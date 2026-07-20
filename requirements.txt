@@ -10,3 +10,5 @@ matplotlib
 seaborn
 open_clip_torch
 python-dotenv
+requests
+google-genai

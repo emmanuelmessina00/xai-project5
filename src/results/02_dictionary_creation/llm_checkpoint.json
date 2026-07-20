@@ -1,0 +1,1900 @@
+{
+  "lung": {
+    "cui": "C0024109",
+    "umls_status": "ok",
+    "umls_synonyms": [
+      "lung",
+      "lungs",
+      "lung structure",
+      "lung structure (body structure)"
+    ],
+    "llm_generated_sentences": [
+      "the lungs demonstrate normal vascular markings throughout the bilateral pulmonary fields.",
+      "clear lung fields with well defined peripheral vascular structures and bronchial markings.",
+      "normal lung parenchyma with symmetric aeration and preserved vascular branching patterns.",
+      "the lungs appear well expanded with normal radiolucency throughout both hemithoraces.",
+      "bilateral lung fields show normal density without focal consolidation or interstitial opacities."
+    ],
+    "llm_status": "ok"
+  },
+  "lung opacity": {
+    "cui": "C4728208",
+    "umls_status": "ok",
+    "umls_synonyms": [
+      "lung opacity"
+    ],
+    "llm_generated_sentences": [
+      "ill-defined area of increased density noted within the right lower lung field.",
+      "patchy opacification identified throughout the mid to lower zones of the lung.",
+      "focal area of increased opacity observed in the left upper lung zone.",
+      "homogeneous density obscuring the normal vascular markings in the right lung base.",
+      "diffuse ground glass opacity noted throughout the bilateral lung fields on radiograph."
+    ],
+    "llm_status": "ok"
+  },
+  "cardiomegaly": {
+    "cui": "C0018800",
+    "umls_status": "ok",
+    "umls_synonyms": [
+      "cardiomegaly",
+      "cardiomegaly (disorder)",
+      "enlargement, heart",
+      "enlarged heart",
+      "heart enlargement",
+      "heart, enlarged"
+    ],
+    "llm_generated_sentences": [
+      "the cardiac silhouette appears enlarged with increased transverse diameter on the frontal view.",
+      "prominent cardiac contour noted with cardiomegaly extending beyond the normal mediastinal borders.",
+      "the heart size is increased suggesting cardiomegaly with a widened cardiac silhouette.",
+      "global enlargement of the cardiac silhouette is observed on the frontal chest radiograph.",
+      "increased cardiothoracic ratio indicates cardiomegaly with a widened and prominent cardiac shadow."
+    ],
+    "llm_status": "ok"
+  },
+  "calcinosis": {
+    "cui": "C0006663",
+    "umls_status": "ok",
+    "umls_synonyms": [
+      "calcinosis",
+      "calcinosis (disorder)",
+      "pathologic calcification",
+      "extraskeletal calcification",
+      "calcification, pathologic",
+      "calcinoses"
+    ],
+    "llm_generated_sentences": [
+      "multiple punctate foci of increased density noted within the soft tissues.",
+      "dense amorphous calcifications identified along the thoracic wall soft tissue planes.",
+      "small irregular opacities consistent with dystrophic calcification seen in the chest wall.",
+      "well defined dense nodular calcifications scattered throughout the subcutaneous soft tissues.",
+      "linear areas of increased radiodensity observed within the extrapleural soft tissue layers."
+    ],
+    "llm_status": "ok"
+  },
+  "pulmonary atelectasis": {
+    "cui": "C0004144",
+    "umls_status": "ok",
+    "umls_synonyms": [
+      "pulmonary atelectasis",
+      "lung collapse",
+      "atelectases",
+      "pulmonary atelectases",
+      "under expanded lung",
+      "atelectasis",
+      "pulmonary collapse",
+      "collapse of lung",
+      "collapse, lung",
+      "pulmonary collapse with atelectasis",
+      "atelectases, pulmonary",
+      "atelectasis, pulmonary",
+      "atelectasis (disorder)",
+      "unexpanded lung"
+    ],
+    "llm_generated_sentences": [
+      "linear band-like opacities consistent with subsegmental atelectasis in the left lower lobe.",
+      "increased density with volume loss noted in the right middle lobe region.",
+      "focal area of increased opacity with associated volume loss in the lung base.",
+      "linear plate-like densities suggestive of discoid atelectasis within the right lower lung.",
+      "homogeneous opacity with ipsilateral mediastinal shift indicating significant lobar collapse."
+    ],
+    "llm_status": "ok"
+  },
+  "calcified granuloma": {
+    "cui": "C0333404",
+    "umls_status": "ok",
+    "umls_synonyms": [
+      "calcified granuloma"
+    ],
+    "llm_generated_sentences": [
+      "a solitary well-defined nodule with central dense calcification is noted.",
+      "small punctate calcified opacity seen within the right upper lung zone.",
+      "dense calcified nodular opacity identified in the left mid lung field.",
+      "multiple small calcified granulomas scattered throughout the bilateral lung parenchyma.",
+      "discrete rounded opacity with dense central calcification in the lung apex."
+    ],
+    "llm_status": "ok"
+  },
+  "thoracic vertebrae": {
+    "cui": "C0039987",
+    "umls_status": "ok",
+    "umls_synonyms": [
+      "thoracic vertebrae",
+      "bone structure of thoracic vertebra",
+      "dorsal vertebra",
+      "thoracic vertebra",
+      "vertebrae, thoracic"
+    ],
+    "llm_generated_sentences": [
+      "thoracic vertebrae are visualized as a vertical column of stacked bony segments.",
+      "the thoracic vertebrae demonstrate normal alignment along the posterior midline of the chest.",
+      "individual thoracic vertebrae appear as distinct rectangular opacities within the central mediastinal shadow.",
+      "normal bony architecture of the thoracic vertebrae is maintained throughout the visualized spine.",
+      "the thoracic vertebrae exhibit uniform density and intact cortical margins on the radiograph."
+    ],
+    "llm_status": "ok"
+  },
+  "pulmonary cicatrix": {
+    "cui": null,
+    "umls_status": "no_cui_match",
+    "umls_synonyms": [
+      "pulmonary cicatrix"
+    ],
+    "llm_generated_sentences": [
+      "linear opacity consistent with focal pulmonary scarring in the right upper lobe.",
+      "well defined linear density representing parenchymal scarring within the left lung apex.",
+      "focal area of increased density suggesting pulmonary cicatrix in the right midzone.",
+      "persistent linear opacity indicative of localized pulmonary scarring in the left base.",
+      "small focal area of increased density consistent with pulmonary cicatrix formation."
+    ],
+    "llm_status": "ok"
+  },
+  "spine": {
+    "cui": "C0037949",
+    "umls_status": "ok",
+    "umls_synonyms": [
+      "spine",
+      "column, spinal",
+      "vertebral columns",
+      "columns, spinal",
+      "spinal columns",
+      "column, vertebral",
+      "spinal column",
+      "vertebral column",
+      "backbone",
+      "columns, vertebral",
+      "structure of vertebral column"
+    ],
+    "llm_generated_sentences": [
+      "the vertebral column maintains normal alignment without evidence of focal bony destruction.",
+      "visualized segments of the thoracic spine demonstrate preserved height and normal density.",
+      "the spinal column shows intact vertebral bodies with well maintained intervertebral disc spaces.",
+      "normal curvature of the thoracic spine is noted on the frontal chest projection.",
+      "the vertebral column appears intact with no evidence of acute fracture or deformity."
+    ],
+    "llm_status": "ok"
+  },
+  "bronchovascular markings": {
+    "cui": null,
+    "umls_status": "no_cui_match",
+    "umls_synonyms": [
+      "bronchovascular markings"
+    ],
+    "llm_generated_sentences": [
+      "bronchovascular markings appear prominent throughout the bilateral lung fields.",
+      "increased bronchovascular markings are noted extending toward the lung periphery.",
+      "bronchovascular markings are within normal limits throughout both lungs.",
+      "coarse bronchovascular markings are visualized radiating from the pulmonary hila.",
+      "accentuated bronchovascular markings are present in the lower lung zones."
+    ],
+    "llm_status": "ok"
+  },
+  "pleural effusion": {
+    "cui": "C0032227",
+    "umls_status": "ok",
+    "umls_synonyms": [
+      "pleural effusion",
+      "effusion, pleural",
+      "pleural effusions",
+      "pleural effusion (disorder)",
+      "effusions, pleural"
+    ],
+    "llm_generated_sentences": [
+      "blunting of the costophrenic angle suggests a small pleural effusion.",
+      "homogeneous opacification noted at the lung base with meniscus sign.",
+      "increased density obscuring the hemidiaphragm consistent with pleural fluid.",
+      "layering opacity along the lateral chest wall indicates pleural effusion.",
+      "obliteration of the costophrenic sulcus consistent with pleural fluid collection."
+    ],
+    "llm_status": "ok"
+  },
+  "aorta": {
+    "cui": "C0003483",
+    "umls_status": "ok",
+    "umls_synonyms": [
+      "aorta",
+      "aortic structure",
+      "aortas",
+      "aortic structure (body structure)"
+    ],
+    "llm_generated_sentences": [
+      "the thoracic aorta follows a normal contour within the mediastinal silhouette.",
+      "normal aortic arch shadow is visualized along the superior mediastinal border.",
+      "the descending aorta is identified as a linear opacity along the spine.",
+      "aortic knob appears as a well defined opacity in the superior mediastinum.",
+      "the aortic silhouette maintains a normal configuration within the central mediastinal space."
+    ],
+    "llm_status": "ok"
+  },
+  "thoracic diaphragm": {
+    "cui": "C0011980",
+    "umls_status": "ok",
+    "umls_synonyms": [
+      "thoracic diaphragm",
+      "respiratory diaphragms",
+      "respiratory diaphragm",
+      "diaphragm structure (body structure)",
+      "diaphragms, respiratory",
+      "diaphragm",
+      "diaphragms",
+      "diaphragm structure",
+      "diaphragm, respiratory"
+    ],
+    "llm_generated_sentences": [
+      "the diaphragm appears as a smooth dome shaped opacity at the lung base.",
+      "normal contour of the bilateral diaphragmatic leaflets is well defined and intact.",
+      "the diaphragm is visualized as a thin curvilinear opacity above the upper abdomen.",
+      "bilateral diaphragmatic domes are smooth with sharp costophrenic angles on frontal view.",
+      "the diaphragm maintains a smooth arcuate contour across the lower thoracic cavity."
+    ],
+    "llm_status": "ok"
+  },
+  "lung density": {
+    "cui": "C0746094",
+    "umls_status": "ok",
+    "umls_synonyms": [
+      "lung density"
+    ],
+    "llm_generated_sentences": [
+      "increased opacity noted within the right lower lobe lung parenchyma.",
+      "focal area of increased density identified in the left mid lung zone.",
+      "patchy areas of increased lung density observed throughout the right lung field.",
+      "ill defined increased density noted within the left upper lobe region.",
+      "homogeneous increased density involving the retrocardiac portion of the left lower lobe."
+    ],
+    "llm_status": "ok"
+  },
+  "atherosclerosis": {
+    "cui": "C0004153",
+    "umls_status": "ok",
+    "umls_synonyms": [
+      "atherosclerosis",
+      "atheromatosis",
+      "atherosclerosis (morphologic abnormality)",
+      "atheroscleroses"
+    ],
+    "llm_generated_sentences": [
+      "prominent calcification noted along the aortic arch and descending thoracic aorta.",
+      "linear calcific densities visible along the contour of the thoracic aorta.",
+      "increased density and tortuosity of the thoracic aorta consistent with atherosclerotic disease.",
+      "dense calcified plaques identified along the margins of the thoracic aorta.",
+      "tortuous thoracic aorta with extensive mural calcification along the aortic knob."
+    ],
+    "llm_status": "ok"
+  },
+  "thoracic skeletal deformity": {
+    "cui": null,
+    "umls_status": "no_cui_match",
+    "umls_synonyms": [
+      "thoracic skeletal deformity"
+    ],
+    "llm_generated_sentences": [
+      "abnormal curvature of the thoracic spine noted on the frontal chest radiograph.",
+      "asymmetric alignment of the posterior ribs suggests underlying thoracic skeletal deformity.",
+      "prominent thoracic cage deformity with altered orientation of the rib segments.",
+      "visualized thoracic skeletal deformity with abnormal configuration of the bony thorax.",
+      "marked thoracic skeletal deformity with altered contour of the bony chest wall."
+    ],
+    "llm_status": "ok"
+  },
+  "pulmonary airspace disease": {
+    "cui": null,
+    "umls_status": "no_cui_match",
+    "umls_synonyms": [
+      "pulmonary airspace disease"
+    ],
+    "llm_generated_sentences": [
+      "ill-defined patchy opacities noted within the bilateral lower lung zones.",
+      "confluent airspace opacities identified throughout the right middle and lower lobes.",
+      "diffuse ground glass opacities present throughout both pulmonary fields.",
+      "segmental airspace consolidation observed in the left upper lobe periphery.",
+      "multifocal airspace opacities distributed across the bilateral lung parenchyma."
+    ],
+    "llm_status": "ok"
+  },
+  "scoliosis": {
+    "cui": "C0036439",
+    "umls_status": "ok",
+    "umls_synonyms": [
+      "scoliosis",
+      "scoliosis deformity of spine (disorder)",
+      "scolioses",
+      "scoliosis deformity of spine"
+    ],
+    "llm_generated_sentences": [
+      "thoracic spine demonstrates a lateral curvature with associated vertebral rotation.",
+      "the thoracic spine shows a mild lateral deviation from the midline.",
+      "lateral curvature of the thoracic spine is noted on the frontal view.",
+      "there is a visible lateral curvature involving the thoracic vertebral column.",
+      "frontal chest radiograph reveals a lateral curvature of the thoracic spine."
+    ],
+    "llm_status": "ok"
+  },
+  "pulmonary nodule": {
+    "cui": "C0034079",
+    "umls_status": "ok",
+    "umls_synonyms": [
+      "pulmonary nodule",
+      "nodule of lung",
+      "nodule of lung (disorder)"
+    ],
+    "llm_generated_sentences": [
+      "a solitary well-defined rounded opacity is noted within the right upper lobe.",
+      "small focal nodular density identified in the left lower lung field.",
+      "discrete rounded pulmonary opacity measuring less than three centimeters in diameter.",
+      "well-circumscribed nodular opacity projected over the mid lung zone.",
+      "single focal pulmonary nodule noted within the peripheral lung parenchyma."
+    ],
+    "llm_status": "ok"
+  },
+  "granulomatous disease": {
+    "cui": "C0740451",
+    "umls_status": "ok",
+    "umls_synonyms": [
+      "granulomatous disease",
+      "granulomatous disorder"
+    ],
+    "llm_generated_sentences": [
+      "multiple small ill-defined nodular opacities scattered throughout both lung fields.",
+      "numerous discrete pulmonary nodules noted within the bilateral mid and upper zones.",
+      "diffuse miliary pattern of tiny rounded opacities throughout the pulmonary parenchyma.",
+      "multiple well-circumscribed pulmonary nodules identified in the bilateral lung fields.",
+      "small clustered nodular densities distributed throughout the bilateral pulmonary segments."
+    ],
+    "llm_status": "ok"
+  },
+  "bone fracture": {
+    "cui": "C0016658",
+    "umls_status": "ok",
+    "umls_synonyms": [
+      "bone fracture",
+      "fracture (morphologic abnormality)",
+      "bone, broken",
+      "broken bones",
+      "bones, broken",
+      "fracture of bone",
+      "fracture",
+      "fracture, bone",
+      "broken bone",
+      "fracture of bone (disorder)",
+      "fractures, bone",
+      "bone fractures"
+    ],
+    "llm_generated_sentences": [
+      "linear lucent line traversing the mid portion of the right sixth rib.",
+      "displaced cortical discontinuity noted along the lateral aspect of the left clavicle.",
+      "focal cortical step-off identified involving the posterior arc of the third rib.",
+      "lucent fracture line extending through the mid shaft of the left humerus.",
+      "abrupt cortical interruption observed along the superior margin of the right scapula."
+    ],
+    "llm_status": "ok"
+  },
+  "aorta, thoracic": {
+    "cui": "C1522460",
+    "umls_status": "ok",
+    "umls_synonyms": [
+      "aorta, thoracic",
+      "thoracic aorta structure",
+      "thoracic aorta structure (body structure)",
+      "thoracic aorta"
+    ],
+    "llm_generated_sentences": [
+      "the thoracic aorta follows a normal mediastinal contour along the left heart border.",
+      "thoracic aorta appears as a well defined tubular structure within the superior mediastinum.",
+      "normal mediastinal silhouette demonstrates the expected arch of the thoracic aorta.",
+      "the thoracic aorta maintains a smooth lateral contour along the upper mediastinal stripe.",
+      "visualized thoracic aorta shows normal caliber and expected position within the mediastinum."
+    ],
+    "llm_status": "ok"
+  },
+  "costophrenic angle": {
+    "cui": "C0230151",
+    "umls_status": "ok",
+    "umls_synonyms": [
+      "costophrenic angle",
+      "structure of costophrenic angle"
+    ],
+    "llm_generated_sentences": [
+      "the bilateral costophrenic angles are sharp and well defined on the frontal view.",
+      "normal appearance of the costophrenic angles with no evidence of blunting or opacification.",
+      "the costophrenic angles appear clear and demonstrate normal acute contour on both sides.",
+      "well maintained costophrenic angles are noted throughout the lower lung zones bilaterally.",
+      "the costophrenic angles are preserved and show no signs of pleural fluid accumulation."
+    ],
+    "llm_status": "ok"
+  },
+  "osteophyte": {
+    "cui": "C1956089",
+    "umls_status": "ok",
+    "umls_synonyms": [
+      "osteophyte",
+      "osteophyte of bone",
+      "osteophytes",
+      "osteophyte of bone (disorder)",
+      "bone spurs",
+      "bone spur",
+      "spurs, bone",
+      "spur, bone",
+      "osteophyte (morphologic abnormality)",
+      "bony spur",
+      "osteophyma"
+    ],
+    "llm_generated_sentences": [
+      "small bony spurs project from the anterior margins of the thoracic vertebral bodies.",
+      "prominent osteophytes are noted along the lateral aspects of the mid thoracic spine.",
+      "multiple bony spurs are identified along the superior and inferior vertebral endplates.",
+      "small osteophytic projections are visible along the anterior thoracic vertebral column margins.",
+      "discrete bony spurs are present along the lateral borders of the thoracic vertebrae."
+    ],
+    "llm_status": "ok"
+  },
+  "pulmonary congestion": {
+    "cui": "C0242073",
+    "umls_status": "ok",
+    "umls_synonyms": [
+      "pulmonary congestion",
+      "pulmonary congestion (disorder)"
+    ],
+    "llm_generated_sentences": [
+      "increased prominence of central pulmonary vasculature with indistinct vascular margins noted bilaterally.",
+      "bilateral perihilar vascular congestion with associated hazy peribronchial cuffing throughout both lungs.",
+      "prominent pulmonary vascular markings extending into the peripheral lung fields bilaterally.",
+      "increased interstitial markings with indistinct vascular contours consistent with pulmonary venous congestion.",
+      "diffuse increase in pulmonary vascular density with blurred margins of the central vessels."
+    ],
+    "llm_status": "ok"
+  },
+  "spondylosis": {
+    "cui": "C0038019",
+    "umls_status": "ok",
+    "umls_synonyms": [
+      "spondylosis",
+      "spondylosis (disorder)"
+    ],
+    "llm_generated_sentences": [
+      "degenerative changes noted along the thoracic spine with associated osteophyte formation.",
+      "prominent anterior osteophytes identified along the mid to lower thoracic vertebral bodies.",
+      "vertebral endplate sclerosis and marginal osteophytes present throughout the thoracic spine.",
+      "thoracic spine demonstrates multilevel osteophyte formation and narrowing of the disc spaces.",
+      "increased density and marginal spurring observed along the thoracic vertebral column."
+    ],
+    "llm_status": "ok"
+  },
+  "pulmonary infiltrate": {
+    "cui": "C0235896",
+    "umls_status": "ok",
+    "umls_synonyms": [
+      "pulmonary infiltrate"
+    ],
+    "llm_generated_sentences": [
+      "ill-defined patchy opacities noted within the right lower lung zone.",
+      "focal area of increased density identified in the left mid lung field.",
+      "hazy increased opacity observed throughout the right upper lobe region.",
+      "confluent airspace opacification present within the left lower lobe segment.",
+      "multifocal patchy densities scattered throughout both lower lung fields."
+    ],
+    "llm_status": "ok"
+  },
+  "emphysema": {
+    "cui": "C0034067",
+    "umls_status": "ok",
+    "umls_synonyms": [
+      "emphysema",
+      "emphysema, pulmonary",
+      "pulmonary emphysema",
+      "emphysemas, pulmonary",
+      "pulmonary emphysemas",
+      "emphysema of lung",
+      "pulmonary emphysema (disorder)"
+    ],
+    "llm_generated_sentences": [
+      "hyperinflated lungs with flattened diaphragms and increased retrosternal airspace are noted.",
+      "diffuse pulmonary lucency with attenuation of peripheral vascular markings is present.",
+      "increased lung volumes with sparse peripheral vascularity consistent with pulmonary emphysema.",
+      "bilateral lung hyperinflation with associated flattening of the hemidiaphragms is observed.",
+      "marked pulmonary lucency with decreased peripheral vascular markings throughout both lungs."
+    ],
+    "llm_status": "ok"
+  },
+  "cardiac silhouette": {
+    "cui": "C0507134",
+    "umls_status": "ok",
+    "umls_synonyms": [
+      "cardiac silhouette"
+    ],
+    "llm_generated_sentences": [
+      "the cardiac silhouette appears within normal limits for size and contour.",
+      "well defined borders of the cardiac silhouette are noted on the frontal view.",
+      "the cardiac silhouette demonstrates a normal configuration and mediastinal position.",
+      "smooth lateral margins characterize the appearance of the cardiac silhouette.",
+      "the cardiac silhouette maintains a normal shape and central thoracic position."
+    ],
+    "llm_status": "ok"
+  },
+  "pleural thickening": {
+    "cui": "C0264545",
+    "umls_status": "ok",
+    "umls_synonyms": [
+      "pleural thickening",
+      "pleural cuirasse",
+      "thickening of pleura (disorder)",
+      "thickening of pleura"
+    ],
+    "llm_generated_sentences": [
+      "linear soft tissue density along the lateral chest wall consistent with pleural thickening.",
+      "smooth pleural thickening noted along the peripheral lung margins on the frontal view.",
+      "increased density along the costal pleural surface suggesting localized pleural thickening.",
+      "diffuse pleural thickening observed along the lateral aspect of the thoracic cavity.",
+      "blunting of the costophrenic angle secondary to chronic pleural thickening and fibrosis."
+    ],
+    "llm_status": "ok"
+  },
+  "pulmonary granuloma": {
+    "cui": "C0235557",
+    "umls_status": "ok",
+    "umls_synonyms": [
+      "pulmonary granuloma",
+      "pulmonary granuloma (disorder)"
+    ],
+    "llm_generated_sentences": [
+      "a well-defined solitary pulmonary nodule is noted in the right upper lobe.",
+      "small calcified pulmonary granuloma identified within the left lower lobe lung field.",
+      "discrete rounded opacity with central calcification seen in the right mid lung.",
+      "multiple small dense pulmonary nodules scattered throughout both lung fields.",
+      "focal pulmonary opacity with smooth margins located in the left upper lobe."
+    ],
+    "llm_status": "ok"
+  },
+  "pulmonary disease, chronic obstructive": {
+    "cui": "C0024117",
+    "umls_status": "ok",
+    "umls_synonyms": [
+      "pulmonary disease, chronic obstructive",
+      "chronic obstructive pulmonary diseases",
+      "chronic obstructive lung disease",
+      "copd",
+      "chronic airflow limitation",
+      "chronic obstructive airway disease",
+      "coad",
+      "chronic obstructive pulmonary disease",
+      "chronic airway disease",
+      "chronic irreversible airway obstruction",
+      "chronic airway obstruction"
+    ],
+    "llm_generated_sentences": [
+      "hyperinflated lungs with flattened diaphragmatic contours and increased retrosternal clear space.",
+      "bilateral lung hyperinflation with increased lucency and attenuated peripheral vascular markings.",
+      "flattened hemidiaphragms with increased lung volumes and widened intercostal spaces noted.",
+      "increased retrosternal airspace and flattened diaphragms consistent with chronic lung hyperinflation.",
+      "hyperinflated lung fields with narrow cardiac silhouette and flattened diaphragmatic contours."
+    ],
+    "llm_status": "ok"
+  },
+  "hernia, hiatal": {
+    "cui": "C3489393",
+    "umls_status": "ok",
+    "umls_synonyms": [
+      "hernia, hiatal",
+      "hiatal hernias",
+      "hiatal hernia",
+      "hernia, hiatus",
+      "oesophageal hiatus hernia",
+      "hiatal hernia (disorder)",
+      "esophageal hiatus hernia",
+      "hiatus hernias",
+      "oesophageal hiatal hernia",
+      "hiatus hernia",
+      "hernias, hiatal",
+      "hernias, hiatus",
+      "esophageal hiatal hernia"
+    ],
+    "llm_generated_sentences": [
+      "retrocardiac opacity noted consistent with a sliding hiatal hernia.",
+      "prominent soft tissue density visualized behind the cardiac silhouette.",
+      "air fluid level identified within the retrocardiac mediastinal space.",
+      "well defined rounded opacity projecting over the lower thoracic spine.",
+      "gas filled structure noted superior to the left hemidiaphragm."
+    ],
+    "llm_status": "ok"
+  },
+  "pulmonary edema": {
+    "cui": "C0034063",
+    "umls_status": "ok",
+    "umls_synonyms": [
+      "pulmonary edema",
+      "lung, wet",
+      "wet lung",
+      "lungs, wet",
+      "pulmonary oedema",
+      "pulmonary edemas",
+      "edema, pulmonary",
+      "pulmonary edema (disorder)",
+      "wet lungs",
+      "edemas, pulmonary"
+    ],
+    "llm_generated_sentences": [
+      "bilateral perihilar airspace opacities consistent with pulmonary edema.",
+      "increased interstitial markings and hazy perihilar opacities noted bilaterally.",
+      "diffuse bilateral hazy opacities with indistinct pulmonary vascular margins.",
+      "bilateral fluffy perihilar opacities suggesting pulmonary interstitial fluid accumulation.",
+      "increased prominence of bronchovascular markings with bilateral hazy opacities."
+    ],
+    "llm_status": "ok"
+  },
+  "pneumonia": {
+    "cui": "C0032285",
+    "umls_status": "ok",
+    "umls_synonyms": [
+      "pneumonia",
+      "pneumonias",
+      "pneumonia (disorder)"
+    ],
+    "llm_generated_sentences": [
+      "ill-defined patchy airspace opacity noted in the right lower lobe region.",
+      "focal consolidation identified within the left mid lung zone on frontal view.",
+      "increased density with indistinct margins involving the right middle lobe segment.",
+      "segmental airspace opacification observed in the left lower lung field.",
+      "persistent hazy opacity noted within the right upper lobe lung parenchyma."
+    ],
+    "llm_status": "ok"
+  },
+  "pulmonary emphysema": {
+    "cui": "C0034067",
+    "umls_status": "ok",
+    "umls_synonyms": [
+      "pulmonary emphysema",
+      "emphysema, pulmonary",
+      "emphysemas, pulmonary",
+      "pulmonary emphysemas",
+      "emphysema of lung",
+      "pulmonary emphysema (disorder)"
+    ],
+    "llm_generated_sentences": [
+      "hyperinflated lungs with flattened diaphragmatic contours and increased retrosternal clear space.",
+      "diffuse pulmonary hyperlucency with attenuation of the peripheral vascular markings.",
+      "increased lung volumes with widened intercostal spaces and flattened hemidiaphragms.",
+      "paucity of peripheral lung markings consistent with diffuse pulmonary emphysema.",
+      "hyperinflated lung fields demonstrating decreased vascularity throughout the bilateral lung zones."
+    ],
+    "llm_status": "ok"
+  },
+  "kyphosis": {
+    "cui": "C2115817",
+    "umls_status": "ok",
+    "umls_synonyms": [
+      "kyphosis"
+    ],
+    "llm_generated_sentences": [
+      "increased posterior curvature of the thoracic spine is noted on the lateral view.",
+      "thoracic spine demonstrates exaggerated posterior convexity consistent with kyphosis.",
+      "lateral chest radiograph reveals increased thoracic kyphosis of the vertebral column.",
+      "prominent posterior angulation of the thoracic spine is seen on the lateral projection.",
+      "the thoracic spine shows an accentuated posterior curve on the lateral chest view."
+    ],
+    "llm_status": "ok"
+  },
+  "diaphragmatic eventration": {
+    "cui": "C0011981",
+    "umls_status": "ok",
+    "umls_synonyms": [
+      "diaphragmatic eventration",
+      "eventration of diaphragm",
+      "eventration, diaphragmatic",
+      "diaphragmatic eventration (disorder)",
+      "diaphragm eventration"
+    ],
+    "llm_generated_sentences": [
+      "focal elevation of the right hemidiaphragm contour with smooth arcuate appearance.",
+      "localized upward displacement of the hemidiaphragm contour without associated mass effect.",
+      "smoothly elevated contour of the hemidiaphragm suggesting localized thinning of the muscle.",
+      "well defined focal elevation of the hemidiaphragm contour along the thoracic base.",
+      "localized dome shaped elevation of the hemidiaphragm contour on the frontal view."
+    ],
+    "llm_status": "ok"
+  },
+  "arthritis": {
+    "cui": "C0003864",
+    "umls_status": "ok",
+    "umls_synonyms": [
+      "arthritis",
+      "arthritides",
+      "inflammatory arthritis",
+      "arthritis (disorder)"
+    ],
+    "llm_generated_sentences": [
+      "narrowing of the glenohumeral joint space with subchondral sclerosis noted.",
+      "irregular joint surfaces with periarticular osteopenia and marginal erosive changes.",
+      "joint space narrowing with associated subchondral cyst formation and bony sclerosis.",
+      "degenerative changes with joint space narrowing and prominent marginal osteophyte formation.",
+      "loss of articular cartilage space with subchondral bone density and irregularity."
+    ],
+    "llm_status": "ok"
+  },
+  "pulmonary consolidation": {
+    "cui": "C0521530",
+    "umls_status": "ok",
+    "umls_synonyms": [
+      "pulmonary consolidation",
+      "lung consolidation",
+      "lung consolidation (disorder)"
+    ],
+    "llm_generated_sentences": [
+      "homogeneous increased opacity noted within the right lower lobe consistent with consolidation.",
+      "ill-defined area of increased density involving the left upper lobe pulmonary parenchyma.",
+      "patchy airspace opacification identified in the right mid lung zone suggesting consolidation.",
+      "dense consolidation obscuring the normal vascular markings in the left lower lung.",
+      "confluent opacification noted throughout the right middle lobe consistent with pulmonary consolidation."
+    ],
+    "llm_status": "ok"
+  },
+  "bone diseases, metabolic": {
+    "cui": "C0005944",
+    "umls_status": "ok",
+    "umls_synonyms": [
+      "bone diseases, metabolic",
+      "bone disease, metabolic",
+      "metabolic bone diseases",
+      "metabolic bone disease (disorder)",
+      "metabolic bone disease",
+      "metabolic disorder of bone"
+    ],
+    "llm_generated_sentences": [
+      "generalized decrease in bone density throughout the visualized thoracic skeleton.",
+      "diffuse osteopenia noted within the visualized ribs and thoracic spine.",
+      "increased lucency of the bony structures throughout the thoracic cage.",
+      "generalized thinning of the cortical margins of the visualized ribs.",
+      "reduced radiographic density involving the thoracic vertebrae and rib structures."
+    ],
+    "llm_status": "ok"
+  },
+  "mediastinum": {
+    "cui": "C0025066",
+    "umls_status": "ok",
+    "umls_synonyms": [
+      "mediastinum",
+      "mediastinal structure",
+      "structure of mediastinum",
+      "mediastinal structure (body structure)"
+    ],
+    "llm_generated_sentences": [
+      "the mediastinal contours appear within normal limits on the frontal chest radiograph.",
+      "central mediastinal structures maintain a normal position without evidence of abnormal widening.",
+      "the mediastinal silhouette is well defined with no evidence of mass effect.",
+      "normal mediastinal contours are preserved throughout the superior and inferior thoracic regions.",
+      "the mediastinal shadow remains midline with clearly visualized borders on the film."
+    ],
+    "llm_status": "ok"
+  },
+  "pulmonary lucency": {
+    "cui": null,
+    "umls_status": "no_cui_match",
+    "umls_synonyms": [
+      "pulmonary lucency"
+    ],
+    "llm_generated_sentences": [
+      "focal area of increased pulmonary lucency noted in the right upper lobe.",
+      "regional pulmonary lucency observed within the left mid lung zone on projection.",
+      "increased pulmonary lucency noted throughout the right hemithorax without associated mass.",
+      "well defined area of pulmonary lucency identified in the left lower lung field.",
+      "diffuse pulmonary lucency noted across the bilateral lung fields on frontal view."
+    ],
+    "llm_status": "ok"
+  },
+  "pneumothorax": {
+    "cui": "C0032326",
+    "umls_status": "ok",
+    "umls_synonyms": [
+      "pneumothorax",
+      "pneumothorax (disorder)"
+    ],
+    "llm_generated_sentences": [
+      "visible pleural line with absent lung markings in the peripheral lung field.",
+      "thin radiopaque line paralleling the chest wall with underlying lung lucency.",
+      "peripheral hyperlucency noted without visible bronchovascular markings in the apical region.",
+      "separation of the visceral pleura from the parietal pleura along the periphery.",
+      "increased peripheral lucency with a distinct pleural line and absent lung markings."
+    ],
+    "llm_status": "ok"
+  },
+  "pulmonary fibrosis": {
+    "cui": "C0034069",
+    "umls_status": "ok",
+    "umls_synonyms": [
+      "pulmonary fibrosis",
+      "pulmonary fibroses",
+      "cirrhosis of lung",
+      "fibrosis of lung (disorder)",
+      "fibrosis, pulmonary",
+      "fibroses, pulmonary",
+      "fibrosis of lung"
+    ],
+    "llm_generated_sentences": [
+      "increased reticular interstitial markings noted throughout both mid and lower lung zones.",
+      "diffuse coarse linear opacities consistent with interstitial fibrosis in both lung bases.",
+      "prominent bibasilar reticulation with associated architectural distortion of the lung parenchyma.",
+      "fine linear interstitial opacities noted throughout the peripheral lung fields bilaterally.",
+      "increased lung density with diffuse reticular pattern and loss of normal vascular markings."
+    ],
+    "llm_status": "ok"
+  },
+  "lung, hyperlucent": {
+    "cui": "C0524799",
+    "umls_status": "ok",
+    "umls_synonyms": [
+      "lung, hyperlucent",
+      "thorax, hyperlucent",
+      "lungs, hyperlucent",
+      "hyperlucent thorax",
+      "hyperlucent lungs",
+      "hyperlucent lung"
+    ],
+    "llm_generated_sentences": [
+      "increased lucency noted throughout the right lung field with diminished vascular markings.",
+      "diffuse hyperlucency of the left lung with associated attenuation of peripheral pulmonary vessels.",
+      "marked hyperlucency of the lung parenchyma with flattened hemidiaphragms and increased retrosternal space.",
+      "bilateral lung hyperlucency with sparse peripheral vascular markings and increased lung volumes.",
+      "regional hyperlucency of the upper lung zone with decreased density of pulmonary vasculature."
+    ],
+    "llm_status": "ok"
+  },
+  "pulmonary mass": {
+    "cui": "C0149726",
+    "umls_status": "ok",
+    "umls_synonyms": [
+      "pulmonary mass",
+      "lung mass (finding)",
+      "lung mass"
+    ],
+    "llm_generated_sentences": [
+      "a well-defined rounded opacity is noted within the right upper lobe.",
+      "large lobulated soft tissue density identified in the left lower lung field.",
+      "solitary circumscribed mass lesion projecting over the right mid lung zone.",
+      "prominent focal opacity with irregular margins seen in the left upper lobe.",
+      "discrete spherical mass density observed within the right lower lung field."
+    ],
+    "llm_status": "ok"
+  },
+  "shoulder": {
+    "cui": "C0037004",
+    "umls_status": "ok",
+    "umls_synonyms": [
+      "shoulder",
+      "shoulders",
+      "shoulder region structure (body structure)",
+      "shoulder region structure",
+      "shoulder region"
+    ],
+    "llm_generated_sentences": [
+      "the shoulder region demonstrates normal osseous alignment and intact cortical margins.",
+      "visualized shoulder structures show no evidence of acute fracture or dislocation.",
+      "normal soft tissue density is noted within the bilateral shoulder regions.",
+      "the shoulder joints appear well maintained with preserved articular space width.",
+      "symmetric appearance of the shoulder girdle structures on the frontal projection."
+    ],
+    "llm_status": "ok"
+  },
+  "lung diseases, interstitial": {
+    "cui": "C0206062",
+    "umls_status": "ok",
+    "umls_synonyms": [
+      "lung diseases, interstitial",
+      "interstitial lung disease",
+      "diffuse parenchymal lung disease",
+      "diffuse parenchymal lung diseases",
+      "interstitial lung disease (disorder)",
+      "interstitial lung diseases",
+      "lung disease, interstitial"
+    ],
+    "llm_generated_sentences": [
+      "diffuse reticular opacities are noted throughout both lung fields bilaterally.",
+      "fine linear interstitial markings are present in the peripheral lung zones.",
+      "increased interstitial density is observed throughout the bilateral pulmonary parenchyma.",
+      "diffuse fine nodular opacities are scattered across both lung fields.",
+      "coarse reticulonodular interstitial pattern is seen throughout the bilateral lungs."
+    ],
+    "llm_status": "ok"
+  },
+  "epicardial fat": {
+    "cui": "C0504196",
+    "umls_status": "ok",
+    "umls_synonyms": [
+      "epicardial fat",
+      "tissue, epicardial fat",
+      "epicardial visceral adipose tissue",
+      "epicardial fats",
+      "fat, epicardial",
+      "epicardial fat tissues",
+      "epicardial adipose tissues",
+      "fat tissue, epicardial",
+      "adipose tissue, epicardial",
+      "epicardial adipose tissue",
+      "tissue, epicardial adipose",
+      "epicardial fat tissue"
+    ],
+    "llm_generated_sentences": [
+      "lucent fat density noted along the inferior cardiac border on lateral view.",
+      "subtle radiolucent stripe visible adjacent to the cardiac silhouette on lateral projection.",
+      "epicardial fat pad identified as a lucent area near the cardiac apex.",
+      "radiolucent epicardial adipose tissue visible along the lower anterior heart border.",
+      "well defined lucency representing epicardial fat adjacent to the cardiac silhouette."
+    ],
+    "llm_status": "ok"
+  },
+  "pulmonary artery": {
+    "cui": "C0034052",
+    "umls_status": "ok",
+    "umls_synonyms": [
+      "pulmonary artery",
+      "pulmonary artery structure (body structure)",
+      "pulmonary artery structure",
+      "artery, pulmonary",
+      "structure of trunk of pulmonary artery",
+      "pulmonary arteries",
+      "trunk of pulmonary artery",
+      "arteries, pulmonary",
+      "pulmonary trunk"
+    ],
+    "llm_generated_sentences": [
+      "the main pulmonary artery segment appears as a prominent convex mediastinal contour.",
+      "normal pulmonary trunk silhouette is identified along the left superior mediastinal border.",
+      "the pulmonary artery trunk demonstrates normal caliber and smooth lateral mediastinal margins.",
+      "central pulmonary arteries are visualized as branching tubular opacities within the hila.",
+      "the pulmonary artery segment maintains a normal contour along the left heart border."
+    ],
+    "llm_status": "ok"
+  },
+  "lumbar vertebrae": {
+    "cui": "C0024091",
+    "umls_status": "ok",
+    "umls_synonyms": [
+      "lumbar vertebrae",
+      "vertebrae, lumbar",
+      "lumbar vertebra",
+      "bone structure of lumbar vertebra"
+    ],
+    "llm_generated_sentences": [
+      "lumbar vertebrae are visualized at the inferior margin of the chest radiograph.",
+      "the lumbar vertebral bodies are partially visible at the lower image border.",
+      "lower thoracic and upper lumbar vertebrae are identified on the lateral view.",
+      "the superior lumbar vertebrae are seen below the diaphragm on this projection.",
+      "lumbar vertebral segments are faintly outlined at the base of the film."
+    ],
+    "llm_status": "ok"
+  },
+  "bone sclerosis": {
+    "cui": "C6013401",
+    "umls_status": "ok",
+    "umls_synonyms": [
+      "bone sclerosis"
+    ],
+    "llm_generated_sentences": [
+      "increased osseous density noted within the visualized thoracic skeletal structures.",
+      "focal areas of increased bone density identified throughout the thoracic cage.",
+      "diffuse increase in bone opacity involving the visualized ribs and vertebrae.",
+      "marked cortical thickening and increased density of the thoracic bony structures.",
+      "increased radiodensity observed within the visualized segments of the thoracic spine."
+    ],
+    "llm_status": "ok"
+  },
+  "lung volume loss": {
+    "cui": null,
+    "umls_status": "no_cui_match",
+    "umls_synonyms": [
+      "lung volume loss"
+    ],
+    "llm_generated_sentences": [
+      "increased lung opacity associated with ipsilateral elevation of the hemidiaphragm.",
+      "crowding of the pulmonary vascular markings within the affected lung zone.",
+      "shift of the mediastinal structures toward the area of reduced aeration.",
+      "reduced lung volume evidenced by crowding of the adjacent rib spaces.",
+      "homogeneous opacification of the lung field with associated volume reduction."
+    ],
+    "llm_status": "ok"
+  },
+  "heart": {
+    "cui": "C0018787",
+    "umls_status": "ok",
+    "umls_synonyms": [
+      "heart",
+      "heart structure",
+      "heart structure (body structure)",
+      "cardiac structure",
+      "hearts"
+    ],
+    "llm_generated_sentences": [
+      "the cardiac silhouette appears within normal limits for size and contour.",
+      "normal cardiomediastinal silhouette with well defined borders and central position.",
+      "the heart shadow is centrally located within the middle mediastinal compartment.",
+      "smooth lateral margins of the cardiac silhouette are clearly visualized throughout.",
+      "normal configuration of the cardiac silhouette with preserved retrosternal clear space."
+    ],
+    "llm_status": "ok"
+  },
+  "mediastinal shift": {
+    "cui": "C0264576",
+    "umls_status": "ok",
+    "umls_synonyms": [
+      "mediastinal shift",
+      "mediastinal shift (disorder)"
+    ],
+    "llm_generated_sentences": [
+      "the mediastinal structures are displaced toward the left hemithorax.",
+      "rightward deviation of the mediastinal silhouette is noted on the frontal view.",
+      "the mediastinum is shifted toward the side of the opacified hemithorax.",
+      "there is a noticeable shift of the mediastinum toward the contralateral side.",
+      "the central mediastinal structures appear deviated from the midline position."
+    ],
+    "llm_status": "ok"
+  },
+  "heart failure": {
+    "cui": "C0018801",
+    "umls_status": "ok",
+    "umls_synonyms": [
+      "heart failure",
+      "cardiac insufficiency",
+      "cardiac failure",
+      "heart failure (disorder)",
+      "weak heart"
+    ],
+    "llm_generated_sentences": [
+      "cardiomegaly with prominent pulmonary vascular congestion and bilateral perihilar interstitial opacities.",
+      "enlarged cardiac silhouette associated with diffuse bilateral pulmonary venous hypertension and edema.",
+      "increased cardiothoracic ratio with prominent upper lobe pulmonary venous redistribution and haziness.",
+      "global cardiac enlargement accompanied by bilateral interstitial markings and indistinct pulmonary vasculature.",
+      "prominent cardiac silhouette with associated bilateral perihilar haziness and interstitial pulmonary edema."
+    ],
+    "llm_status": "ok"
+  },
+  "nipple shadow": {
+    "cui": null,
+    "umls_status": "no_cui_match",
+    "umls_synonyms": [
+      "nipple shadow"
+    ],
+    "llm_generated_sentences": [
+      "faint bilateral rounded opacities projected over the lower lung fields.",
+      "well circumscribed circular densities noted in the mid to lower zones.",
+      "bilateral symmetric soft tissue shadows overlying the lower thoracic lung fields.",
+      "small round opacities visible at the level of the fifth intercostal space.",
+      "superimposed circular densities noted on the anterior aspect of the chest."
+    ],
+    "llm_status": "ok"
+  },
+  "hypertension, pulmonary": {
+    "cui": "C0020542",
+    "umls_status": "ok",
+    "umls_synonyms": [
+      "hypertension, pulmonary",
+      "pulmonary hypertension",
+      "pulmonary hypertension (disorder)"
+    ],
+    "llm_generated_sentences": [
+      "prominent central pulmonary arteries with rapid tapering of the peripheral vascular markings.",
+      "enlarged main pulmonary artery segment with prominent hilar vascular shadows bilaterally.",
+      "prominent central pulmonary arterial vasculature with peripheral pruning of the distal vessels.",
+      "dilated central pulmonary arteries with diminished peripheral vascularity in both lung fields.",
+      "enlarged pulmonary outflow tract with prominent central hilar vascular structures noted."
+    ],
+    "llm_status": "ok"
+  },
+  "pulmonary cavitation": {
+    "cui": "C0578537",
+    "umls_status": "ok",
+    "umls_synonyms": [
+      "pulmonary cavitation",
+      "cavitation of lung (disorder)",
+      "cavitation of lung"
+    ],
+    "llm_generated_sentences": [
+      "thin walled lucent area noted within the right upper lobe lung parenchyma.",
+      "well defined thick walled cavitary lesion identified in the left lower lobe.",
+      "multiple lucent areas with surrounding consolidation noted in the right mid lung.",
+      "prominent air filled space with a thick irregular wall in the apex.",
+      "cavitary opacity with an internal air fluid level seen in the periphery."
+    ],
+    "llm_status": "ok"
+  },
+  "subcutaneous emphysema": {
+    "cui": "C0038536",
+    "umls_status": "ok",
+    "umls_synonyms": [
+      "subcutaneous emphysema",
+      "subcutaneous emphysema (disorder)",
+      "emphysemas, subcutaneous",
+      "subcutaneous emphysemas",
+      "emphysema, subcutaneous",
+      "soft tissue emphysema"
+    ],
+    "llm_generated_sentences": [
+      "linear lucencies tracking along the subcutaneous soft tissues of the chest wall.",
+      "radiolucent streaks noted within the subcutaneous fat planes of the thoracic wall.",
+      "multiple small gas lucencies identified throughout the subcutaneous soft tissues of chest.",
+      "subcutaneous soft tissue lucencies consistent with air tracking along the chest wall.",
+      "prominent radiolucent gas collections visible within the subcutaneous tissues of the thorax."
+    ],
+    "llm_status": "ok"
+  },
+  "pericardial effusion": {
+    "cui": "C1253937",
+    "umls_status": "ok",
+    "umls_synonyms": [
+      "pericardial effusion"
+    ],
+    "llm_generated_sentences": [
+      "enlarged cardiac silhouette with a globular configuration and indistinct borders.",
+      "generalized cardiomegaly with a smooth and widened cardiac contour.",
+      "increased cardiac shadow size with a water bottle configuration.",
+      "prominent cardiac silhouette with loss of normal heart border definition.",
+      "globular heart shape suggesting an increase in the pericardial space."
+    ],
+    "llm_status": "ok"
+  },
+  "pulmonary bleb": {
+    "cui": "C1857434",
+    "umls_status": "ok",
+    "umls_synonyms": [
+      "pulmonary bleb"
+    ],
+    "llm_generated_sentences": [
+      "small thin-walled lucency noted along the superior aspect of the right upper lobe.",
+      "focal subpleural lucency identified at the apex of the left upper lung field.",
+      "well-defined thin-walled air-filled space projecting over the right apical lung zone.",
+      "small rounded lucent area located along the peripheral margin of the lung apex.",
+      "thin-walled cystic lucency visible along the superior contour of the left lung."
+    ],
+    "llm_status": "ok"
+  },
+  "costophrenic sulcus": {
+    "cui": null,
+    "umls_status": "no_cui_match",
+    "umls_synonyms": [
+      "costophrenic sulcus"
+    ],
+    "llm_generated_sentences": [
+      "the costophrenic sulcus appears sharp and well defined on the frontal view.",
+      "normal acute angle of the costophrenic sulcus is maintained bilaterally.",
+      "the costophrenic sulcus is clear with no evidence of blunting.",
+      "well-defined costophrenic sulcus with normal contour and sharp margins.",
+      "the costophrenic sulcus remains patent with no obscuration of the angle."
+    ],
+    "llm_status": "ok"
+  },
+  "pulmonary cyst": {
+    "cui": "C0546483",
+    "umls_status": "ok",
+    "umls_synonyms": [
+      "pulmonary cyst",
+      "lung cyst",
+      "cyst of lung",
+      "cyst of lung (disorder)"
+    ],
+    "llm_generated_sentences": [
+      "thin walled lucent area noted within the right upper lobe lung parenchyma.",
+      "well circumscribed air filled space identified in the left lower lung zone.",
+      "solitary thin walled cystic lesion visualized in the mid lung field region.",
+      "rounded lucency with a thin peripheral wall seen in the apical segment.",
+      "discrete air containing space with smooth margins located in the lung base."
+    ],
+    "llm_status": "ok"
+  },
+  "dislocations": {
+    "cui": "C0012691",
+    "umls_status": "ok",
+    "umls_synonyms": [
+      "dislocations",
+      "joint dislocation",
+      "dislocated joint",
+      "dislocation, joint",
+      "dislocation of joint (disorder)",
+      "dislocation (morphologic abnormality)",
+      "dislocations, joint",
+      "dislocation",
+      "joint dislocations",
+      "dislocation of joint"
+    ],
+    "llm_generated_sentences": [
+      "loss of normal articular congruity noted at the glenohumeral joint space.",
+      "abnormal separation of the articular surfaces within the acromioclavicular joint.",
+      "complete disruption of the normal anatomical alignment of the sternoclavicular joint.",
+      "widened joint space with loss of normal apposition of the humeral head.",
+      "displaced articular surfaces noted at the level of the acromioclavicular joint."
+    ],
+    "llm_status": "ok"
+  },
+  "hyperostosis, diffuse idiopathic skeletal": {
+    "cui": "C0020498",
+    "umls_status": "ok",
+    "umls_synonyms": [
+      "hyperostosis, diffuse idiopathic skeletal",
+      "forestier's disease",
+      "forestiers disease",
+      "ankylosing hyperostoses, vertebral",
+      "vertebral ankylosing hyperostosis",
+      "ankylosing hyperostosis, vertebral",
+      "forestier disease",
+      "hyperostosis, vertebral ankylosing",
+      "hyperostoses, vertebral ankylosing",
+      "forestier rotes disease",
+      "diffuse idiopathic skeletal hyperostosis",
+      "disease, forestier",
+      "vertebral ankylosing hyperostoses",
+      "disease, forestier's",
+      "ankylosing hyperostosis"
+    ],
+    "llm_generated_sentences": [
+      "flowing ossification along the anterior aspect of the thoracic vertebral bodies.",
+      "continuous bony bridging spanning multiple contiguous thoracic vertebral segments.",
+      "prominent osteophyte formation along the anterior margins of the thoracic spine.",
+      "bony excrescences noted along the anterior longitudinal ligament of the spine.",
+      "coalescent ossification bridging the anterior surfaces of the thoracic vertebrae."
+    ],
+    "llm_status": "ok"
+  },
+  "bronchiectasis": {
+    "cui": "C0006267",
+    "umls_status": "ok",
+    "umls_synonyms": [
+      "bronchiectasis",
+      "bronchiectases",
+      "bronchiectasis (disorder)"
+    ],
+    "llm_generated_sentences": [
+      "prominent tubular opacities noted within the lower lung zones bilaterally.",
+      "linear branching opacities consistent with dilated bronchi in the lung bases.",
+      "increased prominence of bronchial markings throughout the lower lung fields.",
+      "multiple ring-like lucencies observed within the mid and lower lung zones.",
+      "thickened bronchial walls appearing as parallel linear opacities in the lungs."
+    ],
+    "llm_status": "ok"
+  },
+  "cystic fibrosis": {
+    "cui": "C0010674",
+    "umls_status": "ok",
+    "umls_synonyms": [
+      "cystic fibrosis",
+      "fibrosis, cystic",
+      "fibrocystic disease",
+      "cystic fibrosis (disorder)",
+      "mucoviscidosis"
+    ],
+    "llm_generated_sentences": [
+      "diffuse bilateral peribronchial thickening with prominent central bronchiectasis throughout both lungs.",
+      "hyperinflation of the lungs with flattened diaphragms and increased retrosternal clear space.",
+      "multiple ring shadows and tubular opacities consistent with widespread cystic bronchiectasis.",
+      "coarse interstitial markings and prominent bronchial wall thickening in both upper lobes.",
+      "increased lung volumes with flattened hemidiaphragms and diffuse bronchial wall thickening."
+    ],
+    "llm_status": "ok"
+  },
+  "pneumoperitoneum": {
+    "cui": "C0032320",
+    "umls_status": "ok",
+    "umls_synonyms": [
+      "pneumoperitoneum",
+      "peritoneal cavity free air",
+      "pneumoperitoneum (disorder)"
+    ],
+    "llm_generated_sentences": [
+      "crescentic lucency visualized beneath the right hemidiaphragm on upright chest radiograph.",
+      "free intraperitoneal air collection noted tracking along the superior hepatic surface.",
+      "radiolucent gas collection identified between the liver dome and the diaphragm.",
+      "subdiaphragmatic lucency consistent with free air within the peritoneal cavity.",
+      "linear lucent shadow observed outlining the superior aspect of the liver."
+    ],
+    "llm_status": "ok"
+  },
+  "aortic aneurysm": {
+    "cui": "C0003486",
+    "umls_status": "ok",
+    "umls_synonyms": [
+      "aortic aneurysm",
+      "aortic aneurysms",
+      "aortic aneurysm (disorder)",
+      "aneurysm, aortic",
+      "aneurysm of aorta",
+      "aneurysms, aortic"
+    ],
+    "llm_generated_sentences": [
+      "prominent contour of the thoracic aorta suggesting focal aneurysmal dilatation.",
+      "focal widening of the aortic silhouette consistent with an aortic aneurysm.",
+      "localized bulging of the aortic arch contour indicating an aortic aneurysm.",
+      "prominent aortic knob contour with focal dilatation of the descending aorta.",
+      "abnormal focal enlargement of the aortic shadow along the thoracic course."
+    ],
+    "llm_status": "ok"
+  },
+  "bullous emphysema": {
+    "cui": "C1261120",
+    "umls_status": "ok",
+    "umls_synonyms": [
+      "bullous emphysema",
+      "chronic bullous emphysema",
+      "chronic bullous emphysema (disorder)"
+    ],
+    "llm_generated_sentences": [
+      "large thin walled lucent areas are noted within the upper lung zones.",
+      "multiple avascular lucent spaces are present throughout the upper pulmonary lobes.",
+      "prominent hyperlucent areas with thin peripheral walls are seen in both lungs.",
+      "large air filled bullae are identified within the apical lung regions.",
+      "multiple large lucencies with thin walls are scattered throughout the lung fields."
+    ],
+    "llm_status": "ok"
+  },
+  "heart atria": {
+    "cui": "C0018792",
+    "umls_status": "ok",
+    "umls_synonyms": [
+      "heart atria",
+      "atrial structure (body structure)",
+      "atrium, heart",
+      "cardiac atrium",
+      "atria, heart",
+      "atrium",
+      "atrial structure",
+      "heart atrium"
+    ],
+    "llm_generated_sentences": [
+      "the right atrial contour is visible along the right heart border.",
+      "normal convex silhouette of the right atrium along the right cardiac margin.",
+      "the left atrial appendage is located along the mid left heart border.",
+      "smooth contour of the right atrium noted along the right mediastinal border.",
+      "the left atrium is situated centrally behind the main cardiac silhouette."
+    ],
+    "llm_status": "ok"
+  },
+  "adipose tissue": {
+    "cui": "C0001527",
+    "umls_status": "ok",
+    "umls_synonyms": [
+      "adipose tissue",
+      "yellow fat",
+      "tissue, adipose",
+      "structure of yellow fat (body structure)",
+      "fatty tissue",
+      "structure of yellow fat",
+      "tissue, fatty",
+      "structure of adipose tissue",
+      "structure of adipose tissue (body structure)"
+    ],
+    "llm_generated_sentences": [
+      "increased retrosternal lucency consistent with prominent anterior mediastinal adipose tissue.",
+      "epicardial fat pad noted as a focal retrosternal lucency along the cardiac border.",
+      "prominent cardiophrenic angle lucency representing normal accumulation of intrathoracic adipose tissue.",
+      "well defined lucent area in the cardiophrenic angle consistent with fatty tissue.",
+      "subcutaneous fatty tissue layer visible along the lateral chest wall soft tissues."
+    ],
+    "llm_status": "ok"
+  },
+  "funnel chest": {
+    "cui": "C2051831",
+    "umls_status": "ok",
+    "umls_synonyms": [
+      "funnel chest",
+      "trichterbrust",
+      "pectus excavatum (disorder)",
+      "pectus recurvatum",
+      "cobbler's chest",
+      "pectus excavatum"
+    ],
+    "llm_generated_sentences": [
+      "posterior displacement of the sternum with narrowing of the retrosternal clear space.",
+      "inward depression of the sternum causing apparent cardiac silhouette displacement to the left.",
+      "increased retrosternal lucency with posterior bowing of the sternal body on lateral view.",
+      "concave deformity of the anterior chest wall with sternal depression on lateral projection.",
+      "posterior sternal indentation resulting in reduced anteroposterior diameter of the thoracic cavity."
+    ],
+    "llm_status": "ok"
+  },
+  "ribs": {
+    "cui": "C0035561",
+    "umls_status": "ok",
+    "umls_synonyms": [
+      "ribs",
+      "bone structure of rib",
+      "rib",
+      "bone structure of rib (body structure)"
+    ],
+    "llm_generated_sentences": [
+      "the visualized ribs demonstrate normal cortical margins and intact bony architecture.",
+      "posterior and anterior rib segments appear unremarkable without evidence of fracture.",
+      "normal rib contours are maintained throughout the visualized thoracic cage.",
+      "no suspicious rib lesions or focal cortical irregularities are identified.",
+      "the rib cage shows symmetric alignment with preserved bony density throughout."
+    ],
+    "llm_status": "ok"
+  },
+  "hydropneumothorax": {
+    "cui": "C0020303",
+    "umls_status": "ok",
+    "umls_synonyms": [
+      "hydropneumothorax",
+      "hydropneumothorax (disorder)"
+    ],
+    "llm_generated_sentences": [
+      "visible air fluid level within the pleural space on upright chest radiograph.",
+      "horizontal air fluid interface noted along the lateral aspect of the hemithorax.",
+      "presence of a distinct air fluid level indicating pleural air and fluid.",
+      "linear air fluid interface observed within the pleural space on erect view.",
+      "well defined horizontal opacity interface consistent with pleural air and fluid collection."
+    ],
+    "llm_status": "ok"
+  },
+  "bone and bones": {
+    "cui": "C0005931",
+    "umls_status": "ok",
+    "umls_synonyms": [
+      "bone and bones",
+      "bones and bone tissue",
+      "bone and bone",
+      "bones and bone"
+    ],
+    "llm_generated_sentences": [
+      "visualized osseous structures demonstrate normal cortical margins and trabecular patterns throughout.",
+      "the visualized thoracic skeleton shows no evidence of acute fracture or lytic lesion.",
+      "normal mineralization is noted within the visualized ribs and thoracic spine segments.",
+      "the bony thorax appears intact with no focal cortical disruption or abnormal density.",
+      "visualized skeletal structures maintain normal alignment and expected radiographic density throughout."
+    ],
+    "llm_status": "ok"
+  },
+  "pleura": {
+    "cui": "C0032225",
+    "umls_status": "ok",
+    "umls_synonyms": [
+      "pleura",
+      "pleural structure",
+      "pleural membrane structure (body structure)",
+      "pleural membrane structure"
+    ],
+    "llm_generated_sentences": [
+      "the pleural surfaces appear smooth and well defined along the lateral chest walls.",
+      "normal pleural reflections are visualized along the mediastinal borders and diaphragmatic domes.",
+      "the visceral and parietal pleural layers are not distinctly identified as separate structures.",
+      "thin pleural lines are visible along the peripheral lung fields without abnormal thickening.",
+      "the pleural space remains clear with no evidence of abnormal opacification or fluid."
+    ],
+    "llm_status": "ok"
+  },
+  "pectus carinatum": {
+    "cui": "C2939416",
+    "umls_status": "ok",
+    "umls_synonyms": [
+      "pectus carinatum",
+      "keeled chest",
+      "pectus carinatum (disorder)",
+      "chicken breast",
+      "pigeon breast",
+      "pigeon chest"
+    ],
+    "llm_generated_sentences": [
+      "anterior protrusion of the sternum noted on the lateral chest radiograph.",
+      "increased retrosternal clear space observed due to anterior sternal bowing.",
+      "prominent anterior chest wall contour consistent with sternal protrusion.",
+      "lateral view demonstrates anterior angulation of the sternum and costal cartilages.",
+      "sternal prominence projecting anteriorly beyond the normal thoracic cage margin."
+    ],
+    "llm_status": "ok"
+  },
+  "heart ventricles": {
+    "cui": "C0018827",
+    "umls_status": "ok",
+    "umls_synonyms": [
+      "heart ventricles",
+      "ventricle, cardiac",
+      "cardiac ventricular structure",
+      "cardiac ventricles",
+      "heart ventricle",
+      "ventricle",
+      "ventricle, heart",
+      "cardiac ventricle",
+      "ventricles, cardiac",
+      "ventricles, heart"
+    ],
+    "llm_generated_sentences": [
+      "cardiac ventricular structures appear as central mediastinal opacities within the thoracic cavity.",
+      "the cardiac ventricles form the lower portion of the normal heart silhouette.",
+      "normal cardiac ventricular contours are visualized along the left heart border profile.",
+      "the heart ventricles occupy the inferior aspect of the central mediastinal shadow.",
+      "cardiac ventricular morphology contributes to the overall size of the cardiac silhouette."
+    ],
+    "llm_status": "ok"
+  },
+  "lymph nodes": {
+    "cui": "C0024204",
+    "umls_status": "ok",
+    "umls_synonyms": [
+      "lymph nodes",
+      "lymph node structure",
+      "structure of lymph node (body structure)",
+      "lymphatic gland",
+      "nodes, lymph",
+      "lymph node",
+      "structure of lymph node",
+      "lymph gland",
+      "node, lymph"
+    ],
+    "llm_generated_sentences": [
+      "prominent hilar lymph nodes noted bilaterally with lobulated contours.",
+      "enlarged mediastinal lymph nodes causing subtle widening of the paratracheal stripe.",
+      "increased soft tissue density within the right hilum suggesting lymphadenopathy.",
+      "well defined rounded opacities identified along the bilateral pulmonary hila.",
+      "widening of the mediastinal silhouette consistent with enlarged lymph nodes."
+    ],
+    "llm_status": "ok"
+  },
+  "sarcoidosis": {
+    "cui": "C0036202",
+    "umls_status": "ok",
+    "umls_synonyms": [
+      "sarcoidosis",
+      "sarcoidoses",
+      "schaumann syndrome",
+      "syndrome, schaumann's",
+      "schaumann's syndromes",
+      "boeck's sarcoid",
+      "besnier boeck disease",
+      "schaumann's syndrome",
+      "benign lymphogranulomatosis of schaumann",
+      "miliary lupoid of boeck",
+      "disease, schaumann",
+      "besnier boeck schaumann syndrome",
+      "sarcoid, boeck's",
+      "boecks sarcoid",
+      "syndrome, schaumann",
+      "schaumann disease",
+      "boeck sarcoid",
+      "lupus pernio of besnier"
+    ],
+    "llm_generated_sentences": [
+      "bilateral hilar lymphadenopathy with prominent right paratracheal nodal enlargement is noted.",
+      "symmetric hilar and mediastinal lymph node enlargement with clear lung fields.",
+      "diffuse fine reticulonodular opacities distributed throughout both mid and upper lung zones.",
+      "prominent bilateral hilar fullness consistent with nodal enlargement and mediastinal widening.",
+      "coarse interstitial markings with bilateral hilar adenopathy and preserved lung volumes."
+    ],
+    "llm_status": "ok"
+  },
+  "abdomen": {
+    "cui": "C0371769",
+    "umls_status": "ok",
+    "umls_synonyms": [
+      "abdomen"
+    ],
+    "llm_generated_sentences": [
+      "the upper abdomen is visualized below the visualized lung bases and diaphragm.",
+      "gas shadows are noted within the upper abdomen beneath the hemidiaphragms.",
+      "the upper abdomen appears clear without evidence of free intraperitoneal air.",
+      "visualized upper abdomen shows normal bowel gas patterns without abnormal distension.",
+      "the upper abdomen is partially included at the base of the image."
+    ],
+    "llm_status": "ok"
+  },
+  "humerus": {
+    "cui": "C0020164",
+    "umls_status": "ok",
+    "umls_synonyms": [
+      "humerus",
+      "bone structure of humerus (body structure)",
+      "humeri",
+      "bone structure of humerus"
+    ],
+    "llm_generated_sentences": [
+      "the proximal humerus is visualized within the lateral aspect of the thoracic cage.",
+      "normal cortical margins of the proximal humerus are intact without focal bony lesions.",
+      "the humeral head is identified articulating with the glenoid fossa on both sides.",
+      "visualized proximal humerus demonstrates normal trabecular pattern and smooth cortical bone surfaces.",
+      "the proximal humerus appears within normal limits on the bilateral chest radiographic views."
+    ],
+    "llm_status": "ok"
+  },
+  "hernia, diaphragmatic": {
+    "cui": "C3489393",
+    "umls_status": "ok",
+    "umls_synonyms": [
+      "hernia, diaphragmatic",
+      "hiatal hernias",
+      "hiatal hernia",
+      "hernia, hiatus",
+      "oesophageal hiatus hernia",
+      "hiatal hernia (disorder)",
+      "esophageal hiatus hernia",
+      "hiatus hernias",
+      "oesophageal hiatal hernia",
+      "hernia, hiatal",
+      "hiatus hernia",
+      "hernias, hiatal",
+      "hernias, hiatus",
+      "esophageal hiatal hernia"
+    ],
+    "llm_generated_sentences": [
+      "retrocardiac soft tissue opacity noted within the posterior mediastinum.",
+      "well-defined rounded density projecting behind the cardiac silhouette.",
+      "air-fluid level visualized within the retrocardiac thoracic space.",
+      "prominent gas-filled structure identified superior to the diaphragm contour.",
+      "smooth rounded opacity superimposed over the lower thoracic spine."
+    ],
+    "llm_status": "ok"
+  },
+  "cervical vertebrae": {
+    "cui": "C3665420",
+    "umls_status": "ok",
+    "umls_synonyms": [
+      "cervical vertebrae",
+      "vertebrae, cervical",
+      "cervical spines",
+      "cervical vertebra",
+      "cervical spine",
+      "spine, cervical",
+      "bone structure of cervical vertebra"
+    ],
+    "llm_generated_sentences": [
+      "cervical vertebrae are visualized superior to the thoracic inlet on the frontal view.",
+      "the cervical spine demonstrates normal alignment and intact bony cortical margins throughout.",
+      "cervical vertebral bodies maintain normal height and density on the lateral projection.",
+      "the cervical spine shows preserved intervertebral disc spaces and normal bony architecture.",
+      "cervical vertebrae are identified superior to the lung apices on the chest radiograph."
+    ],
+    "llm_status": "ok"
+  },
+  "tuberculosis": {
+    "cui": "C0041296",
+    "umls_status": "ok",
+    "umls_synonyms": [
+      "tuberculosis",
+      "kochs disease",
+      "mycobacterium tuberculosis infection",
+      "mycobacterium tuberculosis infections",
+      "tuberculoses",
+      "tuberculous (qualifier value)",
+      "infections, mycobacterium tuberculosis",
+      "koch disease",
+      "koch's disease",
+      "infection, mycobacterium tuberculosis",
+      "tuberculous",
+      "tuberculosis (disorder)"
+    ],
+    "llm_generated_sentences": [
+      "apical segment opacities with associated volume loss in the upper lobes.",
+      "ill defined nodular opacities noted within the bilateral upper lung zones.",
+      "patchy consolidations with cavitation identified in the right upper lung field.",
+      "fibronodular opacities distributed throughout the bilateral apical lung segments.",
+      "linear scarring and calcified granulomas present in the upper lung zones."
+    ],
+    "llm_status": "ok"
+  },
+  "pulmonary blood vessels": {
+    "cui": null,
+    "umls_status": "no_cui_match",
+    "umls_synonyms": [
+      "pulmonary blood vessels"
+    ],
+    "llm_generated_sentences": [
+      "pulmonary vasculature appears prominent throughout the central and peripheral lung fields.",
+      "normal pulmonary vascular markings are visualized extending toward the lung periphery.",
+      "pulmonary vessels are well defined and taper appropriately toward the lung bases.",
+      "increased prominence of pulmonary vascular markings noted in both lower lung zones.",
+      "pulmonary vascular structures are clearly visible radiating from the bilateral hila."
+    ],
+    "llm_status": "ok"
+  },
+  "osteoporosis": {
+    "cui": "C0029456",
+    "umls_status": "ok",
+    "umls_synonyms": [
+      "osteoporosis",
+      "osteoporoses",
+      "osteoporosis (disorder)"
+    ],
+    "llm_generated_sentences": [
+      "generalized decrease in bone density noted throughout the visualized thoracic skeleton.",
+      "increased lucency of the thoracic vertebrae consistent with underlying bone demineralization.",
+      "prominent trabecular pattern observed within the visualized ribs and thoracic spine.",
+      "diffuse reduction in osseous opacity involving the visualized thoracic bony structures.",
+      "thinning of the cortical margins noted in the visualized thoracic skeletal elements."
+    ],
+    "llm_status": "ok"
+  },
+  "hypovolemia": {
+    "cui": "C0546884",
+    "umls_status": "ok",
+    "umls_synonyms": [
+      "hypovolemia",
+      "hypovolemias",
+      "hypovolemia (finding)",
+      "hypovolaemia"
+    ],
+    "llm_generated_sentences": [
+      "decreased caliber of the central pulmonary arteries and peripheral vascular markings.",
+      "reduced prominence of the pulmonary vasculature throughout both lung fields.",
+      "diminished size of the hilar vessels with overall decreased pulmonary vascularity.",
+      "small caliber pulmonary vessels noted throughout the central and peripheral lungs.",
+      "attenuation of the pulmonary vascular tree with reduced vessel diameter bilaterally."
+    ],
+    "llm_status": "ok"
+  },
+  "hemothorax": {
+    "cui": "C0019123",
+    "umls_status": "ok",
+    "umls_synonyms": [
+      "hemothorax",
+      "haemothorax",
+      "pleural haemorrhage",
+      "pleural hemorrhage",
+      "hemothorax (disorder)"
+    ],
+    "llm_generated_sentences": [
+      "homogeneous opacification of the pleural space consistent with a large pleural effusion.",
+      "blunting of the costophrenic angle suggesting fluid accumulation within the pleural space.",
+      "increased density obscuring the hemidiaphragm consistent with a significant pleural collection.",
+      "uniform opacity layering along the lateral chest wall within the pleural cavity.",
+      "dense pleural opacity causing obscuration of the underlying pulmonary vascular markings."
+    ],
+    "llm_status": "ok"
+  },
+  "hemopneumothorax": {
+    "cui": "C0019077",
+    "umls_status": "ok",
+    "umls_synonyms": [
+      "hemopneumothorax",
+      "haemopneumothorax",
+      "pneumohemothorax",
+      "pneumohaemothorax",
+      "hemopneumothorax (disorder)"
+    ],
+    "llm_generated_sentences": [
+      "large pleural effusion associated with a visible peripheral pneumothorax in the right hemithorax.",
+      "air fluid level noted within the pleural space indicating a combined pneumothorax and effusion.",
+      "supine chest radiograph demonstrates increased opacity layering over a pneumothorax in the pleural space.",
+      "visible pleural air collection accompanied by dependent opacification consistent with a hemopneumothorax.",
+      "blunting of the costophrenic angle combined with a peripheral lucent rim of pneumothorax."
+    ],
+    "llm_status": "ok"
+  },
+  "expansile bone lesions": {
+    "cui": "C1863880",
+    "umls_status": "ok",
+    "umls_synonyms": [
+      "expansile bone lesions"
+    ],
+    "llm_generated_sentences": [
+      "well defined expansile lucent lesion involving the posterior aspect of the left rib.",
+      "expansile lytic lesion noted within the mid portion of the right scapula.",
+      "cortical thinning associated with an expansile lucent lesion in the proximal humerus.",
+      "expansile osseous lesion causing focal cortical expansion of the visualized thoracic rib.",
+      "localized expansile lucency with thin sclerotic margins identified in the clavicular head."
+    ],
+    "llm_status": "ok"
+  },
+  "cholelithiasis": {
+    "cui": "C0008350",
+    "umls_status": "ok",
+    "umls_synonyms": [
+      "cholelithiasis",
+      "gallstone diseases",
+      "cholelithiases",
+      "calculus in biliary tract (disorder)",
+      "calculus in biliary tract",
+      "gallstone disease",
+      "biliary calculus"
+    ],
+    "llm_generated_sentences": [
+      "radiopaque calculus identified within the right upper quadrant biliary region.",
+      "small calcified density noted in the expected location of the gallbladder.",
+      "faint curvilinear calcification visualized in the right upper abdominal quadrant.",
+      "discrete radiopaque biliary calculus projected over the right hepatic shadow.",
+      "multiple small calcific densities observed in the right upper quadrant."
+    ],
+    "llm_status": "ok"
+  },
+  "bronchitis": {
+    "cui": "C0149514",
+    "umls_status": "ok",
+    "umls_synonyms": [
+      "bronchitis",
+      "acute bronchitis",
+      "acute tracheobronchitis",
+      "acute bronchitis (disorder)",
+      "acute tracheobronchitis (disorder)"
+    ],
+    "llm_generated_sentences": [
+      "increased prominence of bronchovascular markings noted throughout the bilateral lung fields.",
+      "peribronchial cuffing observed along the central and mid lung zones bilaterally.",
+      "mild thickening of bronchial walls visible in the perihilar regions bilaterally.",
+      "increased interstitial markings radiating from the hila into the mid lung zones.",
+      "prominent central bronchovascular structures with associated peribronchial wall thickening."
+    ],
+    "llm_status": "ok"
+  },
+  "bronchiolitis": {
+    "cui": "C0006271",
+    "umls_status": "ok",
+    "umls_synonyms": [
+      "bronchiolitis",
+      "bronchiolitides",
+      "bronchiolitis (disorder)"
+    ],
+    "llm_generated_sentences": [
+      "diffuse bilateral peribronchial thickening noted throughout both lung fields.",
+      "increased bronchovascular markings visible in the lower lung zones bilaterally.",
+      "fine reticular opacities present throughout the mid and lower lung zones.",
+      "prominent peribronchial cuffing observed extending into the peripheral lung fields.",
+      "subtle hazy peribronchial opacities noted in the bilateral lower lobes."
+    ],
+    "llm_status": "ok"
+  },
+  "thorax": {
+    "cui": "C0817096",
+    "umls_status": "ok",
+    "umls_synonyms": [
+      "thorax",
+      "chest",
+      "thorace",
+      "thoracic structure (body structure)",
+      "thoracic structure",
+      "thoraces",
+      "chests"
+    ],
+    "llm_generated_sentences": [
+      "the bony thorax demonstrates normal alignment and intact osseous structures throughout.",
+      "normal thoracic cage architecture with symmetric rib contours and intact margins.",
+      "the thoracic cavity appears clear with well defined mediastinal and hilar contours.",
+      "symmetric thoracic soft tissues with no evidence of abnormal density or mass.",
+      "normal thoracic volume with appropriate expansion and clear lung fields bilaterally."
+    ],
+    "llm_status": "ok"
+  },
+  "trachea": {
+    "cui": "C0040578",
+    "umls_status": "ok",
+    "umls_synonyms": [
+      "trachea",
+      "tracheal structure",
+      "tracheas",
+      "windpipe",
+      "tracheal structure (body structure)"
+    ],
+    "llm_generated_sentences": [
+      "the trachea is visualized as a midline lucent tubular structure in the mediastinum.",
+      "normal midline position of the air filled trachea is maintained throughout the thorax.",
+      "the tracheal air column appears patent and follows a straight vertical midline course.",
+      "smooth tracheal walls are identified extending inferiorly toward the level of the carina.",
+      "the air filled trachea is clearly defined within the central superior mediastinal space."
+    ],
+    "llm_status": "ok"
+  },
+  "trachea, carina": {
+    "cui": null,
+    "umls_status": "no_cui_match",
+    "umls_synonyms": [
+      "trachea, carina"
+    ],
+    "llm_generated_sentences": [
+      "the trachea is midline and maintains a patent central airway lumen.",
+      "the tracheal air column appears normal with no evidence of deviation.",
+      "the carina is sharp and located at the level of the hilum.",
+      "normal midline position of the trachea with a well defined tracheal air column.",
+      "the tracheal bifurcation is clearly visualized with a sharp carinal angle."
+    ],
+    "llm_status": "ok"
+  }
+}

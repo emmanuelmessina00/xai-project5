@@ -11,7 +11,7 @@ spine,174,Spine
 bronchovascular markings,167,Markings
 pleural effusion,160,Pleural Effusion
 aorta,158,Aorta
-diaphragm,140,Diaphragm
+thoracic diaphragm,140,Diaphragm
 lung density,129,Density
 atherosclerosis,125,Atherosclerosis
 thoracic skeletal deformity,124,Deformity
@@ -36,8 +36,8 @@ pulmonary edema,43,Pulmonary Edema
 pneumonia,41,Pneumonia
 pulmonary emphysema,36,Pulmonary Emphysema
 kyphosis,35,Kyphosis
-arthritis,34,Arthritis
 diaphragmatic eventration,34,Diaphragmatic Eventration
+arthritis,34,Arthritis
 pulmonary consolidation,33,Consolidation
 "bone diseases, metabolic",31,"Bone Diseases, Metabolic"
 mediastinum,26,Mediastinum
@@ -51,37 +51,37 @@ shoulder,15,Shoulder
 epicardial fat,14,Epicardial Fat
 pulmonary artery,13,Pulmonary Artery
 lumbar vertebrae,12,Lumbar Vertebrae
-lung volume loss,10,Volume Loss
-mediastinal shift,10,Shift
 bone sclerosis,10,Sclerosis
+lung volume loss,10,Volume Loss
 heart,10,Heart
+mediastinal shift,10,Shift
 heart failure,9,Heart Failure
-"hypertension, pulmonary",7,"Hypertension, Pulmonary"
 nipple shadow,7,Nipple Shadow
-costophrenic sulcus,6,Sulcus
+"hypertension, pulmonary",7,"Hypertension, Pulmonary"
 pulmonary cavitation,6,Cavitation
-pulmonary bleb,6,Blister
-pericardial effusion,6,Pericardial Effusion
 subcutaneous emphysema,6,Subcutaneous Emphysema
-dislocations,5,Dislocations
+pericardial effusion,6,Pericardial Effusion
+pulmonary bleb,6,Blister
+costophrenic sulcus,6,Sulcus
 pulmonary cyst,5,Cysts
-bronchiectasis,5,Bronchiectasis
+dislocations,5,Dislocations
 "hyperostosis, diffuse idiopathic skeletal",5,"Hyperostosis, Diffuse Idiopathic Skeletal"
+bronchiectasis,5,Bronchiectasis
 cystic fibrosis,4,Cystic Fibrosis
+pneumoperitoneum,4,Pneumoperitoneum
 aortic aneurysm,4,Aortic Aneurysm
 bullous emphysema,4,Bullous Emphysema
-pneumoperitoneum,4,Pneumoperitoneum
-funnel chest,4,Funnel Chest
-adipose tissue,4,Adipose Tissue
 heart atria,4,Heart Atria
-hydropneumothorax,4,Hydropneumothorax
+adipose tissue,4,Adipose Tissue
+funnel chest,4,Funnel Chest
 ribs,4,Ribs
+hydropneumothorax,4,Hydropneumothorax
+bone and bones,3,Bone and Bones
 pleura,3,Pleura
 pectus carinatum,3,Pectus Carinatum
 heart ventricles,3,Heart Ventricles
-sarcoidosis,3,Sarcoidosis
-bone and bones,3,Bone and Bones
 lymph nodes,3,Lymph Nodes
+sarcoidosis,3,Sarcoidosis
 abdomen,2,Abdomen
 humerus,2,Humerus
 "hernia, diaphragmatic",2,"Hernia, Diaphragmatic"
