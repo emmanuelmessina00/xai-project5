@@ -1,94 +1,1100 @@
 {
-    "abdomen": [
-        "abdomen"
-    ],
-    "adipose tissue": [
-        "tissue, fatty",
-        "structure of adipose tissue",
-        "adipose tissue",
-        "fatty tissue",
-        "structure of yellow fat",
-        "tissue, adipose",
-        "yellow fat"
-    ],
-    "airspace disease": [
-        "airspace disease"
-    ],
-    "aorta": [
-        "aorta",
-        "aortic structure",
-        "aortas",
-        "aortic structure (body structure)"
-    ],
-    "aortic aneurysm": [
-        "aneurysm of aorta",
-        "aortic aneurysm",
-        "aneurysm, aortic",
-        "aortic aneurysms",
-        "aneurysms, aortic",
-        "aortic aneurysm (disorder)"
-    ],
-    "arthritis": [
-        "arthritis",
-        "arthritis (disorder)",
-        "arthritides",
-        "inflammatory arthritis"
-    ],
-    "atherosclerosis": [
-        "atheromatosis",
-        "atheroscleroses",
-        "atherosclerosis"
-    ],
-    "blister": [
-        "blister"
-    ],
-    "blood vessels": [
-        "vascular structure",
-        "blood vessel structure (body structure)",
-        "blood vessel structure",
-        "blood vessels",
-        "vessel, blood",
-        "blood vessel",
-        "vessels, blood"
-    ],
-    "bone": [
-        "bone structure (body structure)",
-        "bone",
-        "bones",
-        "bone structure"
-    ],
-    "bone and bones": [
-        "bones and bone",
-        "bones and bone tissue",
-        "bone and bones",
-        "bone and bone"
-    ],
-    "bone diseases": [
-        "disease, bone",
-        "disorder of bone (disorder)",
-        "bone disease",
-        "disorder of bone",
-        "diseases, bone",
-        "osteopathia",
-        "bone diseases"
-    ],
-    "breast implants": [
-        "implants, breast",
-        "internal breast prostheses",
-        "internal breast prosthesis",
-        "breast implants",
-        "implant, breast",
-        "breast prosthesis",
-        "prosthetic breast implant",
-        "prostheses, internal breast",
-        "breast prostheses, internal",
-        "breast implant",
-        "prosthesis, internal breast",
-        "breast prosthesis, internal"
-    ],
-    "bronchiectasis": [
-        "bronchiectasis (disorder)",
-        "bronchiectasis",
-        "bronchiectases"
-    ]
+    "lung": {
+        "cui": "C0024109",
+        "status": "ok",
+        "synonyms": [
+            "lung",
+            "lungs",
+            "lung structure",
+            "lung structure (body structure)"
+        ]
+    },
+    "lung opacity": {
+        "cui": "C4728208",
+        "status": "ok",
+        "synonyms": [
+            "lung opacity"
+        ]
+    },
+    "cardiomegaly": {
+        "cui": "C0018800",
+        "status": "ok",
+        "synonyms": [
+            "cardiomegaly",
+            "cardiomegaly (disorder)",
+            "enlargement, heart",
+            "enlarged heart",
+            "heart enlargement",
+            "heart, enlarged"
+        ]
+    },
+    "calcinosis": {
+        "cui": "C0006663",
+        "status": "ok",
+        "synonyms": [
+            "calcinosis",
+            "calcinosis (disorder)",
+            "pathologic calcification",
+            "extraskeletal calcification",
+            "calcification, pathologic",
+            "calcinoses"
+        ]
+    },
+    "pulmonary atelectasis": {
+        "cui": "C0004144",
+        "status": "ok",
+        "synonyms": [
+            "pulmonary atelectasis",
+            "lung collapse",
+            "atelectases",
+            "pulmonary atelectases",
+            "under expanded lung",
+            "atelectasis",
+            "pulmonary collapse",
+            "collapse of lung",
+            "collapse, lung",
+            "pulmonary collapse with atelectasis",
+            "atelectases, pulmonary",
+            "atelectasis, pulmonary",
+            "atelectasis (disorder)",
+            "unexpanded lung"
+        ]
+    },
+    "calcified granuloma": {
+        "cui": "C0333404",
+        "status": "ok",
+        "synonyms": [
+            "calcified granuloma"
+        ]
+    },
+    "thoracic vertebrae": {
+        "cui": "C0039987",
+        "status": "ok",
+        "synonyms": [
+            "thoracic vertebrae",
+            "bone structure of thoracic vertebra",
+            "dorsal vertebra",
+            "thoracic vertebra",
+            "vertebrae, thoracic"
+        ]
+    },
+    "pulmonary cicatrix": {
+        "cui": null,
+        "status": "no_cui_match",
+        "synonyms": [
+            "pulmonary cicatrix"
+        ]
+    },
+    "spine": {
+        "cui": "C0037949",
+        "status": "ok",
+        "synonyms": [
+            "spine",
+            "column, spinal",
+            "vertebral columns",
+            "columns, spinal",
+            "spinal columns",
+            "column, vertebral",
+            "spinal column",
+            "vertebral column",
+            "backbone",
+            "columns, vertebral",
+            "structure of vertebral column"
+        ]
+    },
+    "bronchovascular markings": {
+        "cui": null,
+        "status": "no_cui_match",
+        "synonyms": [
+            "bronchovascular markings"
+        ]
+    },
+    "pleural effusion": {
+        "cui": "C0032227",
+        "status": "ok",
+        "synonyms": [
+            "pleural effusion",
+            "effusion, pleural",
+            "pleural effusions",
+            "pleural effusion (disorder)",
+            "effusions, pleural"
+        ]
+    },
+    "aorta": {
+        "cui": "C0003483",
+        "status": "ok",
+        "synonyms": [
+            "aorta",
+            "aortic structure",
+            "aortas",
+            "aortic structure (body structure)"
+        ]
+    },
+    "thoracic diaphragm": {
+        "cui": "C0011980",
+        "status": "ok",
+        "synonyms": [
+            "thoracic diaphragm",
+            "respiratory diaphragms",
+            "respiratory diaphragm",
+            "diaphragm structure (body structure)",
+            "diaphragms, respiratory",
+            "diaphragm",
+            "diaphragms",
+            "diaphragm structure",
+            "diaphragm, respiratory"
+        ]
+    },
+    "lung density": {
+        "cui": "C0746094",
+        "status": "ok",
+        "synonyms": [
+            "lung density"
+        ]
+    },
+    "atherosclerosis": {
+        "cui": "C0004153",
+        "status": "ok",
+        "synonyms": [
+            "atherosclerosis",
+            "atheromatosis",
+            "atherosclerosis (morphologic abnormality)",
+            "atheroscleroses"
+        ]
+    },
+    "thoracic skeletal deformity": {
+        "cui": null,
+        "status": "no_cui_match",
+        "synonyms": [
+            "thoracic skeletal deformity"
+        ]
+    },
+    "pulmonary airspace disease": {
+        "cui": null,
+        "status": "no_cui_match",
+        "synonyms": [
+            "pulmonary airspace disease"
+        ]
+    },
+    "scoliosis": {
+        "cui": "C0036439",
+        "status": "ok",
+        "synonyms": [
+            "scoliosis",
+            "scoliosis deformity of spine (disorder)",
+            "scolioses",
+            "scoliosis deformity of spine"
+        ]
+    },
+    "pulmonary nodule": {
+        "cui": "C0034079",
+        "status": "ok",
+        "synonyms": [
+            "pulmonary nodule",
+            "nodule of lung",
+            "nodule of lung (disorder)"
+        ]
+    },
+    "granulomatous disease": {
+        "cui": "C0740451",
+        "status": "ok",
+        "synonyms": [
+            "granulomatous disease",
+            "granulomatous disorder"
+        ]
+    },
+    "bone fracture": {
+        "cui": "C0016658",
+        "status": "ok",
+        "synonyms": [
+            "bone fracture",
+            "fracture (morphologic abnormality)",
+            "bone, broken",
+            "broken bones",
+            "bones, broken",
+            "fracture of bone",
+            "fracture",
+            "fracture, bone",
+            "broken bone",
+            "fracture of bone (disorder)",
+            "fractures, bone",
+            "bone fractures"
+        ]
+    },
+    "aorta, thoracic": {
+        "cui": "C1522460",
+        "status": "ok",
+        "synonyms": [
+            "aorta, thoracic",
+            "thoracic aorta structure",
+            "thoracic aorta structure (body structure)",
+            "thoracic aorta"
+        ]
+    },
+    "costophrenic angle": {
+        "cui": "C0230151",
+        "status": "ok",
+        "synonyms": [
+            "costophrenic angle",
+            "structure of costophrenic angle"
+        ]
+    },
+    "osteophyte": {
+        "cui": "C1956089",
+        "status": "ok",
+        "synonyms": [
+            "osteophyte",
+            "osteophyte of bone",
+            "osteophytes",
+            "osteophyte of bone (disorder)",
+            "bone spurs",
+            "bone spur",
+            "spurs, bone",
+            "spur, bone",
+            "osteophyte (morphologic abnormality)",
+            "bony spur",
+            "osteophyma"
+        ]
+    },
+    "pulmonary congestion": {
+        "cui": "C0242073",
+        "status": "ok",
+        "synonyms": [
+            "pulmonary congestion",
+            "pulmonary congestion (disorder)"
+        ]
+    },
+    "spondylosis": {
+        "cui": "C0038019",
+        "status": "ok",
+        "synonyms": [
+            "spondylosis",
+            "spondylosis (disorder)"
+        ]
+    },
+    "pulmonary infiltrate": {
+        "cui": "C0235896",
+        "status": "ok",
+        "synonyms": [
+            "pulmonary infiltrate"
+        ]
+    },
+    "emphysema": {
+        "cui": "C0034067",
+        "status": "ok",
+        "synonyms": [
+            "emphysema",
+            "emphysema, pulmonary",
+            "pulmonary emphysema",
+            "emphysemas, pulmonary",
+            "pulmonary emphysemas",
+            "emphysema of lung",
+            "pulmonary emphysema (disorder)"
+        ]
+    },
+    "cardiac silhouette": {
+        "cui": "C0507134",
+        "status": "ok",
+        "synonyms": [
+            "cardiac silhouette"
+        ]
+    },
+    "pleural thickening": {
+        "cui": "C0264545",
+        "status": "ok",
+        "synonyms": [
+            "pleural thickening",
+            "pleural cuirasse",
+            "thickening of pleura (disorder)",
+            "thickening of pleura"
+        ]
+    },
+    "pulmonary granuloma": {
+        "cui": "C0235557",
+        "status": "ok",
+        "synonyms": [
+            "pulmonary granuloma",
+            "pulmonary granuloma (disorder)"
+        ]
+    },
+    "pulmonary disease, chronic obstructive": {
+        "cui": "C0024117",
+        "status": "ok",
+        "synonyms": [
+            "pulmonary disease, chronic obstructive",
+            "chronic obstructive pulmonary diseases",
+            "chronic obstructive lung disease",
+            "copd",
+            "chronic airflow limitation",
+            "chronic obstructive airway disease",
+            "coad",
+            "chronic obstructive pulmonary disease",
+            "chronic airway disease",
+            "chronic irreversible airway obstruction",
+            "chronic airway obstruction"
+        ]
+    },
+    "hernia, hiatal": {
+        "cui": "C3489393",
+        "status": "ok",
+        "synonyms": [
+            "hernia, hiatal",
+            "hiatal hernias",
+            "hiatal hernia",
+            "hernia, hiatus",
+            "oesophageal hiatus hernia",
+            "hiatal hernia (disorder)",
+            "esophageal hiatus hernia",
+            "hiatus hernias",
+            "oesophageal hiatal hernia",
+            "hiatus hernia",
+            "hernias, hiatal",
+            "hernias, hiatus",
+            "esophageal hiatal hernia"
+        ]
+    },
+    "pulmonary edema": {
+        "cui": "C0034063",
+        "status": "ok",
+        "synonyms": [
+            "pulmonary edema",
+            "lung, wet",
+            "wet lung",
+            "lungs, wet",
+            "pulmonary oedema",
+            "pulmonary edemas",
+            "edema, pulmonary",
+            "pulmonary edema (disorder)",
+            "wet lungs",
+            "edemas, pulmonary"
+        ]
+    },
+    "pneumonia": {
+        "cui": "C0032285",
+        "status": "ok",
+        "synonyms": [
+            "pneumonia",
+            "pneumonias",
+            "pneumonia (disorder)"
+        ]
+    },
+    "pulmonary emphysema": {
+        "cui": "C0034067",
+        "status": "ok",
+        "synonyms": [
+            "pulmonary emphysema",
+            "emphysema, pulmonary",
+            "emphysemas, pulmonary",
+            "pulmonary emphysemas",
+            "emphysema of lung",
+            "pulmonary emphysema (disorder)"
+        ]
+    },
+    "kyphosis": {
+        "cui": "C2115817",
+        "status": "ok",
+        "synonyms": [
+            "kyphosis"
+        ]
+    },
+    "diaphragmatic eventration": {
+        "cui": "C0011981",
+        "status": "ok",
+        "synonyms": [
+            "diaphragmatic eventration",
+            "eventration of diaphragm",
+            "eventration, diaphragmatic",
+            "diaphragmatic eventration (disorder)",
+            "diaphragm eventration"
+        ]
+    },
+    "arthritis": {
+        "cui": "C0003864",
+        "status": "ok",
+        "synonyms": [
+            "arthritis",
+            "arthritides",
+            "inflammatory arthritis",
+            "arthritis (disorder)"
+        ]
+    },
+    "pulmonary consolidation": {
+        "cui": "C0521530",
+        "status": "ok",
+        "synonyms": [
+            "pulmonary consolidation",
+            "lung consolidation",
+            "lung consolidation (disorder)"
+        ]
+    },
+    "bone diseases, metabolic": {
+        "cui": "C0005944",
+        "status": "ok",
+        "synonyms": [
+            "bone diseases, metabolic",
+            "bone disease, metabolic",
+            "metabolic bone diseases",
+            "metabolic bone disease (disorder)",
+            "metabolic bone disease",
+            "metabolic disorder of bone"
+        ]
+    },
+    "mediastinum": {
+        "cui": "C0025066",
+        "status": "ok",
+        "synonyms": [
+            "mediastinum",
+            "mediastinal structure",
+            "structure of mediastinum",
+            "mediastinal structure (body structure)"
+        ]
+    },
+    "pulmonary lucency": {
+        "cui": null,
+        "status": "no_cui_match",
+        "synonyms": [
+            "pulmonary lucency"
+        ]
+    },
+    "pneumothorax": {
+        "cui": "C0032326",
+        "status": "ok",
+        "synonyms": [
+            "pneumothorax",
+            "pneumothorax (disorder)"
+        ]
+    },
+    "pulmonary fibrosis": {
+        "cui": "C0034069",
+        "status": "ok",
+        "synonyms": [
+            "pulmonary fibrosis",
+            "pulmonary fibroses",
+            "cirrhosis of lung",
+            "fibrosis of lung (disorder)",
+            "fibrosis, pulmonary",
+            "fibroses, pulmonary",
+            "fibrosis of lung"
+        ]
+    },
+    "lung, hyperlucent": {
+        "cui": "C0524799",
+        "status": "ok",
+        "synonyms": [
+            "lung, hyperlucent",
+            "thorax, hyperlucent",
+            "lungs, hyperlucent",
+            "hyperlucent thorax",
+            "hyperlucent lungs",
+            "hyperlucent lung"
+        ]
+    },
+    "pulmonary mass": {
+        "cui": "C0149726",
+        "status": "ok",
+        "synonyms": [
+            "pulmonary mass",
+            "lung mass (finding)",
+            "lung mass"
+        ]
+    },
+    "shoulder": {
+        "cui": "C0037004",
+        "status": "ok",
+        "synonyms": [
+            "shoulder",
+            "shoulders",
+            "shoulder region structure (body structure)",
+            "shoulder region structure",
+            "shoulder region"
+        ]
+    },
+    "lung diseases, interstitial": {
+        "cui": "C0206062",
+        "status": "ok",
+        "synonyms": [
+            "lung diseases, interstitial",
+            "interstitial lung disease",
+            "diffuse parenchymal lung disease",
+            "diffuse parenchymal lung diseases",
+            "interstitial lung disease (disorder)",
+            "interstitial lung diseases",
+            "lung disease, interstitial"
+        ]
+    },
+    "epicardial fat": {
+        "cui": "C0504196",
+        "status": "ok",
+        "synonyms": [
+            "epicardial fat",
+            "tissue, epicardial fat",
+            "epicardial visceral adipose tissue",
+            "epicardial fats",
+            "fat, epicardial",
+            "epicardial fat tissues",
+            "epicardial adipose tissues",
+            "fat tissue, epicardial",
+            "adipose tissue, epicardial",
+            "epicardial adipose tissue",
+            "tissue, epicardial adipose",
+            "epicardial fat tissue"
+        ]
+    },
+    "pulmonary artery": {
+        "cui": "C0034052",
+        "status": "ok",
+        "synonyms": [
+            "pulmonary artery",
+            "pulmonary artery structure (body structure)",
+            "pulmonary artery structure",
+            "artery, pulmonary",
+            "structure of trunk of pulmonary artery",
+            "pulmonary arteries",
+            "trunk of pulmonary artery",
+            "arteries, pulmonary",
+            "pulmonary trunk"
+        ]
+    },
+    "lumbar vertebrae": {
+        "cui": "C0024091",
+        "status": "ok",
+        "synonyms": [
+            "lumbar vertebrae",
+            "vertebrae, lumbar",
+            "lumbar vertebra",
+            "bone structure of lumbar vertebra"
+        ]
+    },
+    "bone sclerosis": {
+        "cui": "C6013401",
+        "status": "ok",
+        "synonyms": [
+            "bone sclerosis"
+        ]
+    },
+    "lung volume loss": {
+        "cui": null,
+        "status": "no_cui_match",
+        "synonyms": [
+            "lung volume loss"
+        ]
+    },
+    "heart": {
+        "cui": "C0018787",
+        "status": "ok",
+        "synonyms": [
+            "heart",
+            "heart structure",
+            "heart structure (body structure)",
+            "cardiac structure",
+            "hearts"
+        ]
+    },
+    "mediastinal shift": {
+        "cui": "C0264576",
+        "status": "ok",
+        "synonyms": [
+            "mediastinal shift",
+            "mediastinal shift (disorder)"
+        ]
+    },
+    "heart failure": {
+        "cui": "C0018801",
+        "status": "ok",
+        "synonyms": [
+            "heart failure",
+            "cardiac insufficiency",
+            "cardiac failure",
+            "heart failure (disorder)",
+            "weak heart"
+        ]
+    },
+    "nipple shadow": {
+        "cui": null,
+        "status": "no_cui_match",
+        "synonyms": [
+            "nipple shadow"
+        ]
+    },
+    "hypertension, pulmonary": {
+        "cui": "C0020542",
+        "status": "ok",
+        "synonyms": [
+            "hypertension, pulmonary",
+            "pulmonary hypertension",
+            "pulmonary hypertension (disorder)"
+        ]
+    },
+    "pulmonary cavitation": {
+        "cui": "C0578537",
+        "status": "ok",
+        "synonyms": [
+            "pulmonary cavitation",
+            "cavitation of lung (disorder)",
+            "cavitation of lung"
+        ]
+    },
+    "subcutaneous emphysema": {
+        "cui": "C0038536",
+        "status": "ok",
+        "synonyms": [
+            "subcutaneous emphysema",
+            "subcutaneous emphysema (disorder)",
+            "emphysemas, subcutaneous",
+            "subcutaneous emphysemas",
+            "emphysema, subcutaneous",
+            "soft tissue emphysema"
+        ]
+    },
+    "pericardial effusion": {
+        "cui": "C1253937",
+        "status": "ok",
+        "synonyms": [
+            "pericardial effusion"
+        ]
+    },
+    "pulmonary bleb": {
+        "cui": "C1857434",
+        "status": "ok",
+        "synonyms": [
+            "pulmonary bleb"
+        ]
+    },
+    "costophrenic sulcus": {
+        "cui": null,
+        "status": "no_cui_match",
+        "synonyms": [
+            "costophrenic sulcus"
+        ]
+    },
+    "pulmonary cyst": {
+        "cui": "C0546483",
+        "status": "ok",
+        "synonyms": [
+            "pulmonary cyst",
+            "lung cyst",
+            "cyst of lung",
+            "cyst of lung (disorder)"
+        ]
+    },
+    "dislocations": {
+        "cui": "C0012691",
+        "status": "ok",
+        "synonyms": [
+            "dislocations",
+            "joint dislocation",
+            "dislocated joint",
+            "dislocation, joint",
+            "dislocation of joint (disorder)",
+            "dislocation (morphologic abnormality)",
+            "dislocations, joint",
+            "dislocation",
+            "joint dislocations",
+            "dislocation of joint"
+        ]
+    },
+    "hyperostosis, diffuse idiopathic skeletal": {
+        "cui": "C0020498",
+        "status": "ok",
+        "synonyms": [
+            "hyperostosis, diffuse idiopathic skeletal",
+            "forestier's disease",
+            "forestiers disease",
+            "ankylosing hyperostoses, vertebral",
+            "vertebral ankylosing hyperostosis",
+            "ankylosing hyperostosis, vertebral",
+            "forestier disease",
+            "hyperostosis, vertebral ankylosing",
+            "hyperostoses, vertebral ankylosing",
+            "forestier rotes disease",
+            "diffuse idiopathic skeletal hyperostosis",
+            "disease, forestier",
+            "vertebral ankylosing hyperostoses",
+            "disease, forestier's",
+            "ankylosing hyperostosis"
+        ]
+    },
+    "bronchiectasis": {
+        "cui": "C0006267",
+        "status": "ok",
+        "synonyms": [
+            "bronchiectasis",
+            "bronchiectases",
+            "bronchiectasis (disorder)"
+        ]
+    },
+    "cystic fibrosis": {
+        "cui": "C0010674",
+        "status": "ok",
+        "synonyms": [
+            "cystic fibrosis",
+            "fibrosis, cystic",
+            "fibrocystic disease",
+            "cystic fibrosis (disorder)",
+            "mucoviscidosis"
+        ]
+    },
+    "pneumoperitoneum": {
+        "cui": "C0032320",
+        "status": "ok",
+        "synonyms": [
+            "pneumoperitoneum",
+            "peritoneal cavity free air",
+            "pneumoperitoneum (disorder)"
+        ]
+    },
+    "aortic aneurysm": {
+        "cui": "C0003486",
+        "status": "ok",
+        "synonyms": [
+            "aortic aneurysm",
+            "aortic aneurysms",
+            "aortic aneurysm (disorder)",
+            "aneurysm, aortic",
+            "aneurysm of aorta",
+            "aneurysms, aortic"
+        ]
+    },
+    "bullous emphysema": {
+        "cui": "C1261120",
+        "status": "ok",
+        "synonyms": [
+            "bullous emphysema",
+            "chronic bullous emphysema",
+            "chronic bullous emphysema (disorder)"
+        ]
+    },
+    "heart atria": {
+        "cui": "C0018792",
+        "status": "ok",
+        "synonyms": [
+            "heart atria",
+            "atrial structure (body structure)",
+            "atrium, heart",
+            "cardiac atrium",
+            "atria, heart",
+            "atrium",
+            "atrial structure",
+            "heart atrium"
+        ]
+    },
+    "adipose tissue": {
+        "cui": "C0001527",
+        "status": "ok",
+        "synonyms": [
+            "adipose tissue",
+            "yellow fat",
+            "tissue, adipose",
+            "structure of yellow fat (body structure)",
+            "fatty tissue",
+            "structure of yellow fat",
+            "tissue, fatty",
+            "structure of adipose tissue",
+            "structure of adipose tissue (body structure)"
+        ]
+    },
+    "funnel chest": {
+        "cui": "C2051831",
+        "status": "ok",
+        "synonyms": [
+            "funnel chest",
+            "trichterbrust",
+            "pectus excavatum (disorder)",
+            "pectus recurvatum",
+            "cobbler's chest",
+            "pectus excavatum"
+        ]
+    },
+    "ribs": {
+        "cui": "C0035561",
+        "status": "ok",
+        "synonyms": [
+            "ribs",
+            "bone structure of rib",
+            "rib",
+            "bone structure of rib (body structure)"
+        ]
+    },
+    "hydropneumothorax": {
+        "cui": "C0020303",
+        "status": "ok",
+        "synonyms": [
+            "hydropneumothorax",
+            "hydropneumothorax (disorder)"
+        ]
+    },
+    "bone and bones": {
+        "cui": "C0005931",
+        "status": "ok",
+        "synonyms": [
+            "bone and bones",
+            "bones and bone tissue",
+            "bone and bone",
+            "bones and bone"
+        ]
+    },
+    "pleura": {
+        "cui": "C0032225",
+        "status": "ok",
+        "synonyms": [
+            "pleura",
+            "pleural structure",
+            "pleural membrane structure (body structure)",
+            "pleural membrane structure"
+        ]
+    },
+    "pectus carinatum": {
+        "cui": "C2939416",
+        "status": "ok",
+        "synonyms": [
+            "pectus carinatum",
+            "keeled chest",
+            "pectus carinatum (disorder)",
+            "chicken breast",
+            "pigeon breast",
+            "pigeon chest"
+        ]
+    },
+    "heart ventricles": {
+        "cui": "C0018827",
+        "status": "ok",
+        "synonyms": [
+            "heart ventricles",
+            "ventricle, cardiac",
+            "cardiac ventricular structure",
+            "cardiac ventricles",
+            "heart ventricle",
+            "ventricle",
+            "ventricle, heart",
+            "cardiac ventricle",
+            "ventricles, cardiac",
+            "ventricles, heart"
+        ]
+    },
+    "lymph nodes": {
+        "cui": "C0024204",
+        "status": "ok",
+        "synonyms": [
+            "lymph nodes",
+            "lymph node structure",
+            "structure of lymph node (body structure)",
+            "lymphatic gland",
+            "nodes, lymph",
+            "lymph node",
+            "structure of lymph node",
+            "lymph gland",
+            "node, lymph"
+        ]
+    },
+    "sarcoidosis": {
+        "cui": "C0036202",
+        "status": "ok",
+        "synonyms": [
+            "sarcoidosis",
+            "sarcoidoses",
+            "schaumann syndrome",
+            "syndrome, schaumann's",
+            "schaumann's syndromes",
+            "boeck's sarcoid",
+            "besnier boeck disease",
+            "schaumann's syndrome",
+            "benign lymphogranulomatosis of schaumann",
+            "miliary lupoid of boeck",
+            "disease, schaumann",
+            "besnier boeck schaumann syndrome",
+            "sarcoid, boeck's",
+            "boecks sarcoid",
+            "syndrome, schaumann",
+            "schaumann disease",
+            "boeck sarcoid",
+            "lupus pernio of besnier"
+        ]
+    },
+    "abdomen": {
+        "cui": "C0371769",
+        "status": "ok",
+        "synonyms": [
+            "abdomen"
+        ]
+    },
+    "humerus": {
+        "cui": "C0020164",
+        "status": "ok",
+        "synonyms": [
+            "humerus",
+            "bone structure of humerus (body structure)",
+            "humeri",
+            "bone structure of humerus"
+        ]
+    },
+    "hernia, diaphragmatic": {
+        "cui": "C3489393",
+        "status": "ok",
+        "synonyms": [
+            "hernia, diaphragmatic",
+            "hiatal hernias",
+            "hiatal hernia",
+            "hernia, hiatus",
+            "oesophageal hiatus hernia",
+            "hiatal hernia (disorder)",
+            "esophageal hiatus hernia",
+            "hiatus hernias",
+            "oesophageal hiatal hernia",
+            "hernia, hiatal",
+            "hiatus hernia",
+            "hernias, hiatal",
+            "hernias, hiatus",
+            "esophageal hiatal hernia"
+        ]
+    },
+    "cervical vertebrae": {
+        "cui": "C3665420",
+        "status": "ok",
+        "synonyms": [
+            "cervical vertebrae",
+            "vertebrae, cervical",
+            "cervical spines",
+            "cervical vertebra",
+            "cervical spine",
+            "spine, cervical",
+            "bone structure of cervical vertebra"
+        ]
+    },
+    "tuberculosis": {
+        "cui": "C0041296",
+        "status": "ok",
+        "synonyms": [
+            "tuberculosis",
+            "kochs disease",
+            "mycobacterium tuberculosis infection",
+            "mycobacterium tuberculosis infections",
+            "tuberculoses",
+            "tuberculous (qualifier value)",
+            "infections, mycobacterium tuberculosis",
+            "koch disease",
+            "koch's disease",
+            "infection, mycobacterium tuberculosis",
+            "tuberculous",
+            "tuberculosis (disorder)"
+        ]
+    },
+    "pulmonary blood vessels": {
+        "cui": null,
+        "status": "no_cui_match",
+        "synonyms": [
+            "pulmonary blood vessels"
+        ]
+    },
+    "osteoporosis": {
+        "cui": "C0029456",
+        "status": "ok",
+        "synonyms": [
+            "osteoporosis",
+            "osteoporoses",
+            "osteoporosis (disorder)"
+        ]
+    },
+    "hypovolemia": {
+        "cui": "C0546884",
+        "status": "ok",
+        "synonyms": [
+            "hypovolemia",
+            "hypovolemias",
+            "hypovolemia (finding)",
+            "hypovolaemia"
+        ]
+    },
+    "hemothorax": {
+        "cui": "C0019123",
+        "status": "ok",
+        "synonyms": [
+            "hemothorax",
+            "haemothorax",
+            "pleural haemorrhage",
+            "pleural hemorrhage",
+            "hemothorax (disorder)"
+        ]
+    },
+    "hemopneumothorax": {
+        "cui": "C0019077",
+        "status": "ok",
+        "synonyms": [
+            "hemopneumothorax",
+            "haemopneumothorax",
+            "pneumohemothorax",
+            "pneumohaemothorax",
+            "hemopneumothorax (disorder)"
+        ]
+    },
+    "expansile bone lesions": {
+        "cui": "C1863880",
+        "status": "ok",
+        "synonyms": [
+            "expansile bone lesions"
+        ]
+    },
+    "cholelithiasis": {
+        "cui": "C0008350",
+        "status": "ok",
+        "synonyms": [
+            "cholelithiasis",
+            "gallstone diseases",
+            "cholelithiases",
+            "calculus in biliary tract (disorder)",
+            "calculus in biliary tract",
+            "gallstone disease",
+            "biliary calculus"
+        ]
+    },
+    "bronchitis": {
+        "cui": "C0149514",
+        "status": "ok",
+        "synonyms": [
+            "bronchitis",
+            "acute bronchitis",
+            "acute tracheobronchitis",
+            "acute bronchitis (disorder)",
+            "acute tracheobronchitis (disorder)"
+        ]
+    },
+    "bronchiolitis": {
+        "cui": "C0006271",
+        "status": "ok",
+        "synonyms": [
+            "bronchiolitis",
+            "bronchiolitides",
+            "bronchiolitis (disorder)"
+        ]
+    },
+    "thorax": {
+        "cui": "C0817096",
+        "status": "ok",
+        "synonyms": [
+            "thorax",
+            "chest",
+            "thorace",
+            "thoracic structure (body structure)",
+            "thoracic structure",
+            "thoraces",
+            "chests"
+        ]
+    },
+    "trachea": {
+        "cui": "C0040578",
+        "status": "ok",
+        "synonyms": [
+            "trachea",
+            "tracheal structure",
+            "tracheas",
+            "windpipe",
+            "tracheal structure (body structure)"
+        ]
+    },
+    "trachea, carina": {
+        "cui": null,
+        "status": "no_cui_match",
+        "synonyms": [
+            "trachea, carina"
+        ]
+    }
 }

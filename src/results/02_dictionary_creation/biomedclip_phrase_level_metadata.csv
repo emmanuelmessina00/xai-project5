@@ -1,0 +1,999 @@
+phrase_index,parent_concept,text,text_source,cui,umls_status
+0,lung,lung,umls_synonym,C0024109,ok
+1,lung,lungs,umls_synonym,C0024109,ok
+2,lung,lung structure,umls_synonym,C0024109,ok
+3,lung,lung structure (body structure),umls_synonym,C0024109,ok
+4,lung,the lungs demonstrate normal vascular markings throughout the bilateral pulmonary fields.,llm_radiology_phrase,C0024109,ok
+5,lung,clear lung fields with well defined peripheral vascular structures and bronchial markings.,llm_radiology_phrase,C0024109,ok
+6,lung,normal lung parenchyma with symmetric aeration and preserved vascular branching patterns.,llm_radiology_phrase,C0024109,ok
+7,lung,the lungs appear well expanded with normal radiolucency throughout both hemithoraces.,llm_radiology_phrase,C0024109,ok
+8,lung,bilateral lung fields show normal density without focal consolidation or interstitial opacities.,llm_radiology_phrase,C0024109,ok
+9,lung opacity,lung opacity,umls_synonym,C4728208,ok
+10,lung opacity,ill-defined area of increased density noted within the right lower lung field.,llm_radiology_phrase,C4728208,ok
+11,lung opacity,patchy opacification identified throughout the mid to lower zones of the lung.,llm_radiology_phrase,C4728208,ok
+12,lung opacity,focal area of increased opacity observed in the left upper lung zone.,llm_radiology_phrase,C4728208,ok
+13,lung opacity,homogeneous density obscuring the normal vascular markings in the right lung base.,llm_radiology_phrase,C4728208,ok
+14,lung opacity,diffuse ground glass opacity noted throughout the bilateral lung fields on radiograph.,llm_radiology_phrase,C4728208,ok
+15,cardiomegaly,cardiomegaly,umls_synonym,C0018800,ok
+16,cardiomegaly,cardiomegaly (disorder),umls_synonym,C0018800,ok
+17,cardiomegaly,"enlargement, heart",umls_synonym,C0018800,ok
+18,cardiomegaly,enlarged heart,umls_synonym,C0018800,ok
+19,cardiomegaly,heart enlargement,umls_synonym,C0018800,ok
+20,cardiomegaly,"heart, enlarged",umls_synonym,C0018800,ok
+21,cardiomegaly,the cardiac silhouette appears enlarged with increased transverse diameter on the frontal view.,llm_radiology_phrase,C0018800,ok
+22,cardiomegaly,prominent cardiac contour noted with cardiomegaly extending beyond the normal mediastinal borders.,llm_radiology_phrase,C0018800,ok
+23,cardiomegaly,the heart size is increased suggesting cardiomegaly with a widened cardiac silhouette.,llm_radiology_phrase,C0018800,ok
+24,cardiomegaly,global enlargement of the cardiac silhouette is observed on the frontal chest radiograph.,llm_radiology_phrase,C0018800,ok
+25,cardiomegaly,increased cardiothoracic ratio indicates cardiomegaly with a widened and prominent cardiac shadow.,llm_radiology_phrase,C0018800,ok
+26,calcinosis,calcinosis,umls_synonym,C0006663,ok
+27,calcinosis,calcinosis (disorder),umls_synonym,C0006663,ok
+28,calcinosis,pathologic calcification,umls_synonym,C0006663,ok
+29,calcinosis,extraskeletal calcification,umls_synonym,C0006663,ok
+30,calcinosis,"calcification, pathologic",umls_synonym,C0006663,ok
+31,calcinosis,calcinoses,umls_synonym,C0006663,ok
+32,calcinosis,multiple punctate foci of increased density noted within the soft tissues.,llm_radiology_phrase,C0006663,ok
+33,calcinosis,dense amorphous calcifications identified along the thoracic wall soft tissue planes.,llm_radiology_phrase,C0006663,ok
+34,calcinosis,small irregular opacities consistent with dystrophic calcification seen in the chest wall.,llm_radiology_phrase,C0006663,ok
+35,calcinosis,well defined dense nodular calcifications scattered throughout the subcutaneous soft tissues.,llm_radiology_phrase,C0006663,ok
+36,calcinosis,linear areas of increased radiodensity observed within the extrapleural soft tissue layers.,llm_radiology_phrase,C0006663,ok
+37,pulmonary atelectasis,pulmonary atelectasis,umls_synonym,C0004144,ok
+38,pulmonary atelectasis,lung collapse,umls_synonym,C0004144,ok
+39,pulmonary atelectasis,atelectases,umls_synonym,C0004144,ok
+40,pulmonary atelectasis,pulmonary atelectases,umls_synonym,C0004144,ok
+41,pulmonary atelectasis,under expanded lung,umls_synonym,C0004144,ok
+42,pulmonary atelectasis,atelectasis,umls_synonym,C0004144,ok
+43,pulmonary atelectasis,pulmonary collapse,umls_synonym,C0004144,ok
+44,pulmonary atelectasis,collapse of lung,umls_synonym,C0004144,ok
+45,pulmonary atelectasis,"collapse, lung",umls_synonym,C0004144,ok
+46,pulmonary atelectasis,pulmonary collapse with atelectasis,umls_synonym,C0004144,ok
+47,pulmonary atelectasis,"atelectases, pulmonary",umls_synonym,C0004144,ok
+48,pulmonary atelectasis,"atelectasis, pulmonary",umls_synonym,C0004144,ok
+49,pulmonary atelectasis,atelectasis (disorder),umls_synonym,C0004144,ok
+50,pulmonary atelectasis,unexpanded lung,umls_synonym,C0004144,ok
+51,pulmonary atelectasis,linear band-like opacities consistent with subsegmental atelectasis in the left lower lobe.,llm_radiology_phrase,C0004144,ok
+52,pulmonary atelectasis,increased density with volume loss noted in the right middle lobe region.,llm_radiology_phrase,C0004144,ok
+53,pulmonary atelectasis,focal area of increased opacity with associated volume loss in the lung base.,llm_radiology_phrase,C0004144,ok
+54,pulmonary atelectasis,linear plate-like densities suggestive of discoid atelectasis within the right lower lung.,llm_radiology_phrase,C0004144,ok
+55,pulmonary atelectasis,homogeneous opacity with ipsilateral mediastinal shift indicating significant lobar collapse.,llm_radiology_phrase,C0004144,ok
+56,calcified granuloma,calcified granuloma,umls_synonym,C0333404,ok
+57,calcified granuloma,a solitary well-defined nodule with central dense calcification is noted.,llm_radiology_phrase,C0333404,ok
+58,calcified granuloma,small punctate calcified opacity seen within the right upper lung zone.,llm_radiology_phrase,C0333404,ok
+59,calcified granuloma,dense calcified nodular opacity identified in the left mid lung field.,llm_radiology_phrase,C0333404,ok
+60,calcified granuloma,multiple small calcified granulomas scattered throughout the bilateral lung parenchyma.,llm_radiology_phrase,C0333404,ok
+61,calcified granuloma,discrete rounded opacity with dense central calcification in the lung apex.,llm_radiology_phrase,C0333404,ok
+62,thoracic vertebrae,thoracic vertebrae,umls_synonym,C0039987,ok
+63,thoracic vertebrae,bone structure of thoracic vertebra,umls_synonym,C0039987,ok
+64,thoracic vertebrae,dorsal vertebra,umls_synonym,C0039987,ok
+65,thoracic vertebrae,thoracic vertebra,umls_synonym,C0039987,ok
+66,thoracic vertebrae,"vertebrae, thoracic",umls_synonym,C0039987,ok
+67,thoracic vertebrae,thoracic vertebrae are visualized as a vertical column of stacked bony segments.,llm_radiology_phrase,C0039987,ok
+68,thoracic vertebrae,the thoracic vertebrae demonstrate normal alignment along the posterior midline of the chest.,llm_radiology_phrase,C0039987,ok
+69,thoracic vertebrae,individual thoracic vertebrae appear as distinct rectangular opacities within the central mediastinal shadow.,llm_radiology_phrase,C0039987,ok
+70,thoracic vertebrae,normal bony architecture of the thoracic vertebrae is maintained throughout the visualized spine.,llm_radiology_phrase,C0039987,ok
+71,thoracic vertebrae,the thoracic vertebrae exhibit uniform density and intact cortical margins on the radiograph.,llm_radiology_phrase,C0039987,ok
+72,pulmonary cicatrix,pulmonary cicatrix,umls_synonym,,no_cui_match
+73,pulmonary cicatrix,linear opacity consistent with focal pulmonary scarring in the right upper lobe.,llm_radiology_phrase,,no_cui_match
+74,pulmonary cicatrix,well defined linear density representing parenchymal scarring within the left lung apex.,llm_radiology_phrase,,no_cui_match
+75,pulmonary cicatrix,focal area of increased density suggesting pulmonary cicatrix in the right midzone.,llm_radiology_phrase,,no_cui_match
+76,pulmonary cicatrix,persistent linear opacity indicative of localized pulmonary scarring in the left base.,llm_radiology_phrase,,no_cui_match
+77,pulmonary cicatrix,small focal area of increased density consistent with pulmonary cicatrix formation.,llm_radiology_phrase,,no_cui_match
+78,spine,spine,umls_synonym,C0037949,ok
+79,spine,"column, spinal",umls_synonym,C0037949,ok
+80,spine,vertebral columns,umls_synonym,C0037949,ok
+81,spine,"columns, spinal",umls_synonym,C0037949,ok
+82,spine,spinal columns,umls_synonym,C0037949,ok
+83,spine,"column, vertebral",umls_synonym,C0037949,ok
+84,spine,spinal column,umls_synonym,C0037949,ok
+85,spine,vertebral column,umls_synonym,C0037949,ok
+86,spine,backbone,umls_synonym,C0037949,ok
+87,spine,"columns, vertebral",umls_synonym,C0037949,ok
+88,spine,structure of vertebral column,umls_synonym,C0037949,ok
+89,spine,the vertebral column maintains normal alignment without evidence of focal bony destruction.,llm_radiology_phrase,C0037949,ok
+90,spine,visualized segments of the thoracic spine demonstrate preserved height and normal density.,llm_radiology_phrase,C0037949,ok
+91,spine,the spinal column shows intact vertebral bodies with well maintained intervertebral disc spaces.,llm_radiology_phrase,C0037949,ok
+92,spine,normal curvature of the thoracic spine is noted on the frontal chest projection.,llm_radiology_phrase,C0037949,ok
+93,spine,the vertebral column appears intact with no evidence of acute fracture or deformity.,llm_radiology_phrase,C0037949,ok
+94,bronchovascular markings,bronchovascular markings,umls_synonym,,no_cui_match
+95,bronchovascular markings,bronchovascular markings appear prominent throughout the bilateral lung fields.,llm_radiology_phrase,,no_cui_match
+96,bronchovascular markings,increased bronchovascular markings are noted extending toward the lung periphery.,llm_radiology_phrase,,no_cui_match
+97,bronchovascular markings,bronchovascular markings are within normal limits throughout both lungs.,llm_radiology_phrase,,no_cui_match
+98,bronchovascular markings,coarse bronchovascular markings are visualized radiating from the pulmonary hila.,llm_radiology_phrase,,no_cui_match
+99,bronchovascular markings,accentuated bronchovascular markings are present in the lower lung zones.,llm_radiology_phrase,,no_cui_match
+100,pleural effusion,pleural effusion,umls_synonym,C0032227,ok
+101,pleural effusion,"effusion, pleural",umls_synonym,C0032227,ok
+102,pleural effusion,pleural effusions,umls_synonym,C0032227,ok
+103,pleural effusion,pleural effusion (disorder),umls_synonym,C0032227,ok
+104,pleural effusion,"effusions, pleural",umls_synonym,C0032227,ok
+105,pleural effusion,blunting of the costophrenic angle suggests a small pleural effusion.,llm_radiology_phrase,C0032227,ok
+106,pleural effusion,homogeneous opacification noted at the lung base with meniscus sign.,llm_radiology_phrase,C0032227,ok
+107,pleural effusion,increased density obscuring the hemidiaphragm consistent with pleural fluid.,llm_radiology_phrase,C0032227,ok
+108,pleural effusion,layering opacity along the lateral chest wall indicates pleural effusion.,llm_radiology_phrase,C0032227,ok
+109,pleural effusion,obliteration of the costophrenic sulcus consistent with pleural fluid collection.,llm_radiology_phrase,C0032227,ok
+110,aorta,aorta,umls_synonym,C0003483,ok
+111,aorta,aortic structure,umls_synonym,C0003483,ok
+112,aorta,aortas,umls_synonym,C0003483,ok
+113,aorta,aortic structure (body structure),umls_synonym,C0003483,ok
+114,aorta,the thoracic aorta follows a normal contour within the mediastinal silhouette.,llm_radiology_phrase,C0003483,ok
+115,aorta,normal aortic arch shadow is visualized along the superior mediastinal border.,llm_radiology_phrase,C0003483,ok
+116,aorta,the descending aorta is identified as a linear opacity along the spine.,llm_radiology_phrase,C0003483,ok
+117,aorta,aortic knob appears as a well defined opacity in the superior mediastinum.,llm_radiology_phrase,C0003483,ok
+118,aorta,the aortic silhouette maintains a normal configuration within the central mediastinal space.,llm_radiology_phrase,C0003483,ok
+119,thoracic diaphragm,thoracic diaphragm,umls_synonym,C0011980,ok
+120,thoracic diaphragm,respiratory diaphragms,umls_synonym,C0011980,ok
+121,thoracic diaphragm,respiratory diaphragm,umls_synonym,C0011980,ok
+122,thoracic diaphragm,diaphragm structure (body structure),umls_synonym,C0011980,ok
+123,thoracic diaphragm,"diaphragms, respiratory",umls_synonym,C0011980,ok
+124,thoracic diaphragm,diaphragm,umls_synonym,C0011980,ok
+125,thoracic diaphragm,diaphragms,umls_synonym,C0011980,ok
+126,thoracic diaphragm,diaphragm structure,umls_synonym,C0011980,ok
+127,thoracic diaphragm,"diaphragm, respiratory",umls_synonym,C0011980,ok
+128,thoracic diaphragm,the diaphragm appears as a smooth dome shaped opacity at the lung base.,llm_radiology_phrase,C0011980,ok
+129,thoracic diaphragm,normal contour of the bilateral diaphragmatic leaflets is well defined and intact.,llm_radiology_phrase,C0011980,ok
+130,thoracic diaphragm,the diaphragm is visualized as a thin curvilinear opacity above the upper abdomen.,llm_radiology_phrase,C0011980,ok
+131,thoracic diaphragm,bilateral diaphragmatic domes are smooth with sharp costophrenic angles on frontal view.,llm_radiology_phrase,C0011980,ok
+132,thoracic diaphragm,the diaphragm maintains a smooth arcuate contour across the lower thoracic cavity.,llm_radiology_phrase,C0011980,ok
+133,lung density,lung density,umls_synonym,C0746094,ok
+134,lung density,increased opacity noted within the right lower lobe lung parenchyma.,llm_radiology_phrase,C0746094,ok
+135,lung density,focal area of increased density identified in the left mid lung zone.,llm_radiology_phrase,C0746094,ok
+136,lung density,patchy areas of increased lung density observed throughout the right lung field.,llm_radiology_phrase,C0746094,ok
+137,lung density,ill defined increased density noted within the left upper lobe region.,llm_radiology_phrase,C0746094,ok
+138,lung density,homogeneous increased density involving the retrocardiac portion of the left lower lobe.,llm_radiology_phrase,C0746094,ok
+139,atherosclerosis,atherosclerosis,umls_synonym,C0004153,ok
+140,atherosclerosis,atheromatosis,umls_synonym,C0004153,ok
+141,atherosclerosis,atherosclerosis (morphologic abnormality),umls_synonym,C0004153,ok
+142,atherosclerosis,atheroscleroses,umls_synonym,C0004153,ok
+143,atherosclerosis,prominent calcification noted along the aortic arch and descending thoracic aorta.,llm_radiology_phrase,C0004153,ok
+144,atherosclerosis,linear calcific densities visible along the contour of the thoracic aorta.,llm_radiology_phrase,C0004153,ok
+145,atherosclerosis,increased density and tortuosity of the thoracic aorta consistent with atherosclerotic disease.,llm_radiology_phrase,C0004153,ok
+146,atherosclerosis,dense calcified plaques identified along the margins of the thoracic aorta.,llm_radiology_phrase,C0004153,ok
+147,atherosclerosis,tortuous thoracic aorta with extensive mural calcification along the aortic knob.,llm_radiology_phrase,C0004153,ok
+148,thoracic skeletal deformity,thoracic skeletal deformity,umls_synonym,,no_cui_match
+149,thoracic skeletal deformity,abnormal curvature of the thoracic spine noted on the frontal chest radiograph.,llm_radiology_phrase,,no_cui_match
+150,thoracic skeletal deformity,asymmetric alignment of the posterior ribs suggests underlying thoracic skeletal deformity.,llm_radiology_phrase,,no_cui_match
+151,thoracic skeletal deformity,prominent thoracic cage deformity with altered orientation of the rib segments.,llm_radiology_phrase,,no_cui_match
+152,thoracic skeletal deformity,visualized thoracic skeletal deformity with abnormal configuration of the bony thorax.,llm_radiology_phrase,,no_cui_match
+153,thoracic skeletal deformity,marked thoracic skeletal deformity with altered contour of the bony chest wall.,llm_radiology_phrase,,no_cui_match
+154,pulmonary airspace disease,pulmonary airspace disease,umls_synonym,,no_cui_match
+155,pulmonary airspace disease,ill-defined patchy opacities noted within the bilateral lower lung zones.,llm_radiology_phrase,,no_cui_match
+156,pulmonary airspace disease,confluent airspace opacities identified throughout the right middle and lower lobes.,llm_radiology_phrase,,no_cui_match
+157,pulmonary airspace disease,diffuse ground glass opacities present throughout both pulmonary fields.,llm_radiology_phrase,,no_cui_match
+158,pulmonary airspace disease,segmental airspace consolidation observed in the left upper lobe periphery.,llm_radiology_phrase,,no_cui_match
+159,pulmonary airspace disease,multifocal airspace opacities distributed across the bilateral lung parenchyma.,llm_radiology_phrase,,no_cui_match
+160,scoliosis,scoliosis,umls_synonym,C0036439,ok
+161,scoliosis,scoliosis deformity of spine (disorder),umls_synonym,C0036439,ok
+162,scoliosis,scolioses,umls_synonym,C0036439,ok
+163,scoliosis,scoliosis deformity of spine,umls_synonym,C0036439,ok
+164,scoliosis,thoracic spine demonstrates a lateral curvature with associated vertebral rotation.,llm_radiology_phrase,C0036439,ok
+165,scoliosis,the thoracic spine shows a mild lateral deviation from the midline.,llm_radiology_phrase,C0036439,ok
+166,scoliosis,lateral curvature of the thoracic spine is noted on the frontal view.,llm_radiology_phrase,C0036439,ok
+167,scoliosis,there is a visible lateral curvature involving the thoracic vertebral column.,llm_radiology_phrase,C0036439,ok
+168,scoliosis,frontal chest radiograph reveals a lateral curvature of the thoracic spine.,llm_radiology_phrase,C0036439,ok
+169,pulmonary nodule,pulmonary nodule,umls_synonym,C0034079,ok
+170,pulmonary nodule,nodule of lung,umls_synonym,C0034079,ok
+171,pulmonary nodule,nodule of lung (disorder),umls_synonym,C0034079,ok
+172,pulmonary nodule,a solitary well-defined rounded opacity is noted within the right upper lobe.,llm_radiology_phrase,C0034079,ok
+173,pulmonary nodule,small focal nodular density identified in the left lower lung field.,llm_radiology_phrase,C0034079,ok
+174,pulmonary nodule,discrete rounded pulmonary opacity measuring less than three centimeters in diameter.,llm_radiology_phrase,C0034079,ok
+175,pulmonary nodule,well-circumscribed nodular opacity projected over the mid lung zone.,llm_radiology_phrase,C0034079,ok
+176,pulmonary nodule,single focal pulmonary nodule noted within the peripheral lung parenchyma.,llm_radiology_phrase,C0034079,ok
+177,granulomatous disease,granulomatous disease,umls_synonym,C0740451,ok
+178,granulomatous disease,granulomatous disorder,umls_synonym,C0740451,ok
+179,granulomatous disease,multiple small ill-defined nodular opacities scattered throughout both lung fields.,llm_radiology_phrase,C0740451,ok
+180,granulomatous disease,numerous discrete pulmonary nodules noted within the bilateral mid and upper zones.,llm_radiology_phrase,C0740451,ok
+181,granulomatous disease,diffuse miliary pattern of tiny rounded opacities throughout the pulmonary parenchyma.,llm_radiology_phrase,C0740451,ok
+182,granulomatous disease,multiple well-circumscribed pulmonary nodules identified in the bilateral lung fields.,llm_radiology_phrase,C0740451,ok
+183,granulomatous disease,small clustered nodular densities distributed throughout the bilateral pulmonary segments.,llm_radiology_phrase,C0740451,ok
+184,bone fracture,bone fracture,umls_synonym,C0016658,ok
+185,bone fracture,fracture (morphologic abnormality),umls_synonym,C0016658,ok
+186,bone fracture,"bone, broken",umls_synonym,C0016658,ok
+187,bone fracture,broken bones,umls_synonym,C0016658,ok
+188,bone fracture,"bones, broken",umls_synonym,C0016658,ok
+189,bone fracture,fracture of bone,umls_synonym,C0016658,ok
+190,bone fracture,fracture,umls_synonym,C0016658,ok
+191,bone fracture,"fracture, bone",umls_synonym,C0016658,ok
+192,bone fracture,broken bone,umls_synonym,C0016658,ok
+193,bone fracture,fracture of bone (disorder),umls_synonym,C0016658,ok
+194,bone fracture,"fractures, bone",umls_synonym,C0016658,ok
+195,bone fracture,bone fractures,umls_synonym,C0016658,ok
+196,bone fracture,linear lucent line traversing the mid portion of the right sixth rib.,llm_radiology_phrase,C0016658,ok
+197,bone fracture,displaced cortical discontinuity noted along the lateral aspect of the left clavicle.,llm_radiology_phrase,C0016658,ok
+198,bone fracture,focal cortical step-off identified involving the posterior arc of the third rib.,llm_radiology_phrase,C0016658,ok
+199,bone fracture,lucent fracture line extending through the mid shaft of the left humerus.,llm_radiology_phrase,C0016658,ok
+200,bone fracture,abrupt cortical interruption observed along the superior margin of the right scapula.,llm_radiology_phrase,C0016658,ok
+201,"aorta, thoracic","aorta, thoracic",umls_synonym,C1522460,ok
+202,"aorta, thoracic",thoracic aorta structure,umls_synonym,C1522460,ok
+203,"aorta, thoracic",thoracic aorta structure (body structure),umls_synonym,C1522460,ok
+204,"aorta, thoracic",thoracic aorta,umls_synonym,C1522460,ok
+205,"aorta, thoracic",the thoracic aorta follows a normal mediastinal contour along the left heart border.,llm_radiology_phrase,C1522460,ok
+206,"aorta, thoracic",thoracic aorta appears as a well defined tubular structure within the superior mediastinum.,llm_radiology_phrase,C1522460,ok
+207,"aorta, thoracic",normal mediastinal silhouette demonstrates the expected arch of the thoracic aorta.,llm_radiology_phrase,C1522460,ok
+208,"aorta, thoracic",the thoracic aorta maintains a smooth lateral contour along the upper mediastinal stripe.,llm_radiology_phrase,C1522460,ok
+209,"aorta, thoracic",visualized thoracic aorta shows normal caliber and expected position within the mediastinum.,llm_radiology_phrase,C1522460,ok
+210,costophrenic angle,costophrenic angle,umls_synonym,C0230151,ok
+211,costophrenic angle,structure of costophrenic angle,umls_synonym,C0230151,ok
+212,costophrenic angle,the bilateral costophrenic angles are sharp and well defined on the frontal view.,llm_radiology_phrase,C0230151,ok
+213,costophrenic angle,normal appearance of the costophrenic angles with no evidence of blunting or opacification.,llm_radiology_phrase,C0230151,ok
+214,costophrenic angle,the costophrenic angles appear clear and demonstrate normal acute contour on both sides.,llm_radiology_phrase,C0230151,ok
+215,costophrenic angle,well maintained costophrenic angles are noted throughout the lower lung zones bilaterally.,llm_radiology_phrase,C0230151,ok
+216,costophrenic angle,the costophrenic angles are preserved and show no signs of pleural fluid accumulation.,llm_radiology_phrase,C0230151,ok
+217,osteophyte,osteophyte,umls_synonym,C1956089,ok
+218,osteophyte,osteophyte of bone,umls_synonym,C1956089,ok
+219,osteophyte,osteophytes,umls_synonym,C1956089,ok
+220,osteophyte,osteophyte of bone (disorder),umls_synonym,C1956089,ok
+221,osteophyte,bone spurs,umls_synonym,C1956089,ok
+222,osteophyte,bone spur,umls_synonym,C1956089,ok
+223,osteophyte,"spurs, bone",umls_synonym,C1956089,ok
+224,osteophyte,"spur, bone",umls_synonym,C1956089,ok
+225,osteophyte,osteophyte (morphologic abnormality),umls_synonym,C1956089,ok
+226,osteophyte,bony spur,umls_synonym,C1956089,ok
+227,osteophyte,osteophyma,umls_synonym,C1956089,ok
+228,osteophyte,small bony spurs project from the anterior margins of the thoracic vertebral bodies.,llm_radiology_phrase,C1956089,ok
+229,osteophyte,prominent osteophytes are noted along the lateral aspects of the mid thoracic spine.,llm_radiology_phrase,C1956089,ok
+230,osteophyte,multiple bony spurs are identified along the superior and inferior vertebral endplates.,llm_radiology_phrase,C1956089,ok
+231,osteophyte,small osteophytic projections are visible along the anterior thoracic vertebral column margins.,llm_radiology_phrase,C1956089,ok
+232,osteophyte,discrete bony spurs are present along the lateral borders of the thoracic vertebrae.,llm_radiology_phrase,C1956089,ok
+233,pulmonary congestion,pulmonary congestion,umls_synonym,C0242073,ok
+234,pulmonary congestion,pulmonary congestion (disorder),umls_synonym,C0242073,ok
+235,pulmonary congestion,increased prominence of central pulmonary vasculature with indistinct vascular margins noted bilaterally.,llm_radiology_phrase,C0242073,ok
+236,pulmonary congestion,bilateral perihilar vascular congestion with associated hazy peribronchial cuffing throughout both lungs.,llm_radiology_phrase,C0242073,ok
+237,pulmonary congestion,prominent pulmonary vascular markings extending into the peripheral lung fields bilaterally.,llm_radiology_phrase,C0242073,ok
+238,pulmonary congestion,increased interstitial markings with indistinct vascular contours consistent with pulmonary venous congestion.,llm_radiology_phrase,C0242073,ok
+239,pulmonary congestion,diffuse increase in pulmonary vascular density with blurred margins of the central vessels.,llm_radiology_phrase,C0242073,ok
+240,spondylosis,spondylosis,umls_synonym,C0038019,ok
+241,spondylosis,spondylosis (disorder),umls_synonym,C0038019,ok
+242,spondylosis,degenerative changes noted along the thoracic spine with associated osteophyte formation.,llm_radiology_phrase,C0038019,ok
+243,spondylosis,prominent anterior osteophytes identified along the mid to lower thoracic vertebral bodies.,llm_radiology_phrase,C0038019,ok
+244,spondylosis,vertebral endplate sclerosis and marginal osteophytes present throughout the thoracic spine.,llm_radiology_phrase,C0038019,ok
+245,spondylosis,thoracic spine demonstrates multilevel osteophyte formation and narrowing of the disc spaces.,llm_radiology_phrase,C0038019,ok
+246,spondylosis,increased density and marginal spurring observed along the thoracic vertebral column.,llm_radiology_phrase,C0038019,ok
+247,pulmonary infiltrate,pulmonary infiltrate,umls_synonym,C0235896,ok
+248,pulmonary infiltrate,ill-defined patchy opacities noted within the right lower lung zone.,llm_radiology_phrase,C0235896,ok
+249,pulmonary infiltrate,focal area of increased density identified in the left mid lung field.,llm_radiology_phrase,C0235896,ok
+250,pulmonary infiltrate,hazy increased opacity observed throughout the right upper lobe region.,llm_radiology_phrase,C0235896,ok
+251,pulmonary infiltrate,confluent airspace opacification present within the left lower lobe segment.,llm_radiology_phrase,C0235896,ok
+252,pulmonary infiltrate,multifocal patchy densities scattered throughout both lower lung fields.,llm_radiology_phrase,C0235896,ok
+253,emphysema,emphysema,umls_synonym,C0034067,ok
+254,emphysema,"emphysema, pulmonary",umls_synonym,C0034067,ok
+255,emphysema,pulmonary emphysema,umls_synonym,C0034067,ok
+256,emphysema,"emphysemas, pulmonary",umls_synonym,C0034067,ok
+257,emphysema,pulmonary emphysemas,umls_synonym,C0034067,ok
+258,emphysema,emphysema of lung,umls_synonym,C0034067,ok
+259,emphysema,pulmonary emphysema (disorder),umls_synonym,C0034067,ok
+260,emphysema,hyperinflated lungs with flattened diaphragms and increased retrosternal airspace are noted.,llm_radiology_phrase,C0034067,ok
+261,emphysema,diffuse pulmonary lucency with attenuation of peripheral vascular markings is present.,llm_radiology_phrase,C0034067,ok
+262,emphysema,increased lung volumes with sparse peripheral vascularity consistent with pulmonary emphysema.,llm_radiology_phrase,C0034067,ok
+263,emphysema,bilateral lung hyperinflation with associated flattening of the hemidiaphragms is observed.,llm_radiology_phrase,C0034067,ok
+264,emphysema,marked pulmonary lucency with decreased peripheral vascular markings throughout both lungs.,llm_radiology_phrase,C0034067,ok
+265,cardiac silhouette,cardiac silhouette,umls_synonym,C0507134,ok
+266,cardiac silhouette,the cardiac silhouette appears within normal limits for size and contour.,llm_radiology_phrase,C0507134,ok
+267,cardiac silhouette,well defined borders of the cardiac silhouette are noted on the frontal view.,llm_radiology_phrase,C0507134,ok
+268,cardiac silhouette,the cardiac silhouette demonstrates a normal configuration and mediastinal position.,llm_radiology_phrase,C0507134,ok
+269,cardiac silhouette,smooth lateral margins characterize the appearance of the cardiac silhouette.,llm_radiology_phrase,C0507134,ok
+270,cardiac silhouette,the cardiac silhouette maintains a normal shape and central thoracic position.,llm_radiology_phrase,C0507134,ok
+271,pleural thickening,pleural thickening,umls_synonym,C0264545,ok
+272,pleural thickening,pleural cuirasse,umls_synonym,C0264545,ok
+273,pleural thickening,thickening of pleura (disorder),umls_synonym,C0264545,ok
+274,pleural thickening,thickening of pleura,umls_synonym,C0264545,ok
+275,pleural thickening,linear soft tissue density along the lateral chest wall consistent with pleural thickening.,llm_radiology_phrase,C0264545,ok
+276,pleural thickening,smooth pleural thickening noted along the peripheral lung margins on the frontal view.,llm_radiology_phrase,C0264545,ok
+277,pleural thickening,increased density along the costal pleural surface suggesting localized pleural thickening.,llm_radiology_phrase,C0264545,ok
+278,pleural thickening,diffuse pleural thickening observed along the lateral aspect of the thoracic cavity.,llm_radiology_phrase,C0264545,ok
+279,pleural thickening,blunting of the costophrenic angle secondary to chronic pleural thickening and fibrosis.,llm_radiology_phrase,C0264545,ok
+280,pulmonary granuloma,pulmonary granuloma,umls_synonym,C0235557,ok
+281,pulmonary granuloma,pulmonary granuloma (disorder),umls_synonym,C0235557,ok
+282,pulmonary granuloma,a well-defined solitary pulmonary nodule is noted in the right upper lobe.,llm_radiology_phrase,C0235557,ok
+283,pulmonary granuloma,small calcified pulmonary granuloma identified within the left lower lobe lung field.,llm_radiology_phrase,C0235557,ok
+284,pulmonary granuloma,discrete rounded opacity with central calcification seen in the right mid lung.,llm_radiology_phrase,C0235557,ok
+285,pulmonary granuloma,multiple small dense pulmonary nodules scattered throughout both lung fields.,llm_radiology_phrase,C0235557,ok
+286,pulmonary granuloma,focal pulmonary opacity with smooth margins located in the left upper lobe.,llm_radiology_phrase,C0235557,ok
+287,"pulmonary disease, chronic obstructive","pulmonary disease, chronic obstructive",umls_synonym,C0024117,ok
+288,"pulmonary disease, chronic obstructive",chronic obstructive pulmonary diseases,umls_synonym,C0024117,ok
+289,"pulmonary disease, chronic obstructive",chronic obstructive lung disease,umls_synonym,C0024117,ok
+290,"pulmonary disease, chronic obstructive",copd,umls_synonym,C0024117,ok
+291,"pulmonary disease, chronic obstructive",chronic airflow limitation,umls_synonym,C0024117,ok
+292,"pulmonary disease, chronic obstructive",chronic obstructive airway disease,umls_synonym,C0024117,ok
+293,"pulmonary disease, chronic obstructive",coad,umls_synonym,C0024117,ok
+294,"pulmonary disease, chronic obstructive",chronic obstructive pulmonary disease,umls_synonym,C0024117,ok
+295,"pulmonary disease, chronic obstructive",chronic airway disease,umls_synonym,C0024117,ok
+296,"pulmonary disease, chronic obstructive",chronic irreversible airway obstruction,umls_synonym,C0024117,ok
+297,"pulmonary disease, chronic obstructive",chronic airway obstruction,umls_synonym,C0024117,ok
+298,"pulmonary disease, chronic obstructive",hyperinflated lungs with flattened diaphragmatic contours and increased retrosternal clear space.,llm_radiology_phrase,C0024117,ok
+299,"pulmonary disease, chronic obstructive",bilateral lung hyperinflation with increased lucency and attenuated peripheral vascular markings.,llm_radiology_phrase,C0024117,ok
+300,"pulmonary disease, chronic obstructive",flattened hemidiaphragms with increased lung volumes and widened intercostal spaces noted.,llm_radiology_phrase,C0024117,ok
+301,"pulmonary disease, chronic obstructive",increased retrosternal airspace and flattened diaphragms consistent with chronic lung hyperinflation.,llm_radiology_phrase,C0024117,ok
+302,"pulmonary disease, chronic obstructive",hyperinflated lung fields with narrow cardiac silhouette and flattened diaphragmatic contours.,llm_radiology_phrase,C0024117,ok
+303,"hernia, hiatal","hernia, hiatal",umls_synonym,C3489393,ok
+304,"hernia, hiatal",hiatal hernias,umls_synonym,C3489393,ok
+305,"hernia, hiatal",hiatal hernia,umls_synonym,C3489393,ok
+306,"hernia, hiatal","hernia, hiatus",umls_synonym,C3489393,ok
+307,"hernia, hiatal",oesophageal hiatus hernia,umls_synonym,C3489393,ok
+308,"hernia, hiatal",hiatal hernia (disorder),umls_synonym,C3489393,ok
+309,"hernia, hiatal",esophageal hiatus hernia,umls_synonym,C3489393,ok
+310,"hernia, hiatal",hiatus hernias,umls_synonym,C3489393,ok
+311,"hernia, hiatal",oesophageal hiatal hernia,umls_synonym,C3489393,ok
+312,"hernia, hiatal",hiatus hernia,umls_synonym,C3489393,ok
+313,"hernia, hiatal","hernias, hiatal",umls_synonym,C3489393,ok
+314,"hernia, hiatal","hernias, hiatus",umls_synonym,C3489393,ok
+315,"hernia, hiatal",esophageal hiatal hernia,umls_synonym,C3489393,ok
+316,"hernia, hiatal",retrocardiac opacity noted consistent with a sliding hiatal hernia.,llm_radiology_phrase,C3489393,ok
+317,"hernia, hiatal",prominent soft tissue density visualized behind the cardiac silhouette.,llm_radiology_phrase,C3489393,ok
+318,"hernia, hiatal",air fluid level identified within the retrocardiac mediastinal space.,llm_radiology_phrase,C3489393,ok
+319,"hernia, hiatal",well defined rounded opacity projecting over the lower thoracic spine.,llm_radiology_phrase,C3489393,ok
+320,"hernia, hiatal",gas filled structure noted superior to the left hemidiaphragm.,llm_radiology_phrase,C3489393,ok
+321,pulmonary edema,pulmonary edema,umls_synonym,C0034063,ok
+322,pulmonary edema,"lung, wet",umls_synonym,C0034063,ok
+323,pulmonary edema,wet lung,umls_synonym,C0034063,ok
+324,pulmonary edema,"lungs, wet",umls_synonym,C0034063,ok
+325,pulmonary edema,pulmonary oedema,umls_synonym,C0034063,ok
+326,pulmonary edema,pulmonary edemas,umls_synonym,C0034063,ok
+327,pulmonary edema,"edema, pulmonary",umls_synonym,C0034063,ok
+328,pulmonary edema,pulmonary edema (disorder),umls_synonym,C0034063,ok
+329,pulmonary edema,wet lungs,umls_synonym,C0034063,ok
+330,pulmonary edema,"edemas, pulmonary",umls_synonym,C0034063,ok
+331,pulmonary edema,bilateral perihilar airspace opacities consistent with pulmonary edema.,llm_radiology_phrase,C0034063,ok
+332,pulmonary edema,increased interstitial markings and hazy perihilar opacities noted bilaterally.,llm_radiology_phrase,C0034063,ok
+333,pulmonary edema,diffuse bilateral hazy opacities with indistinct pulmonary vascular margins.,llm_radiology_phrase,C0034063,ok
+334,pulmonary edema,bilateral fluffy perihilar opacities suggesting pulmonary interstitial fluid accumulation.,llm_radiology_phrase,C0034063,ok
+335,pulmonary edema,increased prominence of bronchovascular markings with bilateral hazy opacities.,llm_radiology_phrase,C0034063,ok
+336,pneumonia,pneumonia,umls_synonym,C0032285,ok
+337,pneumonia,pneumonias,umls_synonym,C0032285,ok
+338,pneumonia,pneumonia (disorder),umls_synonym,C0032285,ok
+339,pneumonia,ill-defined patchy airspace opacity noted in the right lower lobe region.,llm_radiology_phrase,C0032285,ok
+340,pneumonia,focal consolidation identified within the left mid lung zone on frontal view.,llm_radiology_phrase,C0032285,ok
+341,pneumonia,increased density with indistinct margins involving the right middle lobe segment.,llm_radiology_phrase,C0032285,ok
+342,pneumonia,segmental airspace opacification observed in the left lower lung field.,llm_radiology_phrase,C0032285,ok
+343,pneumonia,persistent hazy opacity noted within the right upper lobe lung parenchyma.,llm_radiology_phrase,C0032285,ok
+344,pulmonary emphysema,pulmonary emphysema,umls_synonym,C0034067,ok
+345,pulmonary emphysema,"emphysema, pulmonary",umls_synonym,C0034067,ok
+346,pulmonary emphysema,"emphysemas, pulmonary",umls_synonym,C0034067,ok
+347,pulmonary emphysema,pulmonary emphysemas,umls_synonym,C0034067,ok
+348,pulmonary emphysema,emphysema of lung,umls_synonym,C0034067,ok
+349,pulmonary emphysema,pulmonary emphysema (disorder),umls_synonym,C0034067,ok
+350,pulmonary emphysema,hyperinflated lungs with flattened diaphragmatic contours and increased retrosternal clear space.,llm_radiology_phrase,C0034067,ok
+351,pulmonary emphysema,diffuse pulmonary hyperlucency with attenuation of the peripheral vascular markings.,llm_radiology_phrase,C0034067,ok
+352,pulmonary emphysema,increased lung volumes with widened intercostal spaces and flattened hemidiaphragms.,llm_radiology_phrase,C0034067,ok
+353,pulmonary emphysema,paucity of peripheral lung markings consistent with diffuse pulmonary emphysema.,llm_radiology_phrase,C0034067,ok
+354,pulmonary emphysema,hyperinflated lung fields demonstrating decreased vascularity throughout the bilateral lung zones.,llm_radiology_phrase,C0034067,ok
+355,kyphosis,kyphosis,umls_synonym,C2115817,ok
+356,kyphosis,increased posterior curvature of the thoracic spine is noted on the lateral view.,llm_radiology_phrase,C2115817,ok
+357,kyphosis,thoracic spine demonstrates exaggerated posterior convexity consistent with kyphosis.,llm_radiology_phrase,C2115817,ok
+358,kyphosis,lateral chest radiograph reveals increased thoracic kyphosis of the vertebral column.,llm_radiology_phrase,C2115817,ok
+359,kyphosis,prominent posterior angulation of the thoracic spine is seen on the lateral projection.,llm_radiology_phrase,C2115817,ok
+360,kyphosis,the thoracic spine shows an accentuated posterior curve on the lateral chest view.,llm_radiology_phrase,C2115817,ok
+361,diaphragmatic eventration,diaphragmatic eventration,umls_synonym,C0011981,ok
+362,diaphragmatic eventration,eventration of diaphragm,umls_synonym,C0011981,ok
+363,diaphragmatic eventration,"eventration, diaphragmatic",umls_synonym,C0011981,ok
+364,diaphragmatic eventration,diaphragmatic eventration (disorder),umls_synonym,C0011981,ok
+365,diaphragmatic eventration,diaphragm eventration,umls_synonym,C0011981,ok
+366,diaphragmatic eventration,focal elevation of the right hemidiaphragm contour with smooth arcuate appearance.,llm_radiology_phrase,C0011981,ok
+367,diaphragmatic eventration,localized upward displacement of the hemidiaphragm contour without associated mass effect.,llm_radiology_phrase,C0011981,ok
+368,diaphragmatic eventration,smoothly elevated contour of the hemidiaphragm suggesting localized thinning of the muscle.,llm_radiology_phrase,C0011981,ok
+369,diaphragmatic eventration,well defined focal elevation of the hemidiaphragm contour along the thoracic base.,llm_radiology_phrase,C0011981,ok
+370,diaphragmatic eventration,localized dome shaped elevation of the hemidiaphragm contour on the frontal view.,llm_radiology_phrase,C0011981,ok
+371,arthritis,arthritis,umls_synonym,C0003864,ok
+372,arthritis,arthritides,umls_synonym,C0003864,ok
+373,arthritis,inflammatory arthritis,umls_synonym,C0003864,ok
+374,arthritis,arthritis (disorder),umls_synonym,C0003864,ok
+375,arthritis,narrowing of the glenohumeral joint space with subchondral sclerosis noted.,llm_radiology_phrase,C0003864,ok
+376,arthritis,irregular joint surfaces with periarticular osteopenia and marginal erosive changes.,llm_radiology_phrase,C0003864,ok
+377,arthritis,joint space narrowing with associated subchondral cyst formation and bony sclerosis.,llm_radiology_phrase,C0003864,ok
+378,arthritis,degenerative changes with joint space narrowing and prominent marginal osteophyte formation.,llm_radiology_phrase,C0003864,ok
+379,arthritis,loss of articular cartilage space with subchondral bone density and irregularity.,llm_radiology_phrase,C0003864,ok
+380,pulmonary consolidation,pulmonary consolidation,umls_synonym,C0521530,ok
+381,pulmonary consolidation,lung consolidation,umls_synonym,C0521530,ok
+382,pulmonary consolidation,lung consolidation (disorder),umls_synonym,C0521530,ok
+383,pulmonary consolidation,homogeneous increased opacity noted within the right lower lobe consistent with consolidation.,llm_radiology_phrase,C0521530,ok
+384,pulmonary consolidation,ill-defined area of increased density involving the left upper lobe pulmonary parenchyma.,llm_radiology_phrase,C0521530,ok
+385,pulmonary consolidation,patchy airspace opacification identified in the right mid lung zone suggesting consolidation.,llm_radiology_phrase,C0521530,ok
+386,pulmonary consolidation,dense consolidation obscuring the normal vascular markings in the left lower lung.,llm_radiology_phrase,C0521530,ok
+387,pulmonary consolidation,confluent opacification noted throughout the right middle lobe consistent with pulmonary consolidation.,llm_radiology_phrase,C0521530,ok
+388,"bone diseases, metabolic","bone diseases, metabolic",umls_synonym,C0005944,ok
+389,"bone diseases, metabolic","bone disease, metabolic",umls_synonym,C0005944,ok
+390,"bone diseases, metabolic",metabolic bone diseases,umls_synonym,C0005944,ok
+391,"bone diseases, metabolic",metabolic bone disease (disorder),umls_synonym,C0005944,ok
+392,"bone diseases, metabolic",metabolic bone disease,umls_synonym,C0005944,ok
+393,"bone diseases, metabolic",metabolic disorder of bone,umls_synonym,C0005944,ok
+394,"bone diseases, metabolic",generalized decrease in bone density throughout the visualized thoracic skeleton.,llm_radiology_phrase,C0005944,ok
+395,"bone diseases, metabolic",diffuse osteopenia noted within the visualized ribs and thoracic spine.,llm_radiology_phrase,C0005944,ok
+396,"bone diseases, metabolic",increased lucency of the bony structures throughout the thoracic cage.,llm_radiology_phrase,C0005944,ok
+397,"bone diseases, metabolic",generalized thinning of the cortical margins of the visualized ribs.,llm_radiology_phrase,C0005944,ok
+398,"bone diseases, metabolic",reduced radiographic density involving the thoracic vertebrae and rib structures.,llm_radiology_phrase,C0005944,ok
+399,mediastinum,mediastinum,umls_synonym,C0025066,ok
+400,mediastinum,mediastinal structure,umls_synonym,C0025066,ok
+401,mediastinum,structure of mediastinum,umls_synonym,C0025066,ok
+402,mediastinum,mediastinal structure (body structure),umls_synonym,C0025066,ok
+403,mediastinum,the mediastinal contours appear within normal limits on the frontal chest radiograph.,llm_radiology_phrase,C0025066,ok
+404,mediastinum,central mediastinal structures maintain a normal position without evidence of abnormal widening.,llm_radiology_phrase,C0025066,ok
+405,mediastinum,the mediastinal silhouette is well defined with no evidence of mass effect.,llm_radiology_phrase,C0025066,ok
+406,mediastinum,normal mediastinal contours are preserved throughout the superior and inferior thoracic regions.,llm_radiology_phrase,C0025066,ok
+407,mediastinum,the mediastinal shadow remains midline with clearly visualized borders on the film.,llm_radiology_phrase,C0025066,ok
+408,pulmonary lucency,pulmonary lucency,umls_synonym,,no_cui_match
+409,pulmonary lucency,focal area of increased pulmonary lucency noted in the right upper lobe.,llm_radiology_phrase,,no_cui_match
+410,pulmonary lucency,regional pulmonary lucency observed within the left mid lung zone on projection.,llm_radiology_phrase,,no_cui_match
+411,pulmonary lucency,increased pulmonary lucency noted throughout the right hemithorax without associated mass.,llm_radiology_phrase,,no_cui_match
+412,pulmonary lucency,well defined area of pulmonary lucency identified in the left lower lung field.,llm_radiology_phrase,,no_cui_match
+413,pulmonary lucency,diffuse pulmonary lucency noted across the bilateral lung fields on frontal view.,llm_radiology_phrase,,no_cui_match
+414,pneumothorax,pneumothorax,umls_synonym,C0032326,ok
+415,pneumothorax,pneumothorax (disorder),umls_synonym,C0032326,ok
+416,pneumothorax,visible pleural line with absent lung markings in the peripheral lung field.,llm_radiology_phrase,C0032326,ok
+417,pneumothorax,thin radiopaque line paralleling the chest wall with underlying lung lucency.,llm_radiology_phrase,C0032326,ok
+418,pneumothorax,peripheral hyperlucency noted without visible bronchovascular markings in the apical region.,llm_radiology_phrase,C0032326,ok
+419,pneumothorax,separation of the visceral pleura from the parietal pleura along the periphery.,llm_radiology_phrase,C0032326,ok
+420,pneumothorax,increased peripheral lucency with a distinct pleural line and absent lung markings.,llm_radiology_phrase,C0032326,ok
+421,pulmonary fibrosis,pulmonary fibrosis,umls_synonym,C0034069,ok
+422,pulmonary fibrosis,pulmonary fibroses,umls_synonym,C0034069,ok
+423,pulmonary fibrosis,cirrhosis of lung,umls_synonym,C0034069,ok
+424,pulmonary fibrosis,fibrosis of lung (disorder),umls_synonym,C0034069,ok
+425,pulmonary fibrosis,"fibrosis, pulmonary",umls_synonym,C0034069,ok
+426,pulmonary fibrosis,"fibroses, pulmonary",umls_synonym,C0034069,ok
+427,pulmonary fibrosis,fibrosis of lung,umls_synonym,C0034069,ok
+428,pulmonary fibrosis,increased reticular interstitial markings noted throughout both mid and lower lung zones.,llm_radiology_phrase,C0034069,ok
+429,pulmonary fibrosis,diffuse coarse linear opacities consistent with interstitial fibrosis in both lung bases.,llm_radiology_phrase,C0034069,ok
+430,pulmonary fibrosis,prominent bibasilar reticulation with associated architectural distortion of the lung parenchyma.,llm_radiology_phrase,C0034069,ok
+431,pulmonary fibrosis,fine linear interstitial opacities noted throughout the peripheral lung fields bilaterally.,llm_radiology_phrase,C0034069,ok
+432,pulmonary fibrosis,increased lung density with diffuse reticular pattern and loss of normal vascular markings.,llm_radiology_phrase,C0034069,ok
+433,"lung, hyperlucent","lung, hyperlucent",umls_synonym,C0524799,ok
+434,"lung, hyperlucent","thorax, hyperlucent",umls_synonym,C0524799,ok
+435,"lung, hyperlucent","lungs, hyperlucent",umls_synonym,C0524799,ok
+436,"lung, hyperlucent",hyperlucent thorax,umls_synonym,C0524799,ok
+437,"lung, hyperlucent",hyperlucent lungs,umls_synonym,C0524799,ok
+438,"lung, hyperlucent",hyperlucent lung,umls_synonym,C0524799,ok
+439,"lung, hyperlucent",increased lucency noted throughout the right lung field with diminished vascular markings.,llm_radiology_phrase,C0524799,ok
+440,"lung, hyperlucent",diffuse hyperlucency of the left lung with associated attenuation of peripheral pulmonary vessels.,llm_radiology_phrase,C0524799,ok
+441,"lung, hyperlucent",marked hyperlucency of the lung parenchyma with flattened hemidiaphragms and increased retrosternal space.,llm_radiology_phrase,C0524799,ok
+442,"lung, hyperlucent",bilateral lung hyperlucency with sparse peripheral vascular markings and increased lung volumes.,llm_radiology_phrase,C0524799,ok
+443,"lung, hyperlucent",regional hyperlucency of the upper lung zone with decreased density of pulmonary vasculature.,llm_radiology_phrase,C0524799,ok
+444,pulmonary mass,pulmonary mass,umls_synonym,C0149726,ok
+445,pulmonary mass,lung mass (finding),umls_synonym,C0149726,ok
+446,pulmonary mass,lung mass,umls_synonym,C0149726,ok
+447,pulmonary mass,a well-defined rounded opacity is noted within the right upper lobe.,llm_radiology_phrase,C0149726,ok
+448,pulmonary mass,large lobulated soft tissue density identified in the left lower lung field.,llm_radiology_phrase,C0149726,ok
+449,pulmonary mass,solitary circumscribed mass lesion projecting over the right mid lung zone.,llm_radiology_phrase,C0149726,ok
+450,pulmonary mass,prominent focal opacity with irregular margins seen in the left upper lobe.,llm_radiology_phrase,C0149726,ok
+451,pulmonary mass,discrete spherical mass density observed within the right lower lung field.,llm_radiology_phrase,C0149726,ok
+452,shoulder,shoulder,umls_synonym,C0037004,ok
+453,shoulder,shoulders,umls_synonym,C0037004,ok
+454,shoulder,shoulder region structure (body structure),umls_synonym,C0037004,ok
+455,shoulder,shoulder region structure,umls_synonym,C0037004,ok
+456,shoulder,shoulder region,umls_synonym,C0037004,ok
+457,shoulder,the shoulder region demonstrates normal osseous alignment and intact cortical margins.,llm_radiology_phrase,C0037004,ok
+458,shoulder,visualized shoulder structures show no evidence of acute fracture or dislocation.,llm_radiology_phrase,C0037004,ok
+459,shoulder,normal soft tissue density is noted within the bilateral shoulder regions.,llm_radiology_phrase,C0037004,ok
+460,shoulder,the shoulder joints appear well maintained with preserved articular space width.,llm_radiology_phrase,C0037004,ok
+461,shoulder,symmetric appearance of the shoulder girdle structures on the frontal projection.,llm_radiology_phrase,C0037004,ok
+462,"lung diseases, interstitial","lung diseases, interstitial",umls_synonym,C0206062,ok
+463,"lung diseases, interstitial",interstitial lung disease,umls_synonym,C0206062,ok
+464,"lung diseases, interstitial",diffuse parenchymal lung disease,umls_synonym,C0206062,ok
+465,"lung diseases, interstitial",diffuse parenchymal lung diseases,umls_synonym,C0206062,ok
+466,"lung diseases, interstitial",interstitial lung disease (disorder),umls_synonym,C0206062,ok
+467,"lung diseases, interstitial",interstitial lung diseases,umls_synonym,C0206062,ok
+468,"lung diseases, interstitial","lung disease, interstitial",umls_synonym,C0206062,ok
+469,"lung diseases, interstitial",diffuse reticular opacities are noted throughout both lung fields bilaterally.,llm_radiology_phrase,C0206062,ok
+470,"lung diseases, interstitial",fine linear interstitial markings are present in the peripheral lung zones.,llm_radiology_phrase,C0206062,ok
+471,"lung diseases, interstitial",increased interstitial density is observed throughout the bilateral pulmonary parenchyma.,llm_radiology_phrase,C0206062,ok
+472,"lung diseases, interstitial",diffuse fine nodular opacities are scattered across both lung fields.,llm_radiology_phrase,C0206062,ok
+473,"lung diseases, interstitial",coarse reticulonodular interstitial pattern is seen throughout the bilateral lungs.,llm_radiology_phrase,C0206062,ok
+474,epicardial fat,epicardial fat,umls_synonym,C0504196,ok
+475,epicardial fat,"tissue, epicardial fat",umls_synonym,C0504196,ok
+476,epicardial fat,epicardial visceral adipose tissue,umls_synonym,C0504196,ok
+477,epicardial fat,epicardial fats,umls_synonym,C0504196,ok
+478,epicardial fat,"fat, epicardial",umls_synonym,C0504196,ok
+479,epicardial fat,epicardial fat tissues,umls_synonym,C0504196,ok
+480,epicardial fat,epicardial adipose tissues,umls_synonym,C0504196,ok
+481,epicardial fat,"fat tissue, epicardial",umls_synonym,C0504196,ok
+482,epicardial fat,"adipose tissue, epicardial",umls_synonym,C0504196,ok
+483,epicardial fat,epicardial adipose tissue,umls_synonym,C0504196,ok
+484,epicardial fat,"tissue, epicardial adipose",umls_synonym,C0504196,ok
+485,epicardial fat,epicardial fat tissue,umls_synonym,C0504196,ok
+486,epicardial fat,lucent fat density noted along the inferior cardiac border on lateral view.,llm_radiology_phrase,C0504196,ok
+487,epicardial fat,subtle radiolucent stripe visible adjacent to the cardiac silhouette on lateral projection.,llm_radiology_phrase,C0504196,ok
+488,epicardial fat,epicardial fat pad identified as a lucent area near the cardiac apex.,llm_radiology_phrase,C0504196,ok
+489,epicardial fat,radiolucent epicardial adipose tissue visible along the lower anterior heart border.,llm_radiology_phrase,C0504196,ok
+490,epicardial fat,well defined lucency representing epicardial fat adjacent to the cardiac silhouette.,llm_radiology_phrase,C0504196,ok
+491,pulmonary artery,pulmonary artery,umls_synonym,C0034052,ok
+492,pulmonary artery,pulmonary artery structure (body structure),umls_synonym,C0034052,ok
+493,pulmonary artery,pulmonary artery structure,umls_synonym,C0034052,ok
+494,pulmonary artery,"artery, pulmonary",umls_synonym,C0034052,ok
+495,pulmonary artery,structure of trunk of pulmonary artery,umls_synonym,C0034052,ok
+496,pulmonary artery,pulmonary arteries,umls_synonym,C0034052,ok
+497,pulmonary artery,trunk of pulmonary artery,umls_synonym,C0034052,ok
+498,pulmonary artery,"arteries, pulmonary",umls_synonym,C0034052,ok
+499,pulmonary artery,pulmonary trunk,umls_synonym,C0034052,ok
+500,pulmonary artery,the main pulmonary artery segment appears as a prominent convex mediastinal contour.,llm_radiology_phrase,C0034052,ok
+501,pulmonary artery,normal pulmonary trunk silhouette is identified along the left superior mediastinal border.,llm_radiology_phrase,C0034052,ok
+502,pulmonary artery,the pulmonary artery trunk demonstrates normal caliber and smooth lateral mediastinal margins.,llm_radiology_phrase,C0034052,ok
+503,pulmonary artery,central pulmonary arteries are visualized as branching tubular opacities within the hila.,llm_radiology_phrase,C0034052,ok
+504,pulmonary artery,the pulmonary artery segment maintains a normal contour along the left heart border.,llm_radiology_phrase,C0034052,ok
+505,lumbar vertebrae,lumbar vertebrae,umls_synonym,C0024091,ok
+506,lumbar vertebrae,"vertebrae, lumbar",umls_synonym,C0024091,ok
+507,lumbar vertebrae,lumbar vertebra,umls_synonym,C0024091,ok
+508,lumbar vertebrae,bone structure of lumbar vertebra,umls_synonym,C0024091,ok
+509,lumbar vertebrae,lumbar vertebrae are visualized at the inferior margin of the chest radiograph.,llm_radiology_phrase,C0024091,ok
+510,lumbar vertebrae,the lumbar vertebral bodies are partially visible at the lower image border.,llm_radiology_phrase,C0024091,ok
+511,lumbar vertebrae,lower thoracic and upper lumbar vertebrae are identified on the lateral view.,llm_radiology_phrase,C0024091,ok
+512,lumbar vertebrae,the superior lumbar vertebrae are seen below the diaphragm on this projection.,llm_radiology_phrase,C0024091,ok
+513,lumbar vertebrae,lumbar vertebral segments are faintly outlined at the base of the film.,llm_radiology_phrase,C0024091,ok
+514,bone sclerosis,bone sclerosis,umls_synonym,C6013401,ok
+515,bone sclerosis,increased osseous density noted within the visualized thoracic skeletal structures.,llm_radiology_phrase,C6013401,ok
+516,bone sclerosis,focal areas of increased bone density identified throughout the thoracic cage.,llm_radiology_phrase,C6013401,ok
+517,bone sclerosis,diffuse increase in bone opacity involving the visualized ribs and vertebrae.,llm_radiology_phrase,C6013401,ok
+518,bone sclerosis,marked cortical thickening and increased density of the thoracic bony structures.,llm_radiology_phrase,C6013401,ok
+519,bone sclerosis,increased radiodensity observed within the visualized segments of the thoracic spine.,llm_radiology_phrase,C6013401,ok
+520,lung volume loss,lung volume loss,umls_synonym,,no_cui_match
+521,lung volume loss,increased lung opacity associated with ipsilateral elevation of the hemidiaphragm.,llm_radiology_phrase,,no_cui_match
+522,lung volume loss,crowding of the pulmonary vascular markings within the affected lung zone.,llm_radiology_phrase,,no_cui_match
+523,lung volume loss,shift of the mediastinal structures toward the area of reduced aeration.,llm_radiology_phrase,,no_cui_match
+524,lung volume loss,reduced lung volume evidenced by crowding of the adjacent rib spaces.,llm_radiology_phrase,,no_cui_match
+525,lung volume loss,homogeneous opacification of the lung field with associated volume reduction.,llm_radiology_phrase,,no_cui_match
+526,heart,heart,umls_synonym,C0018787,ok
+527,heart,heart structure,umls_synonym,C0018787,ok
+528,heart,heart structure (body structure),umls_synonym,C0018787,ok
+529,heart,cardiac structure,umls_synonym,C0018787,ok
+530,heart,hearts,umls_synonym,C0018787,ok
+531,heart,the cardiac silhouette appears within normal limits for size and contour.,llm_radiology_phrase,C0018787,ok
+532,heart,normal cardiomediastinal silhouette with well defined borders and central position.,llm_radiology_phrase,C0018787,ok
+533,heart,the heart shadow is centrally located within the middle mediastinal compartment.,llm_radiology_phrase,C0018787,ok
+534,heart,smooth lateral margins of the cardiac silhouette are clearly visualized throughout.,llm_radiology_phrase,C0018787,ok
+535,heart,normal configuration of the cardiac silhouette with preserved retrosternal clear space.,llm_radiology_phrase,C0018787,ok
+536,mediastinal shift,mediastinal shift,umls_synonym,C0264576,ok
+537,mediastinal shift,mediastinal shift (disorder),umls_synonym,C0264576,ok
+538,mediastinal shift,the mediastinal structures are displaced toward the left hemithorax.,llm_radiology_phrase,C0264576,ok
+539,mediastinal shift,rightward deviation of the mediastinal silhouette is noted on the frontal view.,llm_radiology_phrase,C0264576,ok
+540,mediastinal shift,the mediastinum is shifted toward the side of the opacified hemithorax.,llm_radiology_phrase,C0264576,ok
+541,mediastinal shift,there is a noticeable shift of the mediastinum toward the contralateral side.,llm_radiology_phrase,C0264576,ok
+542,mediastinal shift,the central mediastinal structures appear deviated from the midline position.,llm_radiology_phrase,C0264576,ok
+543,heart failure,heart failure,umls_synonym,C0018801,ok
+544,heart failure,cardiac insufficiency,umls_synonym,C0018801,ok
+545,heart failure,cardiac failure,umls_synonym,C0018801,ok
+546,heart failure,heart failure (disorder),umls_synonym,C0018801,ok
+547,heart failure,weak heart,umls_synonym,C0018801,ok
+548,heart failure,cardiomegaly with prominent pulmonary vascular congestion and bilateral perihilar interstitial opacities.,llm_radiology_phrase,C0018801,ok
+549,heart failure,enlarged cardiac silhouette associated with diffuse bilateral pulmonary venous hypertension and edema.,llm_radiology_phrase,C0018801,ok
+550,heart failure,increased cardiothoracic ratio with prominent upper lobe pulmonary venous redistribution and haziness.,llm_radiology_phrase,C0018801,ok
+551,heart failure,global cardiac enlargement accompanied by bilateral interstitial markings and indistinct pulmonary vasculature.,llm_radiology_phrase,C0018801,ok
+552,heart failure,prominent cardiac silhouette with associated bilateral perihilar haziness and interstitial pulmonary edema.,llm_radiology_phrase,C0018801,ok
+553,nipple shadow,nipple shadow,umls_synonym,,no_cui_match
+554,nipple shadow,faint bilateral rounded opacities projected over the lower lung fields.,llm_radiology_phrase,,no_cui_match
+555,nipple shadow,well circumscribed circular densities noted in the mid to lower zones.,llm_radiology_phrase,,no_cui_match
+556,nipple shadow,bilateral symmetric soft tissue shadows overlying the lower thoracic lung fields.,llm_radiology_phrase,,no_cui_match
+557,nipple shadow,small round opacities visible at the level of the fifth intercostal space.,llm_radiology_phrase,,no_cui_match
+558,nipple shadow,superimposed circular densities noted on the anterior aspect of the chest.,llm_radiology_phrase,,no_cui_match
+559,"hypertension, pulmonary","hypertension, pulmonary",umls_synonym,C0020542,ok
+560,"hypertension, pulmonary",pulmonary hypertension,umls_synonym,C0020542,ok
+561,"hypertension, pulmonary",pulmonary hypertension (disorder),umls_synonym,C0020542,ok
+562,"hypertension, pulmonary",prominent central pulmonary arteries with rapid tapering of the peripheral vascular markings.,llm_radiology_phrase,C0020542,ok
+563,"hypertension, pulmonary",enlarged main pulmonary artery segment with prominent hilar vascular shadows bilaterally.,llm_radiology_phrase,C0020542,ok
+564,"hypertension, pulmonary",prominent central pulmonary arterial vasculature with peripheral pruning of the distal vessels.,llm_radiology_phrase,C0020542,ok
+565,"hypertension, pulmonary",dilated central pulmonary arteries with diminished peripheral vascularity in both lung fields.,llm_radiology_phrase,C0020542,ok
+566,"hypertension, pulmonary",enlarged pulmonary outflow tract with prominent central hilar vascular structures noted.,llm_radiology_phrase,C0020542,ok
+567,pulmonary cavitation,pulmonary cavitation,umls_synonym,C0578537,ok
+568,pulmonary cavitation,cavitation of lung (disorder),umls_synonym,C0578537,ok
+569,pulmonary cavitation,cavitation of lung,umls_synonym,C0578537,ok
+570,pulmonary cavitation,thin walled lucent area noted within the right upper lobe lung parenchyma.,llm_radiology_phrase,C0578537,ok
+571,pulmonary cavitation,well defined thick walled cavitary lesion identified in the left lower lobe.,llm_radiology_phrase,C0578537,ok
+572,pulmonary cavitation,multiple lucent areas with surrounding consolidation noted in the right mid lung.,llm_radiology_phrase,C0578537,ok
+573,pulmonary cavitation,prominent air filled space with a thick irregular wall in the apex.,llm_radiology_phrase,C0578537,ok
+574,pulmonary cavitation,cavitary opacity with an internal air fluid level seen in the periphery.,llm_radiology_phrase,C0578537,ok
+575,subcutaneous emphysema,subcutaneous emphysema,umls_synonym,C0038536,ok
+576,subcutaneous emphysema,subcutaneous emphysema (disorder),umls_synonym,C0038536,ok
+577,subcutaneous emphysema,"emphysemas, subcutaneous",umls_synonym,C0038536,ok
+578,subcutaneous emphysema,subcutaneous emphysemas,umls_synonym,C0038536,ok
+579,subcutaneous emphysema,"emphysema, subcutaneous",umls_synonym,C0038536,ok
+580,subcutaneous emphysema,soft tissue emphysema,umls_synonym,C0038536,ok
+581,subcutaneous emphysema,linear lucencies tracking along the subcutaneous soft tissues of the chest wall.,llm_radiology_phrase,C0038536,ok
+582,subcutaneous emphysema,radiolucent streaks noted within the subcutaneous fat planes of the thoracic wall.,llm_radiology_phrase,C0038536,ok
+583,subcutaneous emphysema,multiple small gas lucencies identified throughout the subcutaneous soft tissues of chest.,llm_radiology_phrase,C0038536,ok
+584,subcutaneous emphysema,subcutaneous soft tissue lucencies consistent with air tracking along the chest wall.,llm_radiology_phrase,C0038536,ok
+585,subcutaneous emphysema,prominent radiolucent gas collections visible within the subcutaneous tissues of the thorax.,llm_radiology_phrase,C0038536,ok
+586,pericardial effusion,pericardial effusion,umls_synonym,C1253937,ok
+587,pericardial effusion,enlarged cardiac silhouette with a globular configuration and indistinct borders.,llm_radiology_phrase,C1253937,ok
+588,pericardial effusion,generalized cardiomegaly with a smooth and widened cardiac contour.,llm_radiology_phrase,C1253937,ok
+589,pericardial effusion,increased cardiac shadow size with a water bottle configuration.,llm_radiology_phrase,C1253937,ok
+590,pericardial effusion,prominent cardiac silhouette with loss of normal heart border definition.,llm_radiology_phrase,C1253937,ok
+591,pericardial effusion,globular heart shape suggesting an increase in the pericardial space.,llm_radiology_phrase,C1253937,ok
+592,pulmonary bleb,pulmonary bleb,umls_synonym,C1857434,ok
+593,pulmonary bleb,small thin-walled lucency noted along the superior aspect of the right upper lobe.,llm_radiology_phrase,C1857434,ok
+594,pulmonary bleb,focal subpleural lucency identified at the apex of the left upper lung field.,llm_radiology_phrase,C1857434,ok
+595,pulmonary bleb,well-defined thin-walled air-filled space projecting over the right apical lung zone.,llm_radiology_phrase,C1857434,ok
+596,pulmonary bleb,small rounded lucent area located along the peripheral margin of the lung apex.,llm_radiology_phrase,C1857434,ok
+597,pulmonary bleb,thin-walled cystic lucency visible along the superior contour of the left lung.,llm_radiology_phrase,C1857434,ok
+598,costophrenic sulcus,costophrenic sulcus,umls_synonym,,no_cui_match
+599,costophrenic sulcus,the costophrenic sulcus appears sharp and well defined on the frontal view.,llm_radiology_phrase,,no_cui_match
+600,costophrenic sulcus,normal acute angle of the costophrenic sulcus is maintained bilaterally.,llm_radiology_phrase,,no_cui_match
+601,costophrenic sulcus,the costophrenic sulcus is clear with no evidence of blunting.,llm_radiology_phrase,,no_cui_match
+602,costophrenic sulcus,well-defined costophrenic sulcus with normal contour and sharp margins.,llm_radiology_phrase,,no_cui_match
+603,costophrenic sulcus,the costophrenic sulcus remains patent with no obscuration of the angle.,llm_radiology_phrase,,no_cui_match
+604,pulmonary cyst,pulmonary cyst,umls_synonym,C0546483,ok
+605,pulmonary cyst,lung cyst,umls_synonym,C0546483,ok
+606,pulmonary cyst,cyst of lung,umls_synonym,C0546483,ok
+607,pulmonary cyst,cyst of lung (disorder),umls_synonym,C0546483,ok
+608,pulmonary cyst,thin walled lucent area noted within the right upper lobe lung parenchyma.,llm_radiology_phrase,C0546483,ok
+609,pulmonary cyst,well circumscribed air filled space identified in the left lower lung zone.,llm_radiology_phrase,C0546483,ok
+610,pulmonary cyst,solitary thin walled cystic lesion visualized in the mid lung field region.,llm_radiology_phrase,C0546483,ok
+611,pulmonary cyst,rounded lucency with a thin peripheral wall seen in the apical segment.,llm_radiology_phrase,C0546483,ok
+612,pulmonary cyst,discrete air containing space with smooth margins located in the lung base.,llm_radiology_phrase,C0546483,ok
+613,dislocations,dislocations,umls_synonym,C0012691,ok
+614,dislocations,joint dislocation,umls_synonym,C0012691,ok
+615,dislocations,dislocated joint,umls_synonym,C0012691,ok
+616,dislocations,"dislocation, joint",umls_synonym,C0012691,ok
+617,dislocations,dislocation of joint (disorder),umls_synonym,C0012691,ok
+618,dislocations,dislocation (morphologic abnormality),umls_synonym,C0012691,ok
+619,dislocations,"dislocations, joint",umls_synonym,C0012691,ok
+620,dislocations,dislocation,umls_synonym,C0012691,ok
+621,dislocations,joint dislocations,umls_synonym,C0012691,ok
+622,dislocations,dislocation of joint,umls_synonym,C0012691,ok
+623,dislocations,loss of normal articular congruity noted at the glenohumeral joint space.,llm_radiology_phrase,C0012691,ok
+624,dislocations,abnormal separation of the articular surfaces within the acromioclavicular joint.,llm_radiology_phrase,C0012691,ok
+625,dislocations,complete disruption of the normal anatomical alignment of the sternoclavicular joint.,llm_radiology_phrase,C0012691,ok
+626,dislocations,widened joint space with loss of normal apposition of the humeral head.,llm_radiology_phrase,C0012691,ok
+627,dislocations,displaced articular surfaces noted at the level of the acromioclavicular joint.,llm_radiology_phrase,C0012691,ok
+628,"hyperostosis, diffuse idiopathic skeletal","hyperostosis, diffuse idiopathic skeletal",umls_synonym,C0020498,ok
+629,"hyperostosis, diffuse idiopathic skeletal",forestier's disease,umls_synonym,C0020498,ok
+630,"hyperostosis, diffuse idiopathic skeletal",forestiers disease,umls_synonym,C0020498,ok
+631,"hyperostosis, diffuse idiopathic skeletal","ankylosing hyperostoses, vertebral",umls_synonym,C0020498,ok
+632,"hyperostosis, diffuse idiopathic skeletal",vertebral ankylosing hyperostosis,umls_synonym,C0020498,ok
+633,"hyperostosis, diffuse idiopathic skeletal","ankylosing hyperostosis, vertebral",umls_synonym,C0020498,ok
+634,"hyperostosis, diffuse idiopathic skeletal",forestier disease,umls_synonym,C0020498,ok
+635,"hyperostosis, diffuse idiopathic skeletal","hyperostosis, vertebral ankylosing",umls_synonym,C0020498,ok
+636,"hyperostosis, diffuse idiopathic skeletal","hyperostoses, vertebral ankylosing",umls_synonym,C0020498,ok
+637,"hyperostosis, diffuse idiopathic skeletal",forestier rotes disease,umls_synonym,C0020498,ok
+638,"hyperostosis, diffuse idiopathic skeletal",diffuse idiopathic skeletal hyperostosis,umls_synonym,C0020498,ok
+639,"hyperostosis, diffuse idiopathic skeletal","disease, forestier",umls_synonym,C0020498,ok
+640,"hyperostosis, diffuse idiopathic skeletal",vertebral ankylosing hyperostoses,umls_synonym,C0020498,ok
+641,"hyperostosis, diffuse idiopathic skeletal","disease, forestier's",umls_synonym,C0020498,ok
+642,"hyperostosis, diffuse idiopathic skeletal",ankylosing hyperostosis,umls_synonym,C0020498,ok
+643,"hyperostosis, diffuse idiopathic skeletal",flowing ossification along the anterior aspect of the thoracic vertebral bodies.,llm_radiology_phrase,C0020498,ok
+644,"hyperostosis, diffuse idiopathic skeletal",continuous bony bridging spanning multiple contiguous thoracic vertebral segments.,llm_radiology_phrase,C0020498,ok
+645,"hyperostosis, diffuse idiopathic skeletal",prominent osteophyte formation along the anterior margins of the thoracic spine.,llm_radiology_phrase,C0020498,ok
+646,"hyperostosis, diffuse idiopathic skeletal",bony excrescences noted along the anterior longitudinal ligament of the spine.,llm_radiology_phrase,C0020498,ok
+647,"hyperostosis, diffuse idiopathic skeletal",coalescent ossification bridging the anterior surfaces of the thoracic vertebrae.,llm_radiology_phrase,C0020498,ok
+648,bronchiectasis,bronchiectasis,umls_synonym,C0006267,ok
+649,bronchiectasis,bronchiectases,umls_synonym,C0006267,ok
+650,bronchiectasis,bronchiectasis (disorder),umls_synonym,C0006267,ok
+651,bronchiectasis,prominent tubular opacities noted within the lower lung zones bilaterally.,llm_radiology_phrase,C0006267,ok
+652,bronchiectasis,linear branching opacities consistent with dilated bronchi in the lung bases.,llm_radiology_phrase,C0006267,ok
+653,bronchiectasis,increased prominence of bronchial markings throughout the lower lung fields.,llm_radiology_phrase,C0006267,ok
+654,bronchiectasis,multiple ring-like lucencies observed within the mid and lower lung zones.,llm_radiology_phrase,C0006267,ok
+655,bronchiectasis,thickened bronchial walls appearing as parallel linear opacities in the lungs.,llm_radiology_phrase,C0006267,ok
+656,cystic fibrosis,cystic fibrosis,umls_synonym,C0010674,ok
+657,cystic fibrosis,"fibrosis, cystic",umls_synonym,C0010674,ok
+658,cystic fibrosis,fibrocystic disease,umls_synonym,C0010674,ok
+659,cystic fibrosis,cystic fibrosis (disorder),umls_synonym,C0010674,ok
+660,cystic fibrosis,mucoviscidosis,umls_synonym,C0010674,ok
+661,cystic fibrosis,diffuse bilateral peribronchial thickening with prominent central bronchiectasis throughout both lungs.,llm_radiology_phrase,C0010674,ok
+662,cystic fibrosis,hyperinflation of the lungs with flattened diaphragms and increased retrosternal clear space.,llm_radiology_phrase,C0010674,ok
+663,cystic fibrosis,multiple ring shadows and tubular opacities consistent with widespread cystic bronchiectasis.,llm_radiology_phrase,C0010674,ok
+664,cystic fibrosis,coarse interstitial markings and prominent bronchial wall thickening in both upper lobes.,llm_radiology_phrase,C0010674,ok
+665,cystic fibrosis,increased lung volumes with flattened hemidiaphragms and diffuse bronchial wall thickening.,llm_radiology_phrase,C0010674,ok
+666,pneumoperitoneum,pneumoperitoneum,umls_synonym,C0032320,ok
+667,pneumoperitoneum,peritoneal cavity free air,umls_synonym,C0032320,ok
+668,pneumoperitoneum,pneumoperitoneum (disorder),umls_synonym,C0032320,ok
+669,pneumoperitoneum,crescentic lucency visualized beneath the right hemidiaphragm on upright chest radiograph.,llm_radiology_phrase,C0032320,ok
+670,pneumoperitoneum,free intraperitoneal air collection noted tracking along the superior hepatic surface.,llm_radiology_phrase,C0032320,ok
+671,pneumoperitoneum,radiolucent gas collection identified between the liver dome and the diaphragm.,llm_radiology_phrase,C0032320,ok
+672,pneumoperitoneum,subdiaphragmatic lucency consistent with free air within the peritoneal cavity.,llm_radiology_phrase,C0032320,ok
+673,pneumoperitoneum,linear lucent shadow observed outlining the superior aspect of the liver.,llm_radiology_phrase,C0032320,ok
+674,aortic aneurysm,aortic aneurysm,umls_synonym,C0003486,ok
+675,aortic aneurysm,aortic aneurysms,umls_synonym,C0003486,ok
+676,aortic aneurysm,aortic aneurysm (disorder),umls_synonym,C0003486,ok
+677,aortic aneurysm,"aneurysm, aortic",umls_synonym,C0003486,ok
+678,aortic aneurysm,aneurysm of aorta,umls_synonym,C0003486,ok
+679,aortic aneurysm,"aneurysms, aortic",umls_synonym,C0003486,ok
+680,aortic aneurysm,prominent contour of the thoracic aorta suggesting focal aneurysmal dilatation.,llm_radiology_phrase,C0003486,ok
+681,aortic aneurysm,focal widening of the aortic silhouette consistent with an aortic aneurysm.,llm_radiology_phrase,C0003486,ok
+682,aortic aneurysm,localized bulging of the aortic arch contour indicating an aortic aneurysm.,llm_radiology_phrase,C0003486,ok
+683,aortic aneurysm,prominent aortic knob contour with focal dilatation of the descending aorta.,llm_radiology_phrase,C0003486,ok
+684,aortic aneurysm,abnormal focal enlargement of the aortic shadow along the thoracic course.,llm_radiology_phrase,C0003486,ok
+685,bullous emphysema,bullous emphysema,umls_synonym,C1261120,ok
+686,bullous emphysema,chronic bullous emphysema,umls_synonym,C1261120,ok
+687,bullous emphysema,chronic bullous emphysema (disorder),umls_synonym,C1261120,ok
+688,bullous emphysema,large thin walled lucent areas are noted within the upper lung zones.,llm_radiology_phrase,C1261120,ok
+689,bullous emphysema,multiple avascular lucent spaces are present throughout the upper pulmonary lobes.,llm_radiology_phrase,C1261120,ok
+690,bullous emphysema,prominent hyperlucent areas with thin peripheral walls are seen in both lungs.,llm_radiology_phrase,C1261120,ok
+691,bullous emphysema,large air filled bullae are identified within the apical lung regions.,llm_radiology_phrase,C1261120,ok
+692,bullous emphysema,multiple large lucencies with thin walls are scattered throughout the lung fields.,llm_radiology_phrase,C1261120,ok
+693,heart atria,heart atria,umls_synonym,C0018792,ok
+694,heart atria,atrial structure (body structure),umls_synonym,C0018792,ok
+695,heart atria,"atrium, heart",umls_synonym,C0018792,ok
+696,heart atria,cardiac atrium,umls_synonym,C0018792,ok
+697,heart atria,"atria, heart",umls_synonym,C0018792,ok
+698,heart atria,atrium,umls_synonym,C0018792,ok
+699,heart atria,atrial structure,umls_synonym,C0018792,ok
+700,heart atria,heart atrium,umls_synonym,C0018792,ok
+701,heart atria,the right atrial contour is visible along the right heart border.,llm_radiology_phrase,C0018792,ok
+702,heart atria,normal convex silhouette of the right atrium along the right cardiac margin.,llm_radiology_phrase,C0018792,ok
+703,heart atria,the left atrial appendage is located along the mid left heart border.,llm_radiology_phrase,C0018792,ok
+704,heart atria,smooth contour of the right atrium noted along the right mediastinal border.,llm_radiology_phrase,C0018792,ok
+705,heart atria,the left atrium is situated centrally behind the main cardiac silhouette.,llm_radiology_phrase,C0018792,ok
+706,adipose tissue,adipose tissue,umls_synonym,C0001527,ok
+707,adipose tissue,yellow fat,umls_synonym,C0001527,ok
+708,adipose tissue,"tissue, adipose",umls_synonym,C0001527,ok
+709,adipose tissue,structure of yellow fat (body structure),umls_synonym,C0001527,ok
+710,adipose tissue,fatty tissue,umls_synonym,C0001527,ok
+711,adipose tissue,structure of yellow fat,umls_synonym,C0001527,ok
+712,adipose tissue,"tissue, fatty",umls_synonym,C0001527,ok
+713,adipose tissue,structure of adipose tissue,umls_synonym,C0001527,ok
+714,adipose tissue,structure of adipose tissue (body structure),umls_synonym,C0001527,ok
+715,adipose tissue,increased retrosternal lucency consistent with prominent anterior mediastinal adipose tissue.,llm_radiology_phrase,C0001527,ok
+716,adipose tissue,epicardial fat pad noted as a focal retrosternal lucency along the cardiac border.,llm_radiology_phrase,C0001527,ok
+717,adipose tissue,prominent cardiophrenic angle lucency representing normal accumulation of intrathoracic adipose tissue.,llm_radiology_phrase,C0001527,ok
+718,adipose tissue,well defined lucent area in the cardiophrenic angle consistent with fatty tissue.,llm_radiology_phrase,C0001527,ok
+719,adipose tissue,subcutaneous fatty tissue layer visible along the lateral chest wall soft tissues.,llm_radiology_phrase,C0001527,ok
+720,funnel chest,funnel chest,umls_synonym,C2051831,ok
+721,funnel chest,trichterbrust,umls_synonym,C2051831,ok
+722,funnel chest,pectus excavatum (disorder),umls_synonym,C2051831,ok
+723,funnel chest,pectus recurvatum,umls_synonym,C2051831,ok
+724,funnel chest,cobbler's chest,umls_synonym,C2051831,ok
+725,funnel chest,pectus excavatum,umls_synonym,C2051831,ok
+726,funnel chest,posterior displacement of the sternum with narrowing of the retrosternal clear space.,llm_radiology_phrase,C2051831,ok
+727,funnel chest,inward depression of the sternum causing apparent cardiac silhouette displacement to the left.,llm_radiology_phrase,C2051831,ok
+728,funnel chest,increased retrosternal lucency with posterior bowing of the sternal body on lateral view.,llm_radiology_phrase,C2051831,ok
+729,funnel chest,concave deformity of the anterior chest wall with sternal depression on lateral projection.,llm_radiology_phrase,C2051831,ok
+730,funnel chest,posterior sternal indentation resulting in reduced anteroposterior diameter of the thoracic cavity.,llm_radiology_phrase,C2051831,ok
+731,ribs,ribs,umls_synonym,C0035561,ok
+732,ribs,bone structure of rib,umls_synonym,C0035561,ok
+733,ribs,rib,umls_synonym,C0035561,ok
+734,ribs,bone structure of rib (body structure),umls_synonym,C0035561,ok
+735,ribs,the visualized ribs demonstrate normal cortical margins and intact bony architecture.,llm_radiology_phrase,C0035561,ok
+736,ribs,posterior and anterior rib segments appear unremarkable without evidence of fracture.,llm_radiology_phrase,C0035561,ok
+737,ribs,normal rib contours are maintained throughout the visualized thoracic cage.,llm_radiology_phrase,C0035561,ok
+738,ribs,no suspicious rib lesions or focal cortical irregularities are identified.,llm_radiology_phrase,C0035561,ok
+739,ribs,the rib cage shows symmetric alignment with preserved bony density throughout.,llm_radiology_phrase,C0035561,ok
+740,hydropneumothorax,hydropneumothorax,umls_synonym,C0020303,ok
+741,hydropneumothorax,hydropneumothorax (disorder),umls_synonym,C0020303,ok
+742,hydropneumothorax,visible air fluid level within the pleural space on upright chest radiograph.,llm_radiology_phrase,C0020303,ok
+743,hydropneumothorax,horizontal air fluid interface noted along the lateral aspect of the hemithorax.,llm_radiology_phrase,C0020303,ok
+744,hydropneumothorax,presence of a distinct air fluid level indicating pleural air and fluid.,llm_radiology_phrase,C0020303,ok
+745,hydropneumothorax,linear air fluid interface observed within the pleural space on erect view.,llm_radiology_phrase,C0020303,ok
+746,hydropneumothorax,well defined horizontal opacity interface consistent with pleural air and fluid collection.,llm_radiology_phrase,C0020303,ok
+747,bone and bones,bone and bones,umls_synonym,C0005931,ok
+748,bone and bones,bones and bone tissue,umls_synonym,C0005931,ok
+749,bone and bones,bone and bone,umls_synonym,C0005931,ok
+750,bone and bones,bones and bone,umls_synonym,C0005931,ok
+751,bone and bones,visualized osseous structures demonstrate normal cortical margins and trabecular patterns throughout.,llm_radiology_phrase,C0005931,ok
+752,bone and bones,the visualized thoracic skeleton shows no evidence of acute fracture or lytic lesion.,llm_radiology_phrase,C0005931,ok
+753,bone and bones,normal mineralization is noted within the visualized ribs and thoracic spine segments.,llm_radiology_phrase,C0005931,ok
+754,bone and bones,the bony thorax appears intact with no focal cortical disruption or abnormal density.,llm_radiology_phrase,C0005931,ok
+755,bone and bones,visualized skeletal structures maintain normal alignment and expected radiographic density throughout.,llm_radiology_phrase,C0005931,ok
+756,pleura,pleura,umls_synonym,C0032225,ok
+757,pleura,pleural structure,umls_synonym,C0032225,ok
+758,pleura,pleural membrane structure (body structure),umls_synonym,C0032225,ok
+759,pleura,pleural membrane structure,umls_synonym,C0032225,ok
+760,pleura,the pleural surfaces appear smooth and well defined along the lateral chest walls.,llm_radiology_phrase,C0032225,ok
+761,pleura,normal pleural reflections are visualized along the mediastinal borders and diaphragmatic domes.,llm_radiology_phrase,C0032225,ok
+762,pleura,the visceral and parietal pleural layers are not distinctly identified as separate structures.,llm_radiology_phrase,C0032225,ok
+763,pleura,thin pleural lines are visible along the peripheral lung fields without abnormal thickening.,llm_radiology_phrase,C0032225,ok
+764,pleura,the pleural space remains clear with no evidence of abnormal opacification or fluid.,llm_radiology_phrase,C0032225,ok
+765,pectus carinatum,pectus carinatum,umls_synonym,C2939416,ok
+766,pectus carinatum,keeled chest,umls_synonym,C2939416,ok
+767,pectus carinatum,pectus carinatum (disorder),umls_synonym,C2939416,ok
+768,pectus carinatum,chicken breast,umls_synonym,C2939416,ok
+769,pectus carinatum,pigeon breast,umls_synonym,C2939416,ok
+770,pectus carinatum,pigeon chest,umls_synonym,C2939416,ok
+771,pectus carinatum,anterior protrusion of the sternum noted on the lateral chest radiograph.,llm_radiology_phrase,C2939416,ok
+772,pectus carinatum,increased retrosternal clear space observed due to anterior sternal bowing.,llm_radiology_phrase,C2939416,ok
+773,pectus carinatum,prominent anterior chest wall contour consistent with sternal protrusion.,llm_radiology_phrase,C2939416,ok
+774,pectus carinatum,lateral view demonstrates anterior angulation of the sternum and costal cartilages.,llm_radiology_phrase,C2939416,ok
+775,pectus carinatum,sternal prominence projecting anteriorly beyond the normal thoracic cage margin.,llm_radiology_phrase,C2939416,ok
+776,heart ventricles,heart ventricles,umls_synonym,C0018827,ok
+777,heart ventricles,"ventricle, cardiac",umls_synonym,C0018827,ok
+778,heart ventricles,cardiac ventricular structure,umls_synonym,C0018827,ok
+779,heart ventricles,cardiac ventricles,umls_synonym,C0018827,ok
+780,heart ventricles,heart ventricle,umls_synonym,C0018827,ok
+781,heart ventricles,ventricle,umls_synonym,C0018827,ok
+782,heart ventricles,"ventricle, heart",umls_synonym,C0018827,ok
+783,heart ventricles,cardiac ventricle,umls_synonym,C0018827,ok
+784,heart ventricles,"ventricles, cardiac",umls_synonym,C0018827,ok
+785,heart ventricles,"ventricles, heart",umls_synonym,C0018827,ok
+786,heart ventricles,cardiac ventricular structures appear as central mediastinal opacities within the thoracic cavity.,llm_radiology_phrase,C0018827,ok
+787,heart ventricles,the cardiac ventricles form the lower portion of the normal heart silhouette.,llm_radiology_phrase,C0018827,ok
+788,heart ventricles,normal cardiac ventricular contours are visualized along the left heart border profile.,llm_radiology_phrase,C0018827,ok
+789,heart ventricles,the heart ventricles occupy the inferior aspect of the central mediastinal shadow.,llm_radiology_phrase,C0018827,ok
+790,heart ventricles,cardiac ventricular morphology contributes to the overall size of the cardiac silhouette.,llm_radiology_phrase,C0018827,ok
+791,lymph nodes,lymph nodes,umls_synonym,C0024204,ok
+792,lymph nodes,lymph node structure,umls_synonym,C0024204,ok
+793,lymph nodes,structure of lymph node (body structure),umls_synonym,C0024204,ok
+794,lymph nodes,lymphatic gland,umls_synonym,C0024204,ok
+795,lymph nodes,"nodes, lymph",umls_synonym,C0024204,ok
+796,lymph nodes,lymph node,umls_synonym,C0024204,ok
+797,lymph nodes,structure of lymph node,umls_synonym,C0024204,ok
+798,lymph nodes,lymph gland,umls_synonym,C0024204,ok
+799,lymph nodes,"node, lymph",umls_synonym,C0024204,ok
+800,lymph nodes,prominent hilar lymph nodes noted bilaterally with lobulated contours.,llm_radiology_phrase,C0024204,ok
+801,lymph nodes,enlarged mediastinal lymph nodes causing subtle widening of the paratracheal stripe.,llm_radiology_phrase,C0024204,ok
+802,lymph nodes,increased soft tissue density within the right hilum suggesting lymphadenopathy.,llm_radiology_phrase,C0024204,ok
+803,lymph nodes,well defined rounded opacities identified along the bilateral pulmonary hila.,llm_radiology_phrase,C0024204,ok
+804,lymph nodes,widening of the mediastinal silhouette consistent with enlarged lymph nodes.,llm_radiology_phrase,C0024204,ok
+805,sarcoidosis,sarcoidosis,umls_synonym,C0036202,ok
+806,sarcoidosis,sarcoidoses,umls_synonym,C0036202,ok
+807,sarcoidosis,schaumann syndrome,umls_synonym,C0036202,ok
+808,sarcoidosis,"syndrome, schaumann's",umls_synonym,C0036202,ok
+809,sarcoidosis,schaumann's syndromes,umls_synonym,C0036202,ok
+810,sarcoidosis,boeck's sarcoid,umls_synonym,C0036202,ok
+811,sarcoidosis,besnier boeck disease,umls_synonym,C0036202,ok
+812,sarcoidosis,schaumann's syndrome,umls_synonym,C0036202,ok
+813,sarcoidosis,benign lymphogranulomatosis of schaumann,umls_synonym,C0036202,ok
+814,sarcoidosis,miliary lupoid of boeck,umls_synonym,C0036202,ok
+815,sarcoidosis,"disease, schaumann",umls_synonym,C0036202,ok
+816,sarcoidosis,besnier boeck schaumann syndrome,umls_synonym,C0036202,ok
+817,sarcoidosis,"sarcoid, boeck's",umls_synonym,C0036202,ok
+818,sarcoidosis,boecks sarcoid,umls_synonym,C0036202,ok
+819,sarcoidosis,"syndrome, schaumann",umls_synonym,C0036202,ok
+820,sarcoidosis,schaumann disease,umls_synonym,C0036202,ok
+821,sarcoidosis,boeck sarcoid,umls_synonym,C0036202,ok
+822,sarcoidosis,lupus pernio of besnier,umls_synonym,C0036202,ok
+823,sarcoidosis,bilateral hilar lymphadenopathy with prominent right paratracheal nodal enlargement is noted.,llm_radiology_phrase,C0036202,ok
+824,sarcoidosis,symmetric hilar and mediastinal lymph node enlargement with clear lung fields.,llm_radiology_phrase,C0036202,ok
+825,sarcoidosis,diffuse fine reticulonodular opacities distributed throughout both mid and upper lung zones.,llm_radiology_phrase,C0036202,ok
+826,sarcoidosis,prominent bilateral hilar fullness consistent with nodal enlargement and mediastinal widening.,llm_radiology_phrase,C0036202,ok
+827,sarcoidosis,coarse interstitial markings with bilateral hilar adenopathy and preserved lung volumes.,llm_radiology_phrase,C0036202,ok
+828,abdomen,abdomen,umls_synonym,C0371769,ok
+829,abdomen,the upper abdomen is visualized below the visualized lung bases and diaphragm.,llm_radiology_phrase,C0371769,ok
+830,abdomen,gas shadows are noted within the upper abdomen beneath the hemidiaphragms.,llm_radiology_phrase,C0371769,ok
+831,abdomen,the upper abdomen appears clear without evidence of free intraperitoneal air.,llm_radiology_phrase,C0371769,ok
+832,abdomen,visualized upper abdomen shows normal bowel gas patterns without abnormal distension.,llm_radiology_phrase,C0371769,ok
+833,abdomen,the upper abdomen is partially included at the base of the image.,llm_radiology_phrase,C0371769,ok
+834,humerus,humerus,umls_synonym,C0020164,ok
+835,humerus,bone structure of humerus (body structure),umls_synonym,C0020164,ok
+836,humerus,humeri,umls_synonym,C0020164,ok
+837,humerus,bone structure of humerus,umls_synonym,C0020164,ok
+838,humerus,the proximal humerus is visualized within the lateral aspect of the thoracic cage.,llm_radiology_phrase,C0020164,ok
+839,humerus,normal cortical margins of the proximal humerus are intact without focal bony lesions.,llm_radiology_phrase,C0020164,ok
+840,humerus,the humeral head is identified articulating with the glenoid fossa on both sides.,llm_radiology_phrase,C0020164,ok
+841,humerus,visualized proximal humerus demonstrates normal trabecular pattern and smooth cortical bone surfaces.,llm_radiology_phrase,C0020164,ok
+842,humerus,the proximal humerus appears within normal limits on the bilateral chest radiographic views.,llm_radiology_phrase,C0020164,ok
+843,"hernia, diaphragmatic","hernia, diaphragmatic",umls_synonym,C3489393,ok
+844,"hernia, diaphragmatic",hiatal hernias,umls_synonym,C3489393,ok
+845,"hernia, diaphragmatic",hiatal hernia,umls_synonym,C3489393,ok
+846,"hernia, diaphragmatic","hernia, hiatus",umls_synonym,C3489393,ok
+847,"hernia, diaphragmatic",oesophageal hiatus hernia,umls_synonym,C3489393,ok
+848,"hernia, diaphragmatic",hiatal hernia (disorder),umls_synonym,C3489393,ok
+849,"hernia, diaphragmatic",esophageal hiatus hernia,umls_synonym,C3489393,ok
+850,"hernia, diaphragmatic",hiatus hernias,umls_synonym,C3489393,ok
+851,"hernia, diaphragmatic",oesophageal hiatal hernia,umls_synonym,C3489393,ok
+852,"hernia, diaphragmatic","hernia, hiatal",umls_synonym,C3489393,ok
+853,"hernia, diaphragmatic",hiatus hernia,umls_synonym,C3489393,ok
+854,"hernia, diaphragmatic","hernias, hiatal",umls_synonym,C3489393,ok
+855,"hernia, diaphragmatic","hernias, hiatus",umls_synonym,C3489393,ok
+856,"hernia, diaphragmatic",esophageal hiatal hernia,umls_synonym,C3489393,ok
+857,"hernia, diaphragmatic",retrocardiac soft tissue opacity noted within the posterior mediastinum.,llm_radiology_phrase,C3489393,ok
+858,"hernia, diaphragmatic",well-defined rounded density projecting behind the cardiac silhouette.,llm_radiology_phrase,C3489393,ok
+859,"hernia, diaphragmatic",air-fluid level visualized within the retrocardiac thoracic space.,llm_radiology_phrase,C3489393,ok
+860,"hernia, diaphragmatic",prominent gas-filled structure identified superior to the diaphragm contour.,llm_radiology_phrase,C3489393,ok
+861,"hernia, diaphragmatic",smooth rounded opacity superimposed over the lower thoracic spine.,llm_radiology_phrase,C3489393,ok
+862,cervical vertebrae,cervical vertebrae,umls_synonym,C3665420,ok
+863,cervical vertebrae,"vertebrae, cervical",umls_synonym,C3665420,ok
+864,cervical vertebrae,cervical spines,umls_synonym,C3665420,ok
+865,cervical vertebrae,cervical vertebra,umls_synonym,C3665420,ok
+866,cervical vertebrae,cervical spine,umls_synonym,C3665420,ok
+867,cervical vertebrae,"spine, cervical",umls_synonym,C3665420,ok
+868,cervical vertebrae,bone structure of cervical vertebra,umls_synonym,C3665420,ok
+869,cervical vertebrae,cervical vertebrae are visualized superior to the thoracic inlet on the frontal view.,llm_radiology_phrase,C3665420,ok
+870,cervical vertebrae,the cervical spine demonstrates normal alignment and intact bony cortical margins throughout.,llm_radiology_phrase,C3665420,ok
+871,cervical vertebrae,cervical vertebral bodies maintain normal height and density on the lateral projection.,llm_radiology_phrase,C3665420,ok
+872,cervical vertebrae,the cervical spine shows preserved intervertebral disc spaces and normal bony architecture.,llm_radiology_phrase,C3665420,ok
+873,cervical vertebrae,cervical vertebrae are identified superior to the lung apices on the chest radiograph.,llm_radiology_phrase,C3665420,ok
+874,tuberculosis,tuberculosis,umls_synonym,C0041296,ok
+875,tuberculosis,kochs disease,umls_synonym,C0041296,ok
+876,tuberculosis,mycobacterium tuberculosis infection,umls_synonym,C0041296,ok
+877,tuberculosis,mycobacterium tuberculosis infections,umls_synonym,C0041296,ok
+878,tuberculosis,tuberculoses,umls_synonym,C0041296,ok
+879,tuberculosis,tuberculous (qualifier value),umls_synonym,C0041296,ok
+880,tuberculosis,"infections, mycobacterium tuberculosis",umls_synonym,C0041296,ok
+881,tuberculosis,koch disease,umls_synonym,C0041296,ok
+882,tuberculosis,koch's disease,umls_synonym,C0041296,ok
+883,tuberculosis,"infection, mycobacterium tuberculosis",umls_synonym,C0041296,ok
+884,tuberculosis,tuberculous,umls_synonym,C0041296,ok
+885,tuberculosis,tuberculosis (disorder),umls_synonym,C0041296,ok
+886,tuberculosis,apical segment opacities with associated volume loss in the upper lobes.,llm_radiology_phrase,C0041296,ok
+887,tuberculosis,ill defined nodular opacities noted within the bilateral upper lung zones.,llm_radiology_phrase,C0041296,ok
+888,tuberculosis,patchy consolidations with cavitation identified in the right upper lung field.,llm_radiology_phrase,C0041296,ok
+889,tuberculosis,fibronodular opacities distributed throughout the bilateral apical lung segments.,llm_radiology_phrase,C0041296,ok
+890,tuberculosis,linear scarring and calcified granulomas present in the upper lung zones.,llm_radiology_phrase,C0041296,ok
+891,pulmonary blood vessels,pulmonary blood vessels,umls_synonym,,no_cui_match
+892,pulmonary blood vessels,pulmonary vasculature appears prominent throughout the central and peripheral lung fields.,llm_radiology_phrase,,no_cui_match
+893,pulmonary blood vessels,normal pulmonary vascular markings are visualized extending toward the lung periphery.,llm_radiology_phrase,,no_cui_match
+894,pulmonary blood vessels,pulmonary vessels are well defined and taper appropriately toward the lung bases.,llm_radiology_phrase,,no_cui_match
+895,pulmonary blood vessels,increased prominence of pulmonary vascular markings noted in both lower lung zones.,llm_radiology_phrase,,no_cui_match
+896,pulmonary blood vessels,pulmonary vascular structures are clearly visible radiating from the bilateral hila.,llm_radiology_phrase,,no_cui_match
+897,osteoporosis,osteoporosis,umls_synonym,C0029456,ok
+898,osteoporosis,osteoporoses,umls_synonym,C0029456,ok
+899,osteoporosis,osteoporosis (disorder),umls_synonym,C0029456,ok
+900,osteoporosis,generalized decrease in bone density noted throughout the visualized thoracic skeleton.,llm_radiology_phrase,C0029456,ok
+901,osteoporosis,increased lucency of the thoracic vertebrae consistent with underlying bone demineralization.,llm_radiology_phrase,C0029456,ok
+902,osteoporosis,prominent trabecular pattern observed within the visualized ribs and thoracic spine.,llm_radiology_phrase,C0029456,ok
+903,osteoporosis,diffuse reduction in osseous opacity involving the visualized thoracic bony structures.,llm_radiology_phrase,C0029456,ok
+904,osteoporosis,thinning of the cortical margins noted in the visualized thoracic skeletal elements.,llm_radiology_phrase,C0029456,ok
+905,hypovolemia,hypovolemia,umls_synonym,C0546884,ok
+906,hypovolemia,hypovolemias,umls_synonym,C0546884,ok
+907,hypovolemia,hypovolemia (finding),umls_synonym,C0546884,ok
+908,hypovolemia,hypovolaemia,umls_synonym,C0546884,ok
+909,hypovolemia,decreased caliber of the central pulmonary arteries and peripheral vascular markings.,llm_radiology_phrase,C0546884,ok
+910,hypovolemia,reduced prominence of the pulmonary vasculature throughout both lung fields.,llm_radiology_phrase,C0546884,ok
+911,hypovolemia,diminished size of the hilar vessels with overall decreased pulmonary vascularity.,llm_radiology_phrase,C0546884,ok
+912,hypovolemia,small caliber pulmonary vessels noted throughout the central and peripheral lungs.,llm_radiology_phrase,C0546884,ok
+913,hypovolemia,attenuation of the pulmonary vascular tree with reduced vessel diameter bilaterally.,llm_radiology_phrase,C0546884,ok
+914,hemothorax,hemothorax,umls_synonym,C0019123,ok
+915,hemothorax,haemothorax,umls_synonym,C0019123,ok
+916,hemothorax,pleural haemorrhage,umls_synonym,C0019123,ok
+917,hemothorax,pleural hemorrhage,umls_synonym,C0019123,ok
+918,hemothorax,hemothorax (disorder),umls_synonym,C0019123,ok
+919,hemothorax,homogeneous opacification of the pleural space consistent with a large pleural effusion.,llm_radiology_phrase,C0019123,ok
+920,hemothorax,blunting of the costophrenic angle suggesting fluid accumulation within the pleural space.,llm_radiology_phrase,C0019123,ok
+921,hemothorax,increased density obscuring the hemidiaphragm consistent with a significant pleural collection.,llm_radiology_phrase,C0019123,ok
+922,hemothorax,uniform opacity layering along the lateral chest wall within the pleural cavity.,llm_radiology_phrase,C0019123,ok
+923,hemothorax,dense pleural opacity causing obscuration of the underlying pulmonary vascular markings.,llm_radiology_phrase,C0019123,ok
+924,hemopneumothorax,hemopneumothorax,umls_synonym,C0019077,ok
+925,hemopneumothorax,haemopneumothorax,umls_synonym,C0019077,ok
+926,hemopneumothorax,pneumohemothorax,umls_synonym,C0019077,ok
+927,hemopneumothorax,pneumohaemothorax,umls_synonym,C0019077,ok
+928,hemopneumothorax,hemopneumothorax (disorder),umls_synonym,C0019077,ok
+929,hemopneumothorax,large pleural effusion associated with a visible peripheral pneumothorax in the right hemithorax.,llm_radiology_phrase,C0019077,ok
+930,hemopneumothorax,air fluid level noted within the pleural space indicating a combined pneumothorax and effusion.,llm_radiology_phrase,C0019077,ok
+931,hemopneumothorax,supine chest radiograph demonstrates increased opacity layering over a pneumothorax in the pleural space.,llm_radiology_phrase,C0019077,ok
+932,hemopneumothorax,visible pleural air collection accompanied by dependent opacification consistent with a hemopneumothorax.,llm_radiology_phrase,C0019077,ok
+933,hemopneumothorax,blunting of the costophrenic angle combined with a peripheral lucent rim of pneumothorax.,llm_radiology_phrase,C0019077,ok
+934,expansile bone lesions,expansile bone lesions,umls_synonym,C1863880,ok
+935,expansile bone lesions,well defined expansile lucent lesion involving the posterior aspect of the left rib.,llm_radiology_phrase,C1863880,ok
+936,expansile bone lesions,expansile lytic lesion noted within the mid portion of the right scapula.,llm_radiology_phrase,C1863880,ok
+937,expansile bone lesions,cortical thinning associated with an expansile lucent lesion in the proximal humerus.,llm_radiology_phrase,C1863880,ok
+938,expansile bone lesions,expansile osseous lesion causing focal cortical expansion of the visualized thoracic rib.,llm_radiology_phrase,C1863880,ok
+939,expansile bone lesions,localized expansile lucency with thin sclerotic margins identified in the clavicular head.,llm_radiology_phrase,C1863880,ok
+940,cholelithiasis,cholelithiasis,umls_synonym,C0008350,ok
+941,cholelithiasis,gallstone diseases,umls_synonym,C0008350,ok
+942,cholelithiasis,cholelithiases,umls_synonym,C0008350,ok
+943,cholelithiasis,calculus in biliary tract (disorder),umls_synonym,C0008350,ok
+944,cholelithiasis,calculus in biliary tract,umls_synonym,C0008350,ok
+945,cholelithiasis,gallstone disease,umls_synonym,C0008350,ok
+946,cholelithiasis,biliary calculus,umls_synonym,C0008350,ok
+947,cholelithiasis,radiopaque calculus identified within the right upper quadrant biliary region.,llm_radiology_phrase,C0008350,ok
+948,cholelithiasis,small calcified density noted in the expected location of the gallbladder.,llm_radiology_phrase,C0008350,ok
+949,cholelithiasis,faint curvilinear calcification visualized in the right upper abdominal quadrant.,llm_radiology_phrase,C0008350,ok
+950,cholelithiasis,discrete radiopaque biliary calculus projected over the right hepatic shadow.,llm_radiology_phrase,C0008350,ok
+951,cholelithiasis,multiple small calcific densities observed in the right upper quadrant.,llm_radiology_phrase,C0008350,ok
+952,bronchitis,bronchitis,umls_synonym,C0149514,ok
+953,bronchitis,acute bronchitis,umls_synonym,C0149514,ok
+954,bronchitis,acute tracheobronchitis,umls_synonym,C0149514,ok
+955,bronchitis,acute bronchitis (disorder),umls_synonym,C0149514,ok
+956,bronchitis,acute tracheobronchitis (disorder),umls_synonym,C0149514,ok
+957,bronchitis,increased prominence of bronchovascular markings noted throughout the bilateral lung fields.,llm_radiology_phrase,C0149514,ok
+958,bronchitis,peribronchial cuffing observed along the central and mid lung zones bilaterally.,llm_radiology_phrase,C0149514,ok
+959,bronchitis,mild thickening of bronchial walls visible in the perihilar regions bilaterally.,llm_radiology_phrase,C0149514,ok
+960,bronchitis,increased interstitial markings radiating from the hila into the mid lung zones.,llm_radiology_phrase,C0149514,ok
+961,bronchitis,prominent central bronchovascular structures with associated peribronchial wall thickening.,llm_radiology_phrase,C0149514,ok
+962,bronchiolitis,bronchiolitis,umls_synonym,C0006271,ok
+963,bronchiolitis,bronchiolitides,umls_synonym,C0006271,ok
+964,bronchiolitis,bronchiolitis (disorder),umls_synonym,C0006271,ok
+965,bronchiolitis,diffuse bilateral peribronchial thickening noted throughout both lung fields.,llm_radiology_phrase,C0006271,ok
+966,bronchiolitis,increased bronchovascular markings visible in the lower lung zones bilaterally.,llm_radiology_phrase,C0006271,ok
+967,bronchiolitis,fine reticular opacities present throughout the mid and lower lung zones.,llm_radiology_phrase,C0006271,ok
+968,bronchiolitis,prominent peribronchial cuffing observed extending into the peripheral lung fields.,llm_radiology_phrase,C0006271,ok
+969,bronchiolitis,subtle hazy peribronchial opacities noted in the bilateral lower lobes.,llm_radiology_phrase,C0006271,ok
+970,thorax,thorax,umls_synonym,C0817096,ok
+971,thorax,chest,umls_synonym,C0817096,ok
+972,thorax,thorace,umls_synonym,C0817096,ok
+973,thorax,thoracic structure (body structure),umls_synonym,C0817096,ok
+974,thorax,thoracic structure,umls_synonym,C0817096,ok
+975,thorax,thoraces,umls_synonym,C0817096,ok
+976,thorax,chests,umls_synonym,C0817096,ok
+977,thorax,the bony thorax demonstrates normal alignment and intact osseous structures throughout.,llm_radiology_phrase,C0817096,ok
+978,thorax,normal thoracic cage architecture with symmetric rib contours and intact margins.,llm_radiology_phrase,C0817096,ok
+979,thorax,the thoracic cavity appears clear with well defined mediastinal and hilar contours.,llm_radiology_phrase,C0817096,ok
+980,thorax,symmetric thoracic soft tissues with no evidence of abnormal density or mass.,llm_radiology_phrase,C0817096,ok
+981,thorax,normal thoracic volume with appropriate expansion and clear lung fields bilaterally.,llm_radiology_phrase,C0817096,ok
+982,trachea,trachea,umls_synonym,C0040578,ok
+983,trachea,tracheal structure,umls_synonym,C0040578,ok
+984,trachea,tracheas,umls_synonym,C0040578,ok
+985,trachea,windpipe,umls_synonym,C0040578,ok
+986,trachea,tracheal structure (body structure),umls_synonym,C0040578,ok
+987,trachea,the trachea is visualized as a midline lucent tubular structure in the mediastinum.,llm_radiology_phrase,C0040578,ok
+988,trachea,normal midline position of the air filled trachea is maintained throughout the thorax.,llm_radiology_phrase,C0040578,ok
+989,trachea,the tracheal air column appears patent and follows a straight vertical midline course.,llm_radiology_phrase,C0040578,ok
+990,trachea,smooth tracheal walls are identified extending inferiorly toward the level of the carina.,llm_radiology_phrase,C0040578,ok
+991,trachea,the air filled trachea is clearly defined within the central superior mediastinal space.,llm_radiology_phrase,C0040578,ok
+992,"trachea, carina","trachea, carina",umls_synonym,,no_cui_match
+993,"trachea, carina",the trachea is midline and maintains a patent central airway lumen.,llm_radiology_phrase,,no_cui_match
+994,"trachea, carina",the tracheal air column appears normal with no evidence of deviation.,llm_radiology_phrase,,no_cui_match
+995,"trachea, carina",the carina is sharp and located at the level of the hilum.,llm_radiology_phrase,,no_cui_match
+996,"trachea, carina",normal midline position of the trachea with a well defined tracheal air column.,llm_radiology_phrase,,no_cui_match
+997,"trachea, carina",the tracheal bifurcation is clearly visualized with a sharp carinal angle.,llm_radiology_phrase,,no_cui_match

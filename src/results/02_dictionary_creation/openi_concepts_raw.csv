@@ -1,0 +1,117 @@
+candidate_term,frequency,example_raw_term
+lung,553,Lung
+opacity,509,Opacity
+cardiomegaly,345,Cardiomegaly
+calcinosis,332,Calcinosis
+pulmonary atelectasis,330,Pulmonary Atelectasis
+calcified granuloma,276,Calcified Granuloma
+thoracic vertebrae,257,Thoracic Vertebrae
+cicatrix,196,Cicatrix
+spine,174,Spine
+markings,167,Markings
+pleural effusion,160,Pleural Effusion
+aorta,158,Aorta
+diaphragm,140,Diaphragm
+density,129,Density
+atherosclerosis,125,Atherosclerosis
+deformity,124,Deformity
+airspace disease,123,Airspace Disease
+"catheters, indwelling",121,"Catheters, Indwelling"
+scoliosis,118,Scoliosis
+nodule,116,Nodule
+granulomatous disease,107,Granulomatous Disease
+surgical instruments,105,Surgical Instruments
+"aorta, thoracic",89,"Aorta, Thoracic"
+"fractures, bone",89,"Fractures, Bone"
+technical quality of image unsatisfactory,84,Technical Quality of Image Unsatisfactory
+costophrenic angle,79,Costophrenic Angle
+osteophyte,70,Osteophyte
+pulmonary congestion,68,Pulmonary Congestion
+implanted medical device,66,Implanted Medical Device
+infiltrate,63,Infiltrate
+spondylosis,63,Spondylosis
+emphysema,60,Emphysema
+cardiac shadow,54,Cardiac Shadow
+thickening,53,Thickening
+granuloma,51,Granuloma
+"pulmonary disease, chronic obstructive",48,"Pulmonary Disease, Chronic Obstructive"
+"hernia, hiatal",44,"Hernia, Hiatal"
+pulmonary edema,43,Pulmonary Edema
+pneumonia,41,Pneumonia
+pulmonary emphysema,36,Pulmonary Emphysema
+kyphosis,35,Kyphosis
+arthritis,34,Arthritis
+diaphragmatic eventration,34,Diaphragmatic Eventration
+foreign bodies,34,Foreign Bodies
+consolidation,33,Consolidation
+"bone diseases, metabolic",31,"Bone Diseases, Metabolic"
+"tube, inserted",31,"Tube, Inserted"
+lucency,26,Lucency
+mediastinum,26,Mediastinum
+spinal fusion,26,Spinal Fusion
+pneumothorax,22,Pneumothorax
+medical device,21,Medical Device
+"lung, hyperlucent",18,"Lung, Hyperlucent"
+pulmonary fibrosis,18,Pulmonary Fibrosis
+stents,18,Stents
+mass,16,Mass
+shoulder,15,Shoulder
+epicardial fat,14,Epicardial Fat
+"lung diseases, interstitial",14,"Lung Diseases, Interstitial"
+pulmonary artery,13,Pulmonary Artery
+lumbar vertebrae,12,Lumbar Vertebrae
+heart,10,Heart
+sclerosis,10,Sclerosis
+shift,10,Shift
+volume loss,10,Volume Loss
+heart failure,9,Heart Failure
+"hypertension, pulmonary",7,"Hypertension, Pulmonary"
+nipple shadow,7,Nipple Shadow
+sutures,7,Sutures
+blister,6,Blister
+cavitation,6,Cavitation
+mastectomy,6,Mastectomy
+pericardial effusion,6,Pericardial Effusion
+pneumonectomy,6,Pneumonectomy
+subcutaneous emphysema,6,Subcutaneous Emphysema
+sulcus,6,Sulcus
+breast implants,5,Breast Implants
+bronchiectasis,5,Bronchiectasis
+cysts,5,Cysts
+dislocations,5,Dislocations
+"hyperostosis, diffuse idiopathic skeletal",5,"Hyperostosis, Diffuse Idiopathic Skeletal"
+adipose tissue,4,Adipose Tissue
+aortic aneurysm,4,Aortic Aneurysm
+bullous emphysema,4,Bullous Emphysema
+cystic fibrosis,4,Cystic Fibrosis
+funnel chest,4,Funnel Chest
+heart atria,4,Heart Atria
+hydropneumothorax,4,Hydropneumothorax
+pneumoperitoneum,4,Pneumoperitoneum
+ribs,4,Ribs
+bone and bones,3,Bone and Bones
+contrast media,3,Contrast Media
+heart ventricles,3,Heart Ventricles
+lymph nodes,3,Lymph Nodes
+pectus carinatum,3,Pectus Carinatum
+pleura,3,Pleura
+sarcoidosis,3,Sarcoidosis
+abdomen,2,Abdomen
+cervical vertebrae,2,Cervical Vertebrae
+"hernia, diaphragmatic",2,"Hernia, Diaphragmatic"
+humerus,2,Humerus
+tuberculosis,2,Tuberculosis
+blood vessels,1,Blood Vessels
+bronchiolitis,1,Bronchiolitis
+bronchitis,1,Bronchitis
+cholelithiasis,1,Cholelithiasis
+colonic interposition,1,Colonic Interposition
+expansile bone lesions,1,Expansile Bone Lesions
+fibrosis,1,Fibrosis
+hemopneumothorax,1,Hemopneumothorax
+hemothorax,1,Hemothorax
+hypovolemia,1,Hypovolemia
+osteoporosis,1,Osteoporosis
+thorax,1,Thorax
+trachea,1,Trachea
+"trachea, carina",1,"Trachea, Carina"
