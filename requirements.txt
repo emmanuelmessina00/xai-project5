@@ -12,3 +12,5 @@ open_clip_torch
 python-dotenv
 requests
 google-genai
+accelerate
+huggingface_hub
