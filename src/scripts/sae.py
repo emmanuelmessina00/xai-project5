@@ -22,9 +22,9 @@ class SparseAutoencoder(nn.Module):
         
         return x_hat, z
 
-def sae_loss_function(x: torch.Tensor, x_hat: torch.Tensor, z: torch.Tensor, l1_lambda: float = 1e-4):
+def sae_loss_function(x: torch.Tensor, x_hat: torch.Tensor, z: torch.Tensor, l1_lambda: float = 2e-3):
     mse_loss = F.mse_loss(x_hat, x)
-    l1_loss = z.abs().mean()
+    l1_loss = z.abs().sum(dim=-1).mean()
     total_loss = mse_loss + l1_lambda * l1_loss
     
     return total_loss, mse_loss, l1_loss
