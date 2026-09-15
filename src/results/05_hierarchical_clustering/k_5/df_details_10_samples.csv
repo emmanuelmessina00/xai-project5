@@ -1,0 +1,263 @@
+image_index,concept,verdict,macro_cluster
+0,atheroscleroses,Uncertain,0
+0,atrial structure (body structure),Uncertain,0
+0,cardiac ventricular morphology contributes to the overall size of the cardiac silhouette.,Uncertain,0
+0,cardiomegaly with prominent pulmonary vascular congestion and bilateral perihilar interstitial opacities.,Uncertain,0
+0,cervical spines,Uncertain,0
+0,"column, vertebral",Uncertain,0
+0,dense amorphous calcifications identified along the thoracic wall soft tissue planes.,Uncertain,0
+0,discrete radiopaque biliary calculus projected over the right hepatic shadow.,Unaligned,2
+0,enlarged cardiac silhouette associated with diffuse bilateral pulmonary venous hypertension and edema.,Uncertain,0
+0,focal pulmonary opacity with smooth margins located in the left upper lobe.,Uncertain,0
+0,forestiers disease,Uncertain,0
+0,gallstone diseases,Uncertain,2
+0,globular heart shape suggesting an increase in the pericardial space.,Uncertain,0
+0,keeled chest,Uncertain,0
+0,large air filled bullae are identified within the apical lung regions.,Uncertain,0
+0,layering opacity along the lateral chest wall indicates pleural effusion.,Uncertain,0
+0,lucent fracture line extending through the mid shaft of the left humerus.,Unaligned,0
+0,mediastinal shift,Uncertain,0
+0,miliary lupoid of boeck,Uncertain,0
+0,pigeon breast,Uncertain,0
+0,pulmonary cicatrix,Uncertain,0
+0,solitary circumscribed mass lesion projecting over the right mid lung zone.,Uncertain,0
+0,structure of yellow fat,Uncertain,1
+0,the left atrial appendage is located along the mid left heart border.,Uncertain,0
+0,the pulmonary artery segment maintains a normal contour along the left heart border.,Uncertain,0
+0,the pulmonary artery trunk demonstrates normal caliber and smooth lateral mediastinal margins.,Unaligned,0
+0,the tracheal bifurcation is clearly visualized with a sharp carinal angle.,Unaligned,0
+0,thoracic aorta appears as a well defined tubular structure within the superior mediastinum.,Aligned,0
+0,tortuous thoracic aorta with extensive mural calcification along the aortic knob.,Unaligned,0
+0,unexpanded lung,Uncertain,0
+0,visualized thoracic skeletal deformity with abnormal configuration of the bony thorax.,Uncertain,0
+1,atheroscleroses,Unaligned,0
+1,atrial structure (body structure),Aligned,0
+1,bilateral hilar lymphadenopathy with prominent right paratracheal nodal enlargement is noted.,Unaligned,0
+1,calculus in biliary tract,Unaligned,2
+1,cardiac ventricular morphology contributes to the overall size of the cardiac silhouette.,Aligned,0
+1,cardiomegaly (disorder),Unaligned,0
+1,cardiomegaly with prominent pulmonary vascular congestion and bilateral perihilar interstitial opacities.,Aligned,0
+1,"column, vertebral",Unaligned,0
+1,confluent airspace opacities identified throughout the right middle and lower lobes.,Unaligned,0
+1,dense amorphous calcifications identified along the thoracic wall soft tissue planes.,Unaligned,0
+1,diffuse bilateral peribronchial thickening with prominent central bronchiectasis throughout both lungs.,Uncertain,0
+1,fine reticular opacities present throughout the mid and lower lung zones.,Uncertain,0
+1,gallstone diseases,Uncertain,2
+1,increased density obscuring the hemidiaphragm consistent with a significant pleural collection.,Unaligned,0
+1,increased retrosternal clear space observed due to anterior sternal bowing.,Uncertain,0
+1,layering opacity along the lateral chest wall indicates pleural effusion.,Unaligned,0
+1,linear scarring and calcified granulomas present in the upper lung zones.,Uncertain,0
+1,localized expansile lucency with thin sclerotic margins identified in the clavicular head.,Unaligned,0
+1,lower thoracic and upper lumbar vertebrae are identified on the lateral view.,Uncertain,0
+1,lucent fat density noted along the inferior cardiac border on lateral view.,Uncertain,1
+1,mediastinal shift,Unaligned,0
+1,miliary lupoid of boeck,Uncertain,0
+1,pericardial effusion,Unaligned,0
+1,pigeon breast,Unaligned,0
+1,single focal pulmonary nodule noted within the peripheral lung parenchyma.,Unaligned,0
+1,solitary circumscribed mass lesion projecting over the right mid lung zone.,Unaligned,0
+1,"spine, cervical",Unaligned,0
+1,subdiaphragmatic lucency consistent with free air within the peritoneal cavity.,Unaligned,1
+1,the pulmonary artery trunk demonstrates normal caliber and smooth lateral mediastinal margins.,Unaligned,0
+1,the shoulder region demonstrates normal osseous alignment and intact cortical margins.,Unaligned,0
+1,the upper abdomen is partially included at the base of the image.,Uncertain,1
+1,visualized proximal humerus demonstrates normal trabecular pattern and smooth cortical bone surfaces.,Uncertain,0
+1,visualized thoracic skeletal deformity with abnormal configuration of the bony thorax.,Uncertain,0
+2,besnier boeck schaumann syndrome,Uncertain,0
+2,cervical spines,Uncertain,0
+2,complete disruption of the normal anatomical alignment of the sternoclavicular joint.,Unaligned,0
+2,dense calcified plaques identified along the margins of the thoracic aorta.,Unaligned,0
+2,dense consolidation obscuring the normal vascular markings in the left lower lung.,Unaligned,0
+2,diminished size of the hilar vessels with overall decreased pulmonary vascularity.,Uncertain,0
+2,discrete radiopaque biliary calculus projected over the right hepatic shadow.,Unaligned,2
+2,focal pulmonary opacity with smooth margins located in the left upper lobe.,Unaligned,0
+2,gallstone diseases,Uncertain,2
+2,generalized thinning of the cortical margins of the visualized ribs.,Unaligned,0
+2,large air filled bullae are identified within the apical lung regions.,Unaligned,0
+2,linear lucencies tracking along the subcutaneous soft tissues of the chest wall.,Unaligned,0
+2,linear scarring and calcified granulomas present in the upper lung zones.,Uncertain,0
+2,localized dome shaped elevation of the hemidiaphragm contour on the frontal view.,Uncertain,1
+2,multiple avascular lucent spaces are present throughout the upper pulmonary lobes.,Uncertain,0
+2,multiple ring shadows and tubular opacities consistent with widespread cystic bronchiectasis.,Uncertain,0
+2,patchy opacification identified throughout the mid to lower zones of the lung.,Uncertain,0
+2,pneumothorax (disorder),Unaligned,0
+2,radiolucent gas collection identified between the liver dome and the diaphragm.,Unaligned,1
+2,regional hyperlucency of the upper lung zone with decreased density of pulmonary vasculature.,Uncertain,0
+2,single focal pulmonary nodule noted within the peripheral lung parenchyma.,Unaligned,0
+2,the cervical spine demonstrates normal alignment and intact bony cortical margins throughout.,Unaligned,0
+2,the costophrenic angles are preserved and show no signs of pleural fluid accumulation.,Uncertain,4
+2,the left atrial appendage is located along the mid left heart border.,Uncertain,0
+2,tracheal structure,Aligned,0
+2,tuberculosis,Uncertain,0
+2,visualized thoracic skeletal deformity with abnormal configuration of the bony thorax.,Unaligned,0
+3,abnormal separation of the articular surfaces within the acromioclavicular joint.,Uncertain,0
+3,atheroscleroses,Uncertain,0
+3,cardiac insufficiency,Uncertain,0
+3,"columns, vertebral",Uncertain,0
+3,continuous bony bridging spanning multiple contiguous thoracic vertebral segments.,Uncertain,0
+3,cystic fibrosis,Uncertain,0
+3,dense consolidation obscuring the normal vascular markings in the left lower lung.,Uncertain,0
+3,diffuse bilateral peribronchial thickening with prominent central bronchiectasis throughout both lungs.,Uncertain,0
+3,diminished size of the hilar vessels with overall decreased pulmonary vascularity.,Uncertain,0
+3,extraskeletal calcification,Uncertain,0
+3,fibrocystic disease,Uncertain,0
+3,gallstone diseases,Uncertain,2
+3,homogeneous opacity with ipsilateral mediastinal shift indicating significant lobar collapse.,Uncertain,0
+3,large air filled bullae are identified within the apical lung regions.,Aligned,0
+3,linear scarring and calcified granulomas present in the upper lung zones.,Uncertain,0
+3,lucent fracture line extending through the mid shaft of the left humerus.,Unaligned,0
+3,lymphatic gland,Uncertain,3
+3,miliary lupoid of boeck,Uncertain,0
+3,multiple ring shadows and tubular opacities consistent with widespread cystic bronchiectasis.,Uncertain,0
+3,patchy consolidations with cavitation identified in the right upper lung field.,Unaligned,0
+3,pulmonary vascular structures are clearly visible radiating from the bilateral hila.,Uncertain,0
+3,regional hyperlucency of the upper lung zone with decreased density of pulmonary vasculature.,Uncertain,0
+3,the carina is sharp and located at the level of the hilum.,Uncertain,0
+3,tortuous thoracic aorta with extensive mural calcification along the aortic knob.,Unaligned,0
+3,tuberculosis,Uncertain,0
+3,visible pleural air collection accompanied by dependent opacification consistent with a hemopneumothorax.,Uncertain,0
+4,acute tracheobronchitis (disorder),Uncertain,0
+4,cardiac ventricular morphology contributes to the overall size of the cardiac silhouette.,Uncertain,0
+4,"columns, spinal",Uncertain,0
+4,confluent airspace opacification present within the left lower lobe segment.,Uncertain,0
+4,confluent airspace opacities identified throughout the right middle and lower lobes.,Uncertain,0
+4,crowding of the pulmonary vascular markings within the affected lung zone.,Uncertain,0
+4,diffuse fine reticulonodular opacities distributed throughout both mid and upper lung zones.,Uncertain,0
+4,diffuse miliary pattern of tiny rounded opacities throughout the pulmonary parenchyma.,Uncertain,0
+4,"disease, forestier's",Uncertain,0
+4,"fibroses, pulmonary",Uncertain,0
+4,gas filled structure noted superior to the left hemidiaphragm.,Uncertain,1
+4,increased density obscuring the hemidiaphragm consistent with a significant pleural collection.,Uncertain,0
+4,multiple ring shadows and tubular opacities consistent with widespread cystic bronchiectasis.,Uncertain,0
+4,obliteration of the costophrenic sulcus consistent with pleural fluid collection.,Uncertain,0
+4,single focal pulmonary nodule noted within the peripheral lung parenchyma.,Uncertain,0
+4,solitary circumscribed mass lesion projecting over the right mid lung zone.,Uncertain,0
+4,the pleural surfaces appear smooth and well defined along the lateral chest walls.,Uncertain,0
+4,tortuous thoracic aorta with extensive mural calcification along the aortic knob.,Unaligned,0
+4,tracheal structure,Aligned,0
+4,well-defined costophrenic sulcus with normal contour and sharp margins.,Aligned,4
+5,arthritides,Uncertain,0
+5,atheromatosis,Uncertain,0
+5,atheroscleroses,Uncertain,0
+5,bilateral hilar lymphadenopathy with prominent right paratracheal nodal enlargement is noted.,Unaligned,0
+5,bullous emphysema,Uncertain,0
+5,complete disruption of the normal anatomical alignment of the sternoclavicular joint.,Unaligned,0
+5,confluent airspace opacification present within the left lower lobe segment.,Uncertain,0
+5,crowding of the pulmonary vascular markings within the affected lung zone.,Uncertain,0
+5,dense amorphous calcifications identified along the thoracic wall soft tissue planes.,Uncertain,0
+5,dense calcified plaques identified along the margins of the thoracic aorta.,Unaligned,0
+5,diffuse fine reticulonodular opacities distributed throughout both mid and upper lung zones.,Uncertain,0
+5,diminished size of the hilar vessels with overall decreased pulmonary vascularity.,Uncertain,0
+5,heart atria,Uncertain,0
+5,keeled chest,Uncertain,0
+5,large air filled bullae are identified within the apical lung regions.,Unaligned,0
+5,linear scarring and calcified granulomas present in the upper lung zones.,Uncertain,0
+5,lucent fracture line extending through the mid shaft of the left humerus.,Unaligned,0
+5,patchy opacification identified throughout the mid to lower zones of the lung.,Uncertain,0
+5,single focal pulmonary nodule noted within the peripheral lung parenchyma.,Uncertain,0
+5,solitary circumscribed mass lesion projecting over the right mid lung zone.,Uncertain,0
+5,"spine, cervical",Uncertain,0
+5,the cervical spine demonstrates normal alignment and intact bony cortical margins throughout.,Unaligned,0
+5,the shoulder region demonstrates normal osseous alignment and intact cortical margins.,Uncertain,0
+5,tortuous thoracic aorta with extensive mural calcification along the aortic knob.,Unaligned,0
+5,visualized thoracic skeletal deformity with abnormal configuration of the bony thorax.,Uncertain,0
+6,bronchiectasis (disorder),Uncertain,0
+6,cardiac ventricular morphology contributes to the overall size of the cardiac silhouette.,Uncertain,0
+6,chronic irreversible airway obstruction,Uncertain,0
+6,costophrenic angle,Unaligned,4
+6,dense calcified plaques identified along the margins of the thoracic aorta.,Unaligned,0
+6,dense consolidation obscuring the normal vascular markings in the left lower lung.,Uncertain,0
+6,diffuse miliary pattern of tiny rounded opacities throughout the pulmonary parenchyma.,Uncertain,0
+6,expansile lytic lesion noted within the mid portion of the right scapula.,Unaligned,0
+6,free intraperitoneal air collection noted tracking along the superior hepatic surface.,Unaligned,1
+6,gallstone diseases,Uncertain,2
+6,gas filled structure noted superior to the left hemidiaphragm.,Uncertain,1
+6,large air filled bullae are identified within the apical lung regions.,Uncertain,0
+6,large lobulated soft tissue density identified in the left lower lung field.,Unaligned,0
+6,linear scarring and calcified granulomas present in the upper lung zones.,Uncertain,0
+6,localized dome shaped elevation of the hemidiaphragm contour on the frontal view.,Uncertain,1
+6,multiple ring shadows and tubular opacities consistent with widespread cystic bronchiectasis.,Uncertain,0
+6,obliteration of the costophrenic sulcus consistent with pleural fluid collection.,Unaligned,0
+6,oesophageal hiatal hernia,Uncertain,1
+6,radiolucent gas collection identified between the liver dome and the diaphragm.,Uncertain,1
+6,single focal pulmonary nodule noted within the peripheral lung parenchyma.,Uncertain,0
+6,the cervical spine demonstrates normal alignment and intact bony cortical margins throughout.,Uncertain,0
+6,the costophrenic angles are preserved and show no signs of pleural fluid accumulation.,Aligned,4
+6,the diaphragm maintains a smooth arcuate contour across the lower thoracic cavity.,Aligned,1
+6,the pleural surfaces appear smooth and well defined along the lateral chest walls.,Uncertain,0
+6,the proximal humerus is visualized within the lateral aspect of the thoracic cage.,Unaligned,0
+6,the thoracic aorta maintains a smooth lateral contour along the upper mediastinal stripe.,Unaligned,0
+6,tortuous thoracic aorta with extensive mural calcification along the aortic knob.,Unaligned,0
+6,unexpanded lung,Uncertain,0
+6,visible pleural air collection accompanied by dependent opacification consistent with a hemopneumothorax.,Unaligned,0
+6,visualized thoracic skeletal deformity with abnormal configuration of the bony thorax.,Uncertain,0
+7,a solitary well-defined nodule with central dense calcification is noted.,Uncertain,0
+7,besnier boeck disease,Uncertain,0
+7,boeck sarcoid,Uncertain,0
+7,bronchiectasis (disorder),Uncertain,0
+7,bronchiolitis (disorder),Uncertain,0
+7,bullous emphysema,Uncertain,0
+7,central mediastinal structures maintain a normal position without evidence of abnormal widening.,Aligned,0
+7,cervical spines,Uncertain,0
+7,chronic irreversible airway obstruction,Uncertain,0
+7,complete disruption of the normal anatomical alignment of the sternoclavicular joint.,Unaligned,0
+7,dense calcified plaques identified along the margins of the thoracic aorta.,Unaligned,0
+7,diffuse hyperlucency of the left lung with associated attenuation of peripheral pulmonary vessels.,Uncertain,0
+7,focal pulmonary opacity with smooth margins located in the left upper lobe.,Uncertain,0
+7,gas shadows are noted within the upper abdomen beneath the hemidiaphragms.,Uncertain,1
+7,increased retrosternal clear space observed due to anterior sternal bowing.,Uncertain,0
+7,linear scarring and calcified granulomas present in the upper lung zones.,Uncertain,0
+7,localized dome shaped elevation of the hemidiaphragm contour on the frontal view.,Uncertain,1
+7,lucent fracture line extending through the mid shaft of the left humerus.,Unaligned,0
+7,multiple avascular lucent spaces are present throughout the upper pulmonary lobes.,Uncertain,0
+7,single focal pulmonary nodule noted within the peripheral lung parenchyma.,Uncertain,0
+7,the costophrenic angles are preserved and show no signs of pleural fluid accumulation.,Aligned,4
+7,the pulmonary artery segment maintains a normal contour along the left heart border.,Aligned,0
+7,the pulmonary artery trunk demonstrates normal caliber and smooth lateral mediastinal margins.,Aligned,0
+7,tuberculosis,Uncertain,0
+7,visualized thoracic skeletal deformity with abnormal configuration of the bony thorax.,Aligned,0
+8,a solitary well-defined nodule with central dense calcification is noted.,Uncertain,0
+8,a solitary well-defined rounded opacity is noted within the right upper lobe.,Uncertain,0
+8,abnormal separation of the articular surfaces within the acromioclavicular joint.,Uncertain,0
+8,atheroscleroses,Uncertain,0
+8,besnier boeck disease,Uncertain,0
+8,bilateral hilar lymphadenopathy with prominent right paratracheal nodal enlargement is noted.,Uncertain,0
+8,cystic fibrosis (disorder),Uncertain,0
+8,"disease, forestier's",Uncertain,0
+8,extraskeletal calcification,Uncertain,0
+8,fibrocystic disease,Uncertain,0
+8,"fibroses, pulmonary",Uncertain,0
+8,focal pulmonary opacity with smooth margins located in the left upper lobe.,Uncertain,0
+8,gallstone diseases,Uncertain,2
+8,layering opacity along the lateral chest wall indicates pleural effusion.,Uncertain,0
+8,miliary lupoid of boeck,Uncertain,0
+8,smooth tracheal walls are identified extending inferiorly toward the level of the carina.,Uncertain,0
+8,sternal prominence projecting anteriorly beyond the normal thoracic cage margin.,Uncertain,0
+8,the pulmonary artery trunk demonstrates normal caliber and smooth lateral mediastinal margins.,Uncertain,0
+8,thoracic aorta appears as a well defined tubular structure within the superior mediastinum.,Uncertain,0
+8,tuberculosis (disorder),Uncertain,0
+9,a solitary well-defined nodule with central dense calcification is noted.,Uncertain,0
+9,abnormal separation of the articular surfaces within the acromioclavicular joint.,Uncertain,0
+9,bilateral perihilar airspace opacities consistent with pulmonary edema.,Uncertain,0
+9,cardiomegaly with prominent pulmonary vascular congestion and bilateral perihilar interstitial opacities.,Uncertain,0
+9,chronic irreversible airway obstruction,Uncertain,0
+9,"columns, spinal",Uncertain,0
+9,"disease, forestier's",Uncertain,0
+9,fibrocystic disease,Uncertain,0
+9,hemopneumothorax,Unaligned,0
+9,large air filled bullae are identified within the apical lung regions.,Unaligned,0
+9,lucent fracture line extending through the mid shaft of the left humerus.,Unaligned,0
+9,miliary lupoid of boeck,Uncertain,0
+9,normal aortic arch shadow is visualized along the superior mediastinal border.,Aligned,0
+9,normal midline position of the trachea with a well defined tracheal air column.,Aligned,0
+9,patchy consolidations with cavitation identified in the right upper lung field.,Uncertain,0
+9,persistent hazy opacity noted within the right upper lobe lung parenchyma.,Uncertain,0
+9,radiolucent gas collection identified between the liver dome and the diaphragm.,Uncertain,1
+9,regional hyperlucency of the upper lung zone with decreased density of pulmonary vasculature.,Uncertain,0
+9,shoulder region,Uncertain,0
+9,smooth tracheal walls are identified extending inferiorly toward the level of the carina.,Uncertain,0
+9,the shoulder region demonstrates normal osseous alignment and intact cortical margins.,Uncertain,0
+9,the thoracic aorta maintains a smooth lateral contour along the upper mediastinal stripe.,Aligned,0
+9,the tracheal bifurcation is clearly visualized with a sharp carinal angle.,Aligned,0
+9,tortuous thoracic aorta with extensive mural calcification along the aortic knob.,Unaligned,0
+9,visible pleural air collection accompanied by dependent opacification consistent with a hemopneumothorax.,Unaligned,0
