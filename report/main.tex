@@ -1,0 +1,78 @@
+\documentclass[sigconf, nonacm]{acmart}
+
+%%
+%% \BibTeX command to typeset BibTeX logo in the docs
+\AtBeginDocument{%
+  \providecommand\BibTeX{{%
+    Bib\TeX}}}
+
+
+
+%% These commands are for a PROCEEDINGS abstract or paper.
+\acmConference[Explainable and Trustworthy AI - Project]{}{}{}
+
+
+
+\begin{document}
+
+\title{Project Title}
+
+%%
+%% The "author" 
+\author{Name Surname}
+\affiliation{%
+  \institution{Politecnico di Torino}
+  \city{Turin}
+  \country{Italy}
+}
+
+\author{Name Surname}
+\affiliation{%
+  \institution{Politecnico di Torino}
+  \city{Turin}
+  \country{Italy}
+}
+\author{Name Surname}
+\affiliation{%
+  \institution{Politecnico di Torino}
+  \city{Turin}
+  \country{Italy}
+}
+
+
+
+%%
+\begin{abstract}
+\input{sections/abstract}
+\end{abstract}
+
+
+
+%% OPTIONAL 
+%% Keywords. The author(s) should pick words that accurately describe the work being presented. Separate the keywords with commas.
+\keywords{}
+
+
+
+%%
+%% This command processes the author and affiliation and title information and builds the first part of the formatted document.
+\maketitle
+
+\input{sections/introduction}
+\input{sections/related_work}
+\input{sections/research_gaps}
+\input{sections/methodology}
+\input{sections/experiments}
+\input{sections/conclusions}
+
+
+%%
+%% The next two lines define the bibliography style to be used, and
+%% the bibliography file.
+\bibliographystyle{ACM-Reference-Format}
+\bibliography{biblio}
+
+
+\end{document}
+\endinput
+%%
