@@ -1,3 +1,28 @@
 % !TeX root = ../main.tex
 \section{Methodology}
-[Overview of the proposed solution]
+\subsection{Data and vocabulary}
+We use the frozen BiomedCLIP ViT-B/16 image encoder and PubMedBERT text encoder to obtain 512-dimensional, L2-normalized embeddings. The NIH Chest X-ray 10k subset supplies 7,500 training images and 2,500 validation images, using the provided train/test splits. From Open-I, filtering invalid frontal images and unusable reports leaves 3,666 image--report pairs. Reports concatenate \emph{Findings} and \emph{Impression}; evaluation removes anonymization placeholders and dates. SAE training uses no report text or disease labels.
+
+We extract 116 distinct candidate terms from the Open-I \emph{Problems} field. Removing 15 device, procedure, and technical terms and merging domain-aligned terms yields 100 parent concepts. UMLS~\cite{bodenreider2004umls} supplies exact-match identifiers and English SNOMED CT/MeSH synonyms where available. Ninety concepts receive a CUI; ten retain their original term as a fallback. Gemini 3.1 Flash-Lite generates five radiology-style phrases per concept. Independent text encoding produces $T\in\mathbb{R}^{998\times512}$: 498 terminology/fallback entries and 500 generated phrases. Thus, representation learning is unsupervised, but semantic naming uses curated external resources and evaluation-dataset metadata.
+
+\subsection{Sparse decomposition and naming}
+For an image embedding $x$, the SAE computes
+\begin{equation}
+z=\operatorname{ReLU}(W_e(x-b_d)+b_e),\qquad
+\hat{x}=W_dz+b_d,
+\end{equation}
+with 1,024 hidden units. Its batch loss is
+\begin{equation}
+\mathcal{L}=\frac{1}{512B}\sum_{i=1}^{B}\|x_i-\hat{x}_i\|_2^2
++\frac{\lambda}{B}\sum_{i=1}^{B}\|z_i\|_1,
+\end{equation}
+where $B=256$ and $\lambda=5\times10^{-5}$. Adam starts at $10^{-3}$; the learning rate halves after five epochs without sufficient validation improvement. Decoder columns are normalized after each update. Training allows 1,000 epochs, with early-stopping patience 25; the saved run stops at epoch 413 and selects epoch 388 by validation loss.
+
+Each decoder column receives the phrase maximizing cosine similarity with its direction. Multiple units can share a label. For each image, positive activations are sorted and retained until their cumulative sum reaches 90\% of the positive activation mass; duplicate phrase labels are removed. All selected units are named, including those with low maximum similarity.
+
+\subsection{Semantic evaluation and extensions}
+Frozen MedGemma 1.5 4B receives only the proposed phrase and report. The few-shot prompt distinguishes \emph{Aligned} (explicit support), \emph{Unaligned} (explicit contradiction), and \emph{Uncertain} (omitted, ambiguous, or tentative). Three forward passes cycle the classes through single-token answers A/B/C. Softmax probabilities over these tokens are mapped back to classes and averaged before selecting the verdict. This avoids free-text parsing but does not guarantee correct judgments. For each image, we divide each verdict count by the number of unique predicted phrases, then average these proportions across images.
+
+For structured analysis, each parent concept is represented by the normalized mean of its phrase embeddings. Agglomerative clustering uses cosine distance and average linkage. We evaluate silhouette scores for $k=3,\ldots,15$ and aggregate existing verdicts at $k\in\{3,5,8,10\}$ without querying the judge again. Cluster statistics count phrase--image pairs, rather than equally weighted images.
+
+Finally, 25 pairs are sampled by the original verdict (8 Aligned, 8 Unaligned, 9 Uncertain). The three authors annotate reports and concepts with MedGemma labels hidden; majority vote defines the reference. Three commercial evaluators also label the same pairs through file attachment and pasted text. This is a small, stratified text audit, not an expert radiological assessment.

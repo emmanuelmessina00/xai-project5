@@ -1,3 +1,71 @@
 % !TeX root = ../main.tex
 \section{Experiments and analysis}
-[Presentation of the experimental results and their discussion]
+\subsection{Reconstruction and report alignment}
+On the first 256 NIH validation embeddings, the selected SAE achieves MSE $3.32\times10^{-5}$ and mean cosine similarity 0.9916, with 44.0 positive units out of 1,024 per image. These measurements show sparse reconstruction on that batch; they do not measure monosemanticity.
+
+Table~\ref{tab:alignment} summarizes the saved Open-I evaluations. The cohorts are nested prefixes of the dataset, not independent random samples. At $N=500$, 12,996 phrase--image pairs are evaluated, averaging 25.99 unique phrases per image. Uncertainty dominates throughout. This is compatible with selective reporting, but also with imprecise naming, spurious concepts, or evaluator error; the scores cannot separate these explanations.
+
+\begin{table}[t]
+\centering
+\caption{Mean per-image verdict percentages on nested Open-I subsets. Phrases/img is the mean number of unique labels.}
+\label{tab:alignment}
+\begin{tabular}{rrrrr}
+\toprule
+$N$ & Phrases/img & Aligned & Unaligned & Uncertain \\
+\midrule
+10  & 26.20 & 7.25 & 23.17 & 69.57 \\
+50  & 26.22 & 8.40 & 22.88 & 68.72 \\
+100 & 26.23 & 7.64 & 23.37 & 68.99 \\
+500 & 25.99 & 7.21 & 22.49 & 70.30 \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\subsection{What clustering reveals}
+The highest tested silhouette score is 0.274 at $k=3$, compared with 0.184 at the $k=8$ reference and 0.263 at $k=10$. The eight-group partition is therefore an exploratory resolution, not the metric-optimal solution. Its largest group contains 61 heterogeneous cardiopulmonary concepts, while other groups mix diseases or contain a single concept. Table~\ref{tab:clusters} uses descriptions derived from actual cluster membership.
+
+The costophrenic angle/sulcus group has 49.23\% Aligned judgments (128/260 pairs), versus 8.62\% for the broad cardiopulmonary group. This same two-concept group survives all four tested resolutions, so its unchanged rate reflects retained membership rather than independent evidence of robustness. Clustering localizes differences in report agreement; regrouping fixed verdicts cannot improve overall alignment or establish clinical validity.
+
+\begin{table}[t]
+\centering
+\caption{Selected $k=8$ groups at $N=500$. Percentages pool phrase--image pairs; labels summarize actual membership.}
+\label{tab:clusters}
+\small
+\begin{tabular}{lrrr}
+\toprule
+Group & Pairs & Aligned (\%) & Uncertain (\%) \\
+\midrule
+Mixed cardiopulmonary & 7,643 & 8.62 & 69.53 \\
+Skeletal/calcinosis & 2,118 & 5.15 & 72.57 \\
+Diaphragm/abdominal & 662 & 4.38 & 59.37 \\
+Costophrenic angle/sulcus & 260 & 49.23 & 47.31 \\
+Cholelithiasis & 687 & 0.15 & 71.47 \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\subsection{Qualitative findings and evaluator audit}
+The highest-scoring case (image 108) has 31.03\% Aligned judgments, yet its report explicitly denies pleural effusion while the judge marks a phrase describing a large effusion as Aligned. Consequently, the top score does not identify the most clinically reliable explanation. A normal-study example (image 294) yields 5\% Aligned and 85\% Uncertain, illustrating the limited evidence in a short report. A low-scoring case (image 433), whose report describes a left lower hemithoracic mass, yields 0\% Aligned and 80\% Uncertain. These cases expose both judge failures and gaps between retrieved phrases and report content.
+
+The independent audit provides direct evidence of evaluator disagreement. Human annotators agree unanimously on 18/25 pairs (72\%); pairwise agreement is 76--92\%, with mean pairwise Cohen's $\kappa=0.697$. Their consensus contains 4 Aligned, 8 Unaligned, and 13 Uncertain pairs. MedGemma matches it on 14/25 pairs (56\%). A clear positive example is SAMPLE\_02: all annotators and evaluators support cardiomegaly when the report explicitly describes heart enlargement. Errors include treating unmentioned anatomy as supported and missing explicit negation. Table~\ref{tab:judges} reports the commercial evaluators using the model names recorded in the validation notebook. File/text agreement is 88\% for GPT and 92\% for Claude and Gemini. With only 25 stratified pairs, these descriptive differences do not establish a general ranking of judges.
+
+\begin{table}[t]
+\centering
+\caption{Agreement with author majority vote on 25 pairs. Commercial models were evaluated in two input formats.}
+\label{tab:judges}
+\small
+\begin{tabular}{lrr}
+\toprule
+Evaluator & File (\%) & Text (\%) \\
+\midrule
+MedGemma 1.5 4B (pipeline) & \multicolumn{2}{c}{56} \\
+GPT-5.6 Luna & 72 & 72 \\
+Claude Sonnet 5 (high effort) & 68 & 68 \\
+Gemini 3.1 Pro & 76 & 72 \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\balance
+\subsection{Limitations}
+The vocabulary is derived from Open-I metadata, so evaluation is not independent of vocabulary construction. The available artifacts do not establish patient-disjoint NIH splitting, concept stability across random seeds, or comparative performance against direct text retrieval and alternative SAE settings. Naming always assigns a phrase, including weak matches, and synonym-level deduplication can overweight a parent concept. Hierarchical aggregation is semantic grouping rather than a validated medical ontology. The human audit uses the project authors rather than an independent clinical panel, while precise commercial model snapshots and complete response logs are not preserved. Expert image review, intervention-based tests, and a larger independently sampled audit remain necessary to assess clinical validity and causal faithfulness.
