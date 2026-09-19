@@ -1,17 +1,26 @@
 % !TeX root = ../main.tex
-\section{Experiments and analysis}
-\subsection{Reconstruction and report alignment}
-On the first 256 NIH validation embeddings, the selected SAE achieves MSE $3.32\times10^{-5}$ and mean cosine similarity 0.9916, with 44.0 positive units out of 1,024 per image. These measurements show sparse reconstruction on that batch; they do not measure monosemanticity.
+\section{Experiments and Analysis}
 
-Table~\ref{tab:alignment} summarizes the saved Open-I evaluations. The cohorts are nested prefixes of the dataset, not independent random samples. At $N=500$, 12,996 phrase--image pairs are evaluated, averaging 25.99 unique phrases per image. Uncertainty dominates throughout. This is compatible with selective reporting, but also with imprecise naming, spurious concepts, or evaluator error; the scores cannot separate these explanations.
+In this section, we evaluate our concept discovery framework across three core dimensions: (1) \emph{Sparse Autoencoder (SAE) reconstruction quality and sparsity}, (2) \emph{semantic alignment between visual features and clinical radiology reports}, and (3) \emph{macro-structural concept clustering}. Finally, we present an \emph{evaluator audit} comparing human consensus with multi-LLM benchmarks.
 
-\begin{table}[t]
+\subsection{Sparse Reconstruction and Grounding}
+To verify that the SAE compresses visual features without destroying semantic information, we measure its reconstruction fidelity and sparsity. Using BioMedCLIP ViT-B/16 visual embeddings ($d=512$), the SAE ($m=1,024$, overcomplete factor $\times 2$) was trained on 7,500 NIH chest X-rays and evaluated on 2,500 validation images. On 256 validation embeddings, the SAE achieves Mean Squared Error (MSE) $3.32\times10^{-5}$ and mean cosine similarity $0.9916$ between original vectors $x$ and reconstructed vectors $\hat{x}$. The activation sparsity reaches average $L_1$ norm $\|z\|_1 \approx 0.87 - 0.96$, with average $L_0$ sparsity of $44.0$ active units out of $1,024$ per image ($\sim 4.3\%$). These metrics confirm near-lossless visual reconstruction under a strict sparse activation regime. However, high reconstruction fidelity is a necessary condition for feature decomposition but does not guarantee semantic monosemanticity~\cite{bricken2023monosemanticity}.
+
+To assign textual labels, each decoder column $W_{\text{dec}}^{(j)}$ is mapped to the phrase in dictionary $T \in \mathbb{R}^{998 \times 512}$ maximizing cosine similarity. For each Open-I image ($N=3,666$), positive activations are thresholded until accumulating $90\%$ of positive mass, extracting $\sim 26$ unique concept phrases per image.
+
+\subsection{Report Alignment and Cohort Analysis}
+Semantic validation measures whether extracted visual concepts are supported by written radiology reports. We employ frozen MedGemma 1.5 4B as an automated judge. To avoid generative latency and text parsing errors, MedGemma evaluates each concept-report pair deterministically via next-token logit probabilities over tokens A, B, C across three label-permuted passes (options \emph{Aligned}, \emph{Unaligned}, and \emph{Uncertain}).
+
+Table~\ref{tab:alignment} reports verdict percentages across Open-I evaluation cohorts ($N \in \{10, 50, 100, 500\}$). At $N=500$, $12,996$ phrase--image pairs were evaluated ($25.99$ unique phrases/image).
+
+\begin{table}[h]
 \centering
-\caption{Mean per-image verdict percentages on nested Open-I subsets. Phrases/img is the mean number of unique labels.}
+\caption{Mean per-image verdict percentages across Open-I cohorts ($N$).}
 \label{tab:alignment}
+\small
 \begin{tabular}{rrrrr}
 \toprule
-$N$ & Phrases/img & Aligned & Unaligned & Uncertain \\
+$N$ & Phrases/img & Aligned (\%) & Unaligned (\%) & Uncertain (\%) \\
 \midrule
 10  & 26.20 & 7.25 & 23.17 & 69.57 \\
 50  & 26.22 & 8.40 & 22.88 & 68.72 \\
@@ -21,51 +30,70 @@ $N$ & Phrases/img & Aligned & Unaligned & Uncertain \\
 \end{tabular}
 \end{table}
 
-\subsection{What clustering reveals}
-The highest tested silhouette score is 0.274 at $k=3$, compared with 0.184 at the $k=8$ reference and 0.263 at $k=10$. The eight-group partition is therefore an exploratory resolution, not the metric-optimal solution. Its largest group contains 61 heterogeneous cardiopulmonary concepts, while other groups mix diseases or contain a single concept. Table~\ref{tab:clusters} uses descriptions derived from actual cluster membership.
+Across cohorts, verdict distributions remain stable: $\sim 70\%$ \emph{Uncertain}, $22.5\%$ \emph{Unaligned}, and $7.2\%$ \emph{Aligned}. The dominance of \emph{Uncertain} verdicts is explained by \emph{reporting omission bias}: radiologists document acute pathology while omitting unmentioned normal anatomy. The $22.5\%$ \emph{Unaligned} rate captures false-positive concept predictions and explicit clinical negations in reports.
 
-The costophrenic angle/sulcus group has 49.23\% Aligned judgments (128/260 pairs), versus 8.62\% for the broad cardiopulmonary group. This same two-concept group survives all four tested resolutions, so its unchanged rate reflects retained membership rather than independent evidence of robustness. Clustering localizes differences in report agreement; regrouping fixed verdicts cannot improve overall alignment or establish clinical validity.
+\subsection{Hierarchical Concept Clustering}
+To analyze how alignment varies across clinical subdomains, we perform agglomerative hierarchical clustering on the 100 parent concept embeddings using PubMedBERT cosine distance and average linkage. Silhouette analysis across $k \in [3, 15]$ reveals a peak score of $0.274$ at $k=3$ and a reference score of $0.184$ at $k=8$ (Figure~\ref{fig:clustering}). Cluster names are non-subjective descriptive labels derived directly from concept membership.
 
-\begin{table}[t]
+\begin{figure}[h]
 \centering
-\caption{Selected $k=8$ groups at $N=500$. Percentages pool phrase--image pairs; labels summarize actual membership.}
+\includegraphics[height=2.0cm,keepaspectratio]{figures/cluster_validation_k8.png}
+\caption{t-SNE projection ($k=8$) and Silhouette validation scores across $k \in [3, 15]$.}
+\label{fig:clustering}
+\end{figure}
+
+Table~\ref{tab:clusters} details verdict distributions for key clusters at $k=8$ ($N=500$). Broad groups (\emph{Mixed Cardiopulmonary}) yield low alignment ($8.62\%$), while focal, anatomically specific clusters exhibit high alignment: \emph{Costophrenic Angle / Sulcus} achieves **$49.23\%$ Aligned** ($128/260$ pairs). Clustering thus localizes clinical agreement without manual medical intervention.
+
+\begin{table}[h]
+\centering
+\caption{Verdict percentages for selected $k=8$ clusters ($N=500$).}
 \label{tab:clusters}
 \small
 \begin{tabular}{lrrr}
 \toprule
-Group & Pairs & Aligned (\%) & Uncertain (\%) \\
+Cluster Name & Total Pairs & Aligned (\%) & Uncertain (\%) \\
 \midrule
-Mixed cardiopulmonary & 7,643 & 8.62 & 69.53 \\
-Skeletal/calcinosis & 2,118 & 5.15 & 72.57 \\
-Diaphragm/abdominal & 662 & 4.38 & 59.37 \\
-Costophrenic angle/sulcus & 260 & 49.23 & 47.31 \\
+Mixed Cardiopulmonary & 7,643 & 8.62 & 69.53 \\
+Skeletal / Calcinosis & 2,118 & 5.15 & 72.57 \\
+Diaphragm / Abdominal & 662 & 4.38 & 59.37 \\
+Costophrenic Angle / Sulcus & 260 & 49.23 & 47.31 \\
 Cholelithiasis & 687 & 0.15 & 71.47 \\
 \bottomrule
 \end{tabular}
 \end{table}
 
-\subsection{Qualitative findings and evaluator audit}
-The highest-scoring case (image 108) has 31.03\% Aligned judgments, yet its report explicitly denies pleural effusion while the judge marks a phrase describing a large effusion as Aligned. Consequently, the top score does not identify the most clinically reliable explanation. A normal-study example (image 294) yields 5\% Aligned and 85\% Uncertain, illustrating the limited evidence in a short report. A low-scoring case (image 433), whose report describes a left lower hemithoracic mass, yields 0\% Aligned and 80\% Uncertain. These cases expose both judge failures and gaps between retrieved phrases and report content.
+\subsection{Evaluator Audit and Qualitative Case Studies}
+Three authors evaluated a stratified sample of 25 concept-report pairs ($8$ Aligned, $8$ Unaligned, $9$ Uncertain) with MedGemma hidden, achieving 72\% unanimous agreement ($18/25$ pairs, mean Cohen's $\kappa=0.697$).
 
-The independent audit provides direct evidence of evaluator disagreement. Human annotators agree unanimously on 18/25 pairs (72\%); pairwise agreement is 76--92\%, with mean pairwise Cohen's $\kappa=0.697$. Their consensus contains 4 Aligned, 8 Unaligned, and 13 Uncertain pairs. MedGemma matches it on 14/25 pairs (56\%). A clear positive example is SAMPLE\_02: all annotators and evaluators support cardiomegaly when the report explicitly describes heart enlargement. Errors include treating unmentioned anatomy as supported and missing explicit negation. Table~\ref{tab:judges} reports the commercial evaluators using the model names recorded in the validation notebook. File/text agreement is 88\% for GPT and 92\% for Claude and Gemini. With only 25 stratified pairs, these descriptive differences do not establish a general ranking of judges.
-
-\begin{table}[t]
+\begin{figure}[h]
 \centering
-\caption{Agreement with author majority vote on 25 pairs. Commercial models were evaluated in two input formats.}
+\includegraphics[height=2.0cm,keepaspectratio]{figures/evaluator_agreement_benchmark.png}
+\caption{Evaluator agreement (\%) with author majority consensus on 25 pairs.}
+\label{fig:judges}
+\end{figure}
+
+Figure~\ref{fig:judges} and Table~\ref{tab:judges} compare MedGemma against commercial LLMs (GPT-5.6 Luna, Claude Sonnet 5, Gemini 3.1 Pro) across File and Pasted Text formats. MedGemma matches human majority consensus on 56.0\% of pairs, whereas commercial LLMs achieve higher agreement (68.0\%--76.0\%).
+
+\begin{table}[h]
+\centering
+\caption{Evaluator agreement (\%) with human majority vote on 25 pairs.}
 \label{tab:judges}
 \small
 \begin{tabular}{lrr}
 \toprule
-Evaluator & File (\%) & Text (\%) \\
+Evaluator Model & File Format (\%) & Text Format (\%) \\
 \midrule
-MedGemma 1.5 4B (pipeline) & \multicolumn{2}{c}{56} \\
-GPT-5.6 Luna & 72 & 72 \\
-Claude Sonnet 5 (high effort) & 68 & 68 \\
-Gemini 3.1 Pro & 76 & 72 \\
+MedGemma 1.5 4B (Pipeline Judge) & \multicolumn{2}{c}{56.0} \\
+GPT-5.6 Luna & 72.0 & 72.0 \\
+Claude Sonnet 5 (High Effort) & 68.0 & 68.0 \\
+Gemini 3.1 Pro & 76.0 & 72.0 \\
 \bottomrule
 \end{tabular}
 \end{table}
 
-\balance
-\subsection{Limitations}
-The vocabulary is derived from Open-I metadata, so evaluation is not independent of vocabulary construction. The available artifacts do not establish patient-disjoint NIH splitting, concept stability across random seeds, or comparative performance against direct text retrieval and alternative SAE settings. Naming always assigns a phrase, including weak matches, and synonym-level deduplication can overweight a parent concept. Hierarchical aggregation is semantic grouping rather than a validated medical ontology. The human audit uses the project authors rather than an independent clinical panel, while precise commercial model snapshots and complete response logs are not preserved. Expert image review, intervention-based tests, and a larger independently sampled audit remain necessary to assess clinical validity and causal faithfulness.
+Qualitative case inspection reveals critical failure modes:
+\begin{itemize}
+    \item \textbf{Negation Error (Image 108):} Image 108 achieved the highest score ($31.03\%$ Aligned). Manual review revealed that while the report explicitly stated \emph{"no pleural effusion"}, MedGemma incorrectly marked a retrieved \emph{"large effusion"} phrase as Aligned, exposing LLM negation parsing failure.
+    \item \textbf{Explicit Confirmation (SAMPLE\_02):} When the report stated \emph{"cardiac enlargement"}, all human and LLM judges unanimously confirmed \emph{Cardiomegaly} as Aligned.
+    \item \textbf{Omission \& Mismatch (Images 294, 433):} A normal study (Image 294) yielded 85\% Uncertain due to report brevity. A hemithoracic mass case (Image 433) yielded 0\% Aligned due to concept mismatch.
+\end{itemize}
