@@ -1,0 +1,59 @@
+\documentclass{beamer}
+\usepackage{amsfonts,amsmath,oldgerm}
+\usepackage{array}
+\usepackage{pgfpages}
+
+\usepackage{booktabs}
+\usepackage{multirow}
+\usepackage{colortbl}
+\usepackage{xcolor}
+
+\usetheme{sintef}
+
+%\setbeameroption{hide notes} % Only slides
+%\setbeameroption{show only notes} % Only notes
+\setbeameroption{show notes on second screen=right} % Slides and notes
+
+\newcommand{\testcolor}[1]{\colorbox{#1}{\textcolor{#1}{test}}~\texttt{#1}}
+
+\usefonttheme[onlymath]{serif}
+
+\titlebackground*{assets/background}
+
+\newcommand{\hrefcol}[2]{\textcolor{cyan}{\href{#1}{#2}}}
+\hypersetup{draft}
+
+\title{Unsupervised Concept Discovery and Evaluation}
+\subtitle{for Medical Vision-Language Models}
+\course{Politecnico di Torino}
+
+\author{
+\texorpdfstring{
+\begin{tabular}{c}
+Riccardo Marconi \\
+Davide Candela \\
+Emmanuel Messina
+\end{tabular}
+}{
+Riccardo Marconi, Davide Candela, Emmanuel Messina
+}
+}
+
+\hypersetup{
+  final,
+  pdfauthor={Riccardo Marconi, Davide Candela, Emmanuel Messina},
+  pdftitle={Unsupervised Concept Discovery and Evaluation for Medical Vision-Language Models}
+}
+
+\begin{document}
+\maketitle
+
+\note{Presenter: Emmanuel.\\Good morning everyone. Today we present our work on Unsupervised Concept Discovery and Evaluation for Medical Vision-Language Models, focusing on extracting interpretable features from chest X-ray embeddings.}
+
+\input{sections/introduction.tex}
+\input{sections/related_work.tex}
+\input{sections/research_gaps.tex}
+\input{sections/methodology.tex}
+\include{sections/experiments}
+\backmatter
+\end{document}

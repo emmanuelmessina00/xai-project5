@@ -1,0 +1,65 @@
+\begin{frame}{Methodology}{Datasets and Feature Extraction}
+  \begin{itemize}
+    \item \textbf{NIH Chest X-ray 10k}: 7,500 images used exclusively to train the Sparse Autoencoder (SAE), and 2,500 for validation[cite: 3]. No text or labels were used[cite: 3].
+    \item \textbf{Open-I}: 3,666 image-report pairs used for semantic evaluation[cite: 3]. Reports concatenate Findings and Impression sections[cite: 3].
+    \item \textbf{Feature Extraction}: BiomedCLIP's frozen ViT-B/16 image encoder produced the visual embeddings for both datasets[cite: 3].
+  \end{itemize}
+
+  \note{
+    Let's discuss our methodology, starting with the datasets[cite: 3]. 
+    We kept discovery and evaluation strictly separate. We trained the Sparse Autoencoder on 7,500 images from the NIH dataset without any text or labels[cite: 3]. 
+    For evaluation, we used the Open-I dataset, which provides paired images and radiology reports[cite: 3]. 
+    All visual embeddings were extracted using BiomedCLIP's frozen ViT-B/16 encoder[cite: 3].
+  }
+\end{frame}
+
+\begin{frame}{Methodology}{Concept Dictionary Construction}
+  \begin{itemize}
+    \item \textbf{Concept Selection}: 100 clinical parent concepts extracted and filtered from Open-I Problems metadata[cite: 3].
+    \item \textbf{Expansion}: Concepts were mapped via UMLS to SNOMED CT and MeSH to retrieve synonyms and Unique Identifiers (CUIs)[cite: 3].
+    \item \textbf{Phrase Generation}: Gemini 3.1 Flash-Lite generated 5 descriptive phrases per concept[cite: 3].
+    \item \textbf{Encoding}: Phrases were encoded with BiomedCLIP's PubMedBERT into a $998 \times 512$ matrix[cite: 3].
+  \end{itemize}
+
+  \note{
+    To name the features learned by the SAE, we built a dictionary of medical concepts[cite: 3]. 
+    We started with 100 parent concepts from Open-I metadata and linked them to standardized vocabularies like SNOMED CT using UMLS[cite: 3]. 
+    To get radiology-style descriptions, we used Gemini 3.1 Flash-Lite to generate 5 short phrases per concept[cite: 3]. 
+    These phrases were then encoded with PubMedBERT to map them into the same latent space as the images[cite: 3].
+  }
+\end{frame}
+
+\begin{frame}{Methodology}{Sparse Autoencoder and Concept Assignment}
+  \begin{itemize}
+    \item \textbf{SAE Architecture}: Input dimension $d=512$, hidden dimension $m=1024$ (overcomplete factor of 2)[cite: 3].
+    \item \textbf{Training}: Optimization includes an $L_1$ penalty to encourage sparse activations[cite: 3].
+    \item \textbf{Naming}: Each learned feature direction (decoder column) is assigned a phrase based on the highest cosine similarity[cite: 3].
+    \item \textbf{Inference}: For a new image, active neurons contributing to $>90\%$ of the total positive activation are selected to form the predicted concept set[cite: 3].
+  \end{itemize}
+
+  \note{
+    Our Sparse Autoencoder maps the 512-dimensional embeddings into a 1,024-dimensional hidden space[cite: 3]. 
+    By applying an L1 penalty, we force the model to use only a few active units per image[cite: 3]. 
+    We assigned names to these 1,024 features by finding the closest phrase in our dictionary using cosine similarity[cite: 3]. 
+    During inference, we select the top features that account for 90 percent of the positive activation for a given image[cite: 3].
+  }
+\end{frame}
+
+\begin{frame}{Methodology}{Semantic Evaluation and Validation}
+  \begin{itemize}
+    \item \textbf{Evaluator}: Frozen MedGemma 1.5 4B[cite: 3].
+    \item \textbf{Verdicts}:
+    \begin{itemize}
+        \item \textbf{Aligned}: Report explicitly supports the concept[cite: 3].
+        \item \textbf{Unaligned}: Report explicitly negates/contradicts the concept[cite: 3].
+        \item \textbf{Uncertain}: Concept is unmentioned or ambiguous[cite: 3].
+    \end{itemize}
+    \item \textbf{Bias Mitigation}: 3 forward passes with permuted label-to-letter mappings to reduce position bias[cite: 3].
+  \end{itemize}
+
+  \note{
+    To evaluate if the extracted concepts match the radiology reports, we used MedGemma 1.5 4B as a judge[cite: 3]. 
+    The model classifies each concept-report pair as Aligned, Unaligned, or Uncertain[cite: 3]. 
+    To prevent the LLM from simply favoring the first option, we rotated the answer choices across three separate passes and averaged the probabilities[cite: 3].
+  }
+\end{frame}

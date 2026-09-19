@@ -1,0 +1,70 @@
+\begin{frame}{Experiments}{Sparse Reconstruction and Grounding}
+  \begin{itemize}
+    \item \textbf{Reconstruction Fidelity}: Mean Squared Error (MSE) of $3.32 \times 10^{-5}$ and mean cosine similarity of $0.9916$ on the validation set[cite: 3].
+    \item \textbf{Sparsity}: Average of 44.0 active units out of 1024 ($\sim 4.3\%$ $L_0$ sparsity) per image[cite: 3].
+    \item \textbf{Takeaway}: The SAE achieves near-lossless visual reconstruction under a strict sparse activation regime[cite: 3]. However, fidelity does not guarantee semantic monosemanticity[cite: 3].
+  \end{itemize}
+
+  \note{
+    Moving to our results, the SAE training was highly successful in terms of reconstruction[cite: 3]. 
+    We achieved a very low Mean Squared Error and a cosine similarity above 0.99 on the validation set[cite: 3]. 
+    It did this while maintaining high sparsity, using an average of only 44 active units out of 1024 per image[cite: 3]. 
+    However, as we will see, this mathematical fidelity does not automatically mean the features are perfectly interpretable clinically[cite: 3].
+  }
+\end{frame}
+
+\begin{frame}{Experiments}{Report Alignment and Cohort Analysis}
+  \begin{itemize}
+    \item \textbf{Cohort Performance ($N=500$)}:
+    \begin{itemize}
+        \item \textbf{Uncertain}: $70.30\%$[cite: 3]
+        \item \textbf{Unaligned}: $22.49\%$[cite: 3]
+        \item \textbf{Aligned}: $7.21\%$[cite: 3]
+    \end{itemize}
+    \item \textbf{Omission Bias}: The dominance of Uncertain verdicts is due to radiologists omitting normal anatomy and unmentioned concepts[cite: 3].
+    \item \textbf{Unaligned Rate}: Captures both false-positive concept predictions and explicit clinical negations[cite: 3].
+  \end{itemize}
+
+  \note{
+    When we tested the extracted concepts against actual reports on a 500-image cohort, the alignment was surprisingly low, averaging about 7.2 percent[cite: 3]. 
+    Over 70 percent of concepts were marked as Uncertain[cite: 3]. This is heavily driven by reporting omission bias: radiologists document acute pathology but skip normal anatomy, which the SAE still extracts[cite: 3]. 
+    The 22.5 percent Unaligned rate includes both model false-positives and explicit negations in the text[cite: 3].
+  }
+\end{frame}
+
+\begin{frame}{Experiments}{Hierarchical Concept Clustering}
+  \begin{itemize}
+    \item \textbf{Approach}: Agglomerative hierarchical clustering on the 100 parent concept embeddings using cosine distance[cite: 3].
+    \item \textbf{Localized Alignment}:
+    \begin{itemize}
+        \item Focal, specific clusters score highly: \textit{Costophrenic Angle / Sulcus} achieves \textbf{49.23\%} Aligned[cite: 3].
+        \item Broad groups score poorly: \textit{Mixed Cardiopulmonary} yields only 8.62\% Aligned[cite: 3].
+    \end{itemize}
+    \item \textbf{Conclusion}: Clinical agreement is highly localized and unevenly distributed across subdomains[cite: 3].
+  \end{itemize}
+
+  \note{
+    To see if alignment varied by topic, we clustered the 100 parent concepts[cite: 3]. 
+    We found that clinical agreement is highly localized[cite: 3]. 
+    For example, focal anatomical findings like the "Costophrenic Angle" achieved over 49 percent alignment[cite: 3]. 
+    Conversely, broad or mixed clusters performed very poorly[cite: 3]. This shows that the SAE learns certain specific features much better than general ones[cite: 3].
+  }
+\end{frame}
+
+\begin{frame}{Experiments}{Evaluator Audit and Qualitative Case Studies}
+  \begin{itemize}
+    \item \textbf{Human Consensus}: 3 human experts audited 25 concept-report pairs[cite: 3].
+    \item \textbf{Model Agreement vs. Humans}:
+    \begin{itemize}
+        \item \textbf{MedGemma 1.5 4B}: $56.0\%$ agreement[cite: 3].
+        \item \textbf{Commercial LLMs} (GPT-5.6, Claude 5, Gemini 3.1 Pro): $68.0\% - 76.0\%$ agreement[cite: 3].
+    \end{itemize}
+    \item \textbf{Failure Modes}: MedGemma suffered from negation parsing errors (e.g., misclassifying "no pleural effusion" as an Aligned "large effusion")[cite: 3].
+  \end{itemize}
+
+  \note{
+    Finally, we audited our judge model[cite: 3]. Three experts manually evaluated 25 concept-report pairs[cite: 3]. 
+    We discovered that MedGemma agreed with human consensus only 56 percent of the time, while commercial models like Gemini 3.1 Pro reached up to 76 percent[cite: 3]. 
+    A major failure mode for MedGemma was negation: it would read "no pleural effusion" and incorrectly mark the concept "large effusion" as Aligned[cite: 3]. This proves that automated judges cannot yet replace expert review[cite: 3].
+  }
+\end{frame}

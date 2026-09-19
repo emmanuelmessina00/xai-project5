@@ -1,0 +1,26 @@
+\begin{frame}{Related Work}{From Predefined Concepts to Unsupervised Discovery}
+  \begin{itemize}
+    \item \textbf{Concept Representation}:
+    \begin{itemize}
+        \item Methods like TCAV and Concept Bottleneck Models provide semantic interfaces but strictly require user-defined, annotated concepts[cite: 3].
+        \item Sparse dictionary learning decomposes polysemantic activations into monosemantic features without predefined labels[cite: 3].
+    \end{itemize}
+    \item \textbf{VLMs and Medical Grounding}:
+    \begin{itemize}
+        \item Recent works dissect neuron activations to build interpretable medical explanations directly from opaque networks[cite: 3].
+        \item \textbf{MedConcept}: Combines sparse decomposition, ontology-derived vocabularies, and LLM judgments[cite: 3]. We adapt this pipeline from 3D abdominal CTs to 2D chest radiographs using BiomedCLIP[cite: 3].
+    \end{itemize}
+    \item \textbf{Evaluating Explanations}:
+    \begin{itemize}
+        \item Reconstruction fidelity, human inspection, and report entailment are complementary evaluation metrics[cite: 3].
+        \item LLM-as-a-judge offers scalability but introduces vulnerabilities like position bias[cite: 3].
+    \end{itemize}
+  \end{itemize}
+  
+  \note{
+    Moving to related work, traditional interpretability approaches like Concept Bottleneck Models rely heavily on predefined, manual annotations[cite: 3]. 
+    To bypass this, recent advancements in Sparse Dictionary Learning allow us to extract concepts in a completely unsupervised way[cite: 3]. 
+    Our specific methodology builds upon the MedConcept framework[cite: 3]. However, we transition the focus from 3D CT scans to 2D chest X-rays, replacing the backbone with BiomedCLIP and building a new dedicated vocabulary[cite: 3]. 
+    Finally, evaluating these discovered explanations remains an open challenge[cite: 3]. While using an LLM as a judge scales well, literature shows it introduces inherent biases that require independent human validation[cite: 3].
+  }
+\end{frame}

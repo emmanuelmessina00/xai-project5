@@ -1,0 +1,22 @@
+\begin{frame}{Introduction \& Abstract}{Unsupervised Concept Discovery in VLMs}
+  \begin{itemize}
+    \item \textbf{Objective}: Investigate unsupervised concept discovery in medical Vision-Language Models (VLMs) without diagnostic supervision[cite: 3].
+    \item \textbf{Methodology}: A Sparse Autoencoder (SAE) decomposes frozen BiomedCLIP embeddings into $1,024$ latent features[cite: 3].
+    \item \textbf{Vocabulary Generation}: Features are named using 998 phrases associated with 100 clinical concepts, extracted without relying on downstream disease labels[cite: 3].
+    \item \textbf{Semantic Evaluation}: Extracted concepts are assessed against Open-I radiology reports using a frozen MedGemma evaluator[cite: 3].
+    \item \textbf{Key Findings}:
+    \begin{itemize}
+        \item SAE achieves near-lossless reconstruction with high sparsity, but textual alignment remains low on average ($7.21\%$ Aligned)[cite: 3].
+        \item Alignment is highly uneven across clinical subdomains[cite: 3].
+        \item Evaluator reliability is a critical bottleneck: MedGemma agreed with human consensus only $56\%$ of the time[cite: 3].
+    \end{itemize}
+  \end{itemize}
+  
+  \note{
+    Good morning everyone. Today we are presenting our analysis on unsupervised concept discovery in medical Vision-Language Models[cite: 3]. 
+    Our main objective is to understand the clinical meaning of latent dimensions in models like BiomedCLIP without relying on manual diagnostic labels[cite: 3]. 
+    To do this, we trained a Sparse Autoencoder to decompose image embeddings into 1,024 features, which we then named using a custom vocabulary of 998 medical phrases[cite: 3]. 
+    We evaluated these concepts against real radiology reports using MedGemma as an LLM judge[cite: 3]. 
+    Our core finding is that while we can achieve excellent and sparse visual reconstruction, this does not automatically translate to high clinical textual agreement[cite: 3]. Furthermore, the choice of the LLM judge heavily impacts the evaluation results[cite: 3].
+  }
+\end{frame}
