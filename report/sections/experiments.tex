@@ -3,10 +3,14 @@
 
 In this section, we evaluate our concept discovery framework across three core dimensions: (1) \emph{Sparse Autoencoder (SAE) reconstruction quality and sparsity}, (2) \emph{semantic alignment between visual features and clinical radiology reports}, and (3) \emph{macro-structural concept clustering}. Finally, we present an \emph{evaluator audit} comparing human consensus with multi-LLM benchmarks.
 
-\subsection{Sparse Reconstruction and Grounding}
-To verify that the SAE compresses visual features without destroying semantic information, we measure its reconstruction fidelity and sparsity. Using BioMedCLIP ViT-B/16 visual embeddings ($d=512$), the SAE ($m=1,024$, overcomplete factor $\times 2$) was trained on 7,500 NIH chest X-rays and evaluated on 2,500 validation images. On 256 validation embeddings, the SAE achieves Mean Squared Error (MSE) $3.32\times10^{-5}$ and mean cosine similarity $0.9916$ between original vectors $x$ and reconstructed vectors $\hat{x}$. The activation sparsity reaches average $L_1$ norm $\|z\|_1 \approx 0.87 - 0.96$, with average $L_0$ sparsity of $44.0$ active units out of $1,024$ per image ($\sim 4.3\%$). These metrics confirm near-lossless visual reconstruction under a strict sparse activation regime. However, high reconstruction fidelity is a necessary condition for feature decomposition but does not guarantee semantic monosemanticity~\cite{bricken2023monosemanticity}.
 
-To assign textual labels, each decoder column $W_{\text{dec}}^{(j)}$ is mapped to the phrase in dictionary $T \in \mathbb{R}^{998 \times 512}$ maximizing cosine similarity. For each Open-I image ($N=3,666$), positive activations are thresholded until accumulating $90\%$ of positive mass, extracting $\sim 26$ unique concept phrases per image.
+\subsection{Sparse Reconstruction and Grounding}
+To assess SAE reconstruction quality and sparsity, we trained the model on BiomedCLIP embeddings from 7,500 NIH chest X-rays and monitored validation loss on 2,500 images. We used Adam with an initial learning rate of \(10^{-3}\), halving it when validation loss plateaued with a scheduler patience of five epochs. Decoder columns were normalized to unit length after each update. We set a maximum of 1,000 epochs and an early-stopping patience of 25 epochs. Training stopped at epoch 413, and the model from epoch 388 was selected for evaluation because it achieved the lowest validation loss. 
+
+On 256 validation embeddings, the SAE achieves Mean Squared Error (MSE) $3.32\times10^{-5}$ and mean cosine similarity $0.9916$ between original vectors $x$ and reconstructed vectors $\hat{x}$. The activation sparsity reaches average $L_1$ norm $\|z\|_1 \approx 0.87 - 0.96$, with average $L_0$ sparsity of $44.0$ active units out of $1,024$ per image ($\sim 4.3\%$). These metrics confirm near-lossless visual reconstruction under a strict sparse activation regime. However, high reconstruction fidelity is a necessary condition for feature decomposition but does not guarantee semantic monosemanticity~\cite{bricken2023monosemanticity}.
+
+Following the concept assignment procedure described in Section 4.3, we label the SAE features using the concept dictionary. Retaining features accounting for over 90\% of the positive activation yields approximately 26 unique concept phrases per image, on average, in the evaluated Open-I cohorts.
+
 
 \subsection{Report Alignment and Cohort Analysis}
 Semantic validation measures whether extracted visual concepts are supported by written radiology reports. We employ frozen MedGemma 1.5 4B as an automated judge. To avoid generative latency and text parsing errors, MedGemma evaluates each concept-report pair deterministically via next-token logit probabilities over tokens A, B, C across three label-permuted passes (options \emph{Aligned}, \emph{Unaligned}, and \emph{Uncertain}).
@@ -15,7 +19,7 @@ Table~\ref{tab:alignment} reports verdict percentages across Open-I evaluation c
 
 \begin{table}[h]
 \centering
-\caption{Mean per-image verdict percentages across Open-I cohorts ($N$).}
+\caption{Mean per-image verdict percentages across Open-I cohorts ($N$ denotes the number of images.).}
 \label{tab:alignment}
 \small
 \begin{tabular}{rrrrr}
@@ -32,12 +36,13 @@ $N$ & Phrases/img & Aligned (\%) & Unaligned (\%) & Uncertain (\%) \\
 
 Across cohorts, verdict distributions remain stable: $\sim 70\%$ \emph{Uncertain}, $22.5\%$ \emph{Unaligned}, and $7.2\%$ \emph{Aligned}. The dominance of \emph{Uncertain} verdicts is explained by \emph{reporting omission bias}: radiologists document acute pathology while omitting unmentioned normal anatomy. The $22.5\%$ \emph{Unaligned} rate captures false-positive concept predictions and explicit clinical negations in reports.
 
+
 \subsection{Hierarchical Concept Clustering}
 To analyze how alignment varies across clinical subdomains, we perform agglomerative hierarchical clustering on the 100 parent concept embeddings using PubMedBERT cosine distance and average linkage. Silhouette analysis across $k \in [3, 15]$ reveals a peak score of $0.274$ at $k=3$ and a reference score of $0.184$ at $k=8$ (Figure~\ref{fig:clustering}). Cluster names are non-subjective descriptive labels derived directly from concept membership.
 
 \begin{figure}[h]
 \centering
-\includegraphics[height=2.0cm,keepaspectratio]{figures/cluster_validation_k8.png}
+\includegraphics[width=\linewidth]{figures/cluster_validation_k8.png}
 \caption{t-SNE projection ($k=8$) and Silhouette validation scores across $k \in [3, 15]$.}
 \label{fig:clustering}
 \end{figure}
@@ -67,7 +72,7 @@ Three authors evaluated a stratified sample of 25 concept-report pairs ($8$ Alig
 
 \begin{figure}[h]
 \centering
-\includegraphics[height=2.0cm,keepaspectratio]{figures/evaluator_agreement_benchmark.png}
+\includegraphics[width=\linewidth]{figures/evaluator_agreement_benchmark.png}
 \caption{Evaluator agreement (\%) with author majority consensus on 25 pairs.}
 \label{fig:judges}
 \end{figure}
