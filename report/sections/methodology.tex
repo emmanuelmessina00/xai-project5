@@ -1,24 +1,47 @@
 % !TeX root = ../main.tex
 \section{Methodology}
-\subsection{Data and vocabulary}
-We use the frozen BiomedCLIP ViT-B/16 image encoder and PubMedBERT text encoder to obtain 512-dimensional, L2-normalized embeddings. The NIH Chest X-ray 10k subset supplies 7,500 training images and 2,500 validation images, using the provided train/test splits. From Open-I, filtering invalid frontal images and unusable reports leaves 3,666 image--report pairs. Reports concatenate \emph{Findings} and \emph{Impression}; evaluation removes anonymization placeholders and dates. SAE training uses no report text or disease labels.
 
-We extract 116 distinct candidate terms from the Open-I \emph{Problems} field. Removing 15 device, procedure, and technical terms and merging domain-aligned terms yields 100 parent concepts. UMLS~\cite{bodenreider2004umls} supplies exact-match identifiers and English SNOMED CT/MeSH synonyms where available. Ninety concepts receive a CUI; ten retain their original term as a fallback. Gemini 3.1 Flash-Lite generates five radiology-style phrases per concept. Independent text encoding produces $T\in\mathbb{R}^{998\times512}$: 498 terminology/fallback entries and 500 generated phrases. Thus, representation learning is unsupervised, but semantic naming uses curated external resources and evaluation-dataset metadata.
+\subsection{Datasets and feature extraction}
+We use two chest X-ray datasets with distinct roles: the NIH Chest X-ray 10k subset for learning the sparse representation, and Open-I for evaluating the extracted concepts against radiology reports.
+
+The NIH subset contains 10,000 images. We retain its provided split, using the 7,500 training images to fit the sparse autoencoder (SAE) and the 2,500 images in the test split as a validation set for early stopping and model selection. The SAE learns exclusively from image embeddings, without report text or disease labels.
+
+Open-I provides chest X-ray images paired with radiology reports, allowing us to assess whether the concepts extracted from an image are supported by the corresponding clinical text. We use the frontal image from each record and exclude records with missing or unreadable frontal images. For each image, we construct a reference report by concatenating the available \emph{Findings} and \emph{Impression} sections, which describe the radiological observations and their diagnostic interpretation. Records with combined reports under ten characters are discarded. This preprocessing yields 3,666 image--report pairs, forming the pool from which the semantic evaluation samples are drawn. Open-I images and reports are not used to train the SAE; its metadata also supplies the candidate vocabulary described below.
+
+We use BiomedCLIP's frozen ViT-B/16 image encoder for images from both datasets to produce the visual embeddings used for SAE training and inference.
+
+
+\subsection{Concept dictionary construction}
+To assign interpretable names to the features learned by the SAE, we construct a dictionary of medical concepts. We start from Open-I's \emph{Problems} metadata, which contains medical terms associated with each record. After normalizing formatting and removing duplicates, we obtain 116 distinct candidate terms. We exclude 15 device, procedure, and technical terms, map broad terms to chest X-ray terminology (e.g., “opacity” to “lung opacity”), and merge any resulting duplicates. This yields 100 parent concepts covering anatomical structures and pathological findings.
+
+We then query the Unified Medical Language System (UMLS)~\cite{bodenreider2004umls} for an exact match to each concept. For matched concepts, we retrieve a Concept Unique Identifier (CUI) and available English synonyms from SNOMED CT and MeSH, two medical terminology resources accessible through UMLS. This step links the vocabulary to standardized terminology while preserving alternative names for the same concept. We obtain a CUI for 90 concepts; the remaining ten retain their base term as a fallback.
+
+To complement these terminology entries with radiology-style descriptions, we use Gemini 3.1 Flash-Lite to generate five short phrases per concept, providing the base term and available synonyms as input. The prompt requests descriptions of visible features consistent with the concept, including normal anatomy. We check that phrases are unique within each concept and contain 6–16 words and at most 140 characters.
+
+Finally, we encode each dictionary entry independently using BiomedCLIP’s frozen PubMedBERT text encoder and L2-normalize its embedding, which lies in the same latent space as the image features. The resulting matrix, \(T\in\mathbb{R}^{998\times512}\), contains 498 base-term and synonym entries and 500 generated phrases, with each row linked to its parent concept.
+
 
 \subsection{Sparse decomposition and naming}
-For an image embedding $x$, the SAE computes
+We train an SAE to represent each image embedding through a sparse combination of learned features. Given an input $x\in\mathbb{R}^{512}$, the encoder produces 1,024 non-negative activations $z$, from which the decoder reconstructs the input:
 \begin{equation}
 z=\operatorname{ReLU}(W_e(x-b_d)+b_e),\qquad
 \hat{x}=W_dz+b_d,
 \end{equation}
-with 1,024 hidden units. Its batch loss is
+Here, $W_e$ and $W_d$ are the encoder and decoder weights, and $b_e$ and $b_d$ are learned biases. Training combines reconstruction error with an $L_1$ penalty that encourages sparse activations:
 \begin{equation}
 \mathcal{L}=\frac{1}{512B}\sum_{i=1}^{B}\|x_i-\hat{x}_i\|_2^2
 +\frac{\lambda}{B}\sum_{i=1}^{B}\|z_i\|_1,
 \end{equation}
-where $B=256$ and $\lambda=5\times10^{-5}$. Adam starts at $10^{-3}$; the learning rate halves after five epochs without sufficient validation improvement. Decoder columns are normalized after each update. Training allows 1,000 epochs, with early-stopping patience 25; the saved run stops at epoch 413 and selects epoch 388 by validation loss.
+where $B=256$ is the batch size and $\lambda=5\times10^{-5}$ controls the sparsity penalty. We use Adam with an initial learning rate of $10^{-3}$, halving it when validation loss plateaus with a scheduler patience of five epochs. Decoder columns are normalized to unit length after each update. Training runs for up to 1,000 epochs with early-stopping patience 25; our run stops at epoch 413 and retains the model from epoch 388, which has the lowest validation loss.
 
-Each decoder column receives the phrase maximizing cosine similarity with its direction. Multiple units can share a label. For each image, positive activations are sorted and retained until their cumulative sum reaches 90\% of the positive activation mass; duplicate phrase labels are removed. All selected units are named, including those with low maximum similarity.
+To name the learned features, we compare each decoder column with the dictionary embeddings in $T$ and assign the phrase with the highest cosine similarity. Each column represents a feature direction in the image embedding space, and multiple features may receive the same phrase label.
+
+For each image, we retain the strongest activations until their cumulative sum exceeds 90\% of the total positive activation. Let $z_{(1)}\geq\cdots\geq z_{(M)}>0$ denote the $M$ positive activations in descending order. The number of selected features is
+\begin{equation}
+k^*=\min\left\{k\in\{1,\ldots,M\}:\frac{\sum_{j=1}^{k}z_{(j)}}{\sum_{j=1}^{M}z_{(j)}}>0.90\right\}.
+\end{equation}
+This allows the number of selected features to vary across images. We collect the labels of the first $k^*$ features and remove duplicate phrases to obtain the predicted concept set. No minimum cosine-similarity threshold is applied.
+
 
 \subsection{Semantic evaluation and extensions}
 Frozen MedGemma 1.5 4B receives only the proposed phrase and report. The few-shot prompt distinguishes \emph{Aligned} (explicit support), \emph{Unaligned} (explicit contradiction), and \emph{Uncertain} (omitted, ambiguous, or tentative). Three forward passes cycle the classes through single-token answers A/B/C. Softmax probabilities over these tokens are mapped back to classes and averaged before selecting the verdict. This avoids free-text parsing but does not guarantee correct judgments. For each image, we divide each verdict count by the number of unique predicted phrases, then average these proportions across images.
