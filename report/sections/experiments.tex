@@ -17,9 +17,9 @@ Semantic validation measures whether extracted visual concepts are supported by 
 
 Table~\ref{tab:alignment} reports verdict percentages across Open-I evaluation cohorts ($N \in \{10, 50, 100, 500\}$). At $N=500$, $12,996$ phrase--image pairs were evaluated ($25.99$ unique phrases/image).
 
-\begin{table}[h]
+\begin{table}[htbp]
 \centering
-\caption{Mean per-image verdict percentages across Open-I cohorts ($N$ denotes the number of images.).}
+\caption{Mean per-image verdict percentages across Open-I cohorts ($N$ denotes the number of images).}
 \label{tab:alignment}
 \small
 \begin{tabular}{rrrrr}
@@ -40,16 +40,17 @@ Across cohorts, verdict distributions remain stable: $\sim 70\%$ \emph{Uncertain
 \subsection{Hierarchical Concept Clustering}
 To analyze how alignment varies across clinical subdomains, we perform agglomerative hierarchical clustering on the 100 parent concept embeddings using PubMedBERT cosine distance and average linkage. Silhouette analysis across $k \in [3, 15]$ reveals a peak score of $0.274$ at $k=3$ and a reference score of $0.184$ at $k=8$ (Figure~\ref{fig:clustering}). Cluster names are non-subjective descriptive labels derived directly from concept membership.
 
-\begin{figure}[h]
+\begin{figure}[htbp]
 \centering
 \includegraphics[width=\linewidth]{figures/cluster_validation_k8.png}
 \caption{t-SNE projection ($k=8$) and Silhouette validation scores across $k \in [3, 15]$.}
+\Description{Two panels summarize concept clustering. Left: a two-dimensional t-SNE scatter plot with eight clusters distinguished by color and marker shape; cluster 0 contains most points, while the smaller clusters occupy more localized regions. Right: cosine silhouette score versus the number of clusters from 3 to 15. The highest tested score is 0.274 at 3 clusters; the reference grouping of 8 clusters scores 0.184.}
 \label{fig:clustering}
 \end{figure}
 
 Table~\ref{tab:clusters} details verdict distributions for key clusters at $k=8$ ($N=500$). Broad groups (\emph{Mixed Cardiopulmonary}) yield low alignment ($8.62\%$), while focal, anatomically specific clusters exhibit high alignment: \emph{Costophrenic Angle / Sulcus} achieves **$49.23\%$ Aligned** ($128/260$ pairs). Clustering thus localizes clinical agreement without manual medical intervention.
 
-\begin{table}[h]
+\begin{table}[htbp]
 \centering
 \caption{Verdict percentages for selected $k=8$ clusters ($N=500$).}
 \label{tab:clusters}
@@ -70,16 +71,17 @@ Cholelithiasis & 687 & 0.15 & 71.47 \\
 \subsection{Evaluator Audit and Qualitative Case Studies}
 Three authors evaluated a stratified sample of 25 concept-report pairs ($8$ Aligned, $8$ Unaligned, $9$ Uncertain) with MedGemma hidden, achieving 72\% unanimous agreement ($18/25$ pairs, mean Cohen's $\kappa=0.697$).
 
-\begin{figure}[h]
+\begin{figure}[htbp]
 \centering
 \includegraphics[width=\linewidth]{figures/evaluator_agreement_benchmark.png}
 \caption{Evaluator agreement (\%) with author majority consensus on 25 pairs.}
+\Description{Horizontal bars show agreement with human majority consensus on 25 concept-report pairs. MedGemma 4B achieves 56 percent. GPT-5.6 Luna achieves 72 percent for both file and pasted-text inputs; Claude Sonnet 5 achieves 68 percent for both; Gemini 3.1 Pro achieves 76 percent for file input and 72 percent for text input. The combined commercial LLM consensus achieves 68 percent.}
 \label{fig:judges}
 \end{figure}
 
 Figure~\ref{fig:judges} and Table~\ref{tab:judges} compare MedGemma against commercial LLMs (GPT-5.6 Luna, Claude Sonnet 5, Gemini 3.1 Pro) across File and Pasted Text formats. MedGemma matches human majority consensus on 56.0\% of pairs, whereas commercial LLMs achieve higher agreement (68.0\%--76.0\%).
 
-\begin{table}[h]
+\begin{table}[htbp]
 \centering
 \caption{Evaluator agreement (\%) with human majority vote on 25 pairs.}
 \label{tab:judges}
@@ -88,7 +90,7 @@ Figure~\ref{fig:judges} and Table~\ref{tab:judges} compare MedGemma against comm
 \toprule
 Evaluator Model & File Format (\%) & Text Format (\%) \\
 \midrule
-MedGemma 1.5 4B (Pipeline Judge) & \multicolumn{2}{c}{56.0} \\
+MedGemma 1.5 4B (Pipeline Judge) & 56.0 & - \\
 GPT-5.6 Luna & 72.0 & 72.0 \\
 Claude Sonnet 5 (High Effort) & 68.0 & 68.0 \\
 Gemini 3.1 Pro & 76.0 & 72.0 \\

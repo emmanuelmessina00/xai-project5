@@ -230,7 +230,6 @@ __marimo__/
 /report/**/*.log
 /report/**/*.out
 /report/**/*.synctex.gz
-/report/main.pdf
 
 .idea
 
