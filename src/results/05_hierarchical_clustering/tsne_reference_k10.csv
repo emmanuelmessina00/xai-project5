@@ -1,0 +1,101 @@
+parent_concept,macro_cluster,tsne_x,tsne_y,cluster_label
+lung,0,2.284507,-3.6383004,Cluster 0
+lung opacity,0,8.328366,-0.17695759,Cluster 0
+cardiomegaly,4,1.2614536,-10.621553,Cluster 4
+calcinosis,2,-7.75494,2.478964,Cluster 2
+pulmonary atelectasis,0,4.9726014,-0.5913576,Cluster 0
+calcified granuloma,0,11.416213,3.7117357,Cluster 0
+thoracic vertebrae,2,-13.411707,-4.151406,Cluster 2
+pulmonary cicatrix,0,13.066157,2.9088378,Cluster 0
+spine,2,-13.958679,-3.430732,Cluster 2
+bronchovascular markings,0,4.068984,2.1819324,Cluster 0
+pleural effusion,0,4.439216,9.295966,Cluster 0
+aorta,1,-4.8172975,-10.7230015,Cluster 1
+thoracic diaphragm,8,-0.77791435,9.993039,Cluster 8
+lung density,0,9.338923,0.37051874,Cluster 0
+atherosclerosis,1,-4.8880944,-12.388,Cluster 1
+thoracic skeletal deformity,2,-10.582566,-5.0613885,Cluster 2
+pulmonary airspace disease,0,7.3409896,2.1079104,Cluster 0
+scoliosis,2,-11.323552,-5.50173,Cluster 2
+pulmonary nodule,0,11.329362,1.6733446,Cluster 0
+granulomatous disease,0,9.675528,3.2844489,Cluster 0
+bone fracture,2,-8.698994,0.56083894,Cluster 2
+"aorta, thoracic",1,-5.252916,-11.049065,Cluster 1
+costophrenic angle,9,5.2327,11.917724,Cluster 9
+osteophyte,2,-9.905202,1.1589881,Cluster 2
+pulmonary congestion,0,4.2554464,-4.4504037,Cluster 0
+spondylosis,2,-11.84811,-2.7409832,Cluster 2
+pulmonary infiltrate,0,8.401613,0.85750556,Cluster 0
+emphysema,0,4.719599,-1.9301729,Cluster 0
+cardiac silhouette,4,0.13934986,-12.223828,Cluster 4
+pleural thickening,0,3.1433022,9.135971,Cluster 0
+pulmonary granuloma,0,10.999374,2.4493136,Cluster 0
+"pulmonary disease, chronic obstructive",0,0.37604845,-2.0697591,Cluster 0
+"hernia, hiatal",8,-2.9838612,7.833092,Cluster 8
+pulmonary edema,0,4.1519966,-3.6693804,Cluster 0
+pneumonia,0,6.4700437,0.72360957,Cluster 0
+pulmonary emphysema,0,5.059452,-2.212392,Cluster 0
+kyphosis,2,-12.182794,-6.3561306,Cluster 2
+diaphragmatic eventration,8,-1.3336161,9.006265,Cluster 8
+arthritis,3,5.777815,-9.870638,Cluster 3
+pulmonary consolidation,0,7.505661,0.7968071,Cluster 0
+"bone diseases, metabolic",2,-11.160895,-0.36305183,Cluster 2
+mediastinum,1,-5.7598844,-9.418273,Cluster 1
+pulmonary lucency,0,10.017557,-0.5330324,Cluster 0
+pneumothorax,0,2.4351609,7.579497,Cluster 0
+pulmonary fibrosis,0,2.2605944,-1.9886799,Cluster 0
+"lung, hyperlucent",0,6.2219067,-2.7530627,Cluster 0
+pulmonary mass,0,12.062189,1.5207196,Cluster 0
+shoulder,2,-6.6193733,-2.4261897,Cluster 2
+"lung diseases, interstitial",0,2.707164,-1.993153,Cluster 0
+epicardial fat,6,-8.331791,8.0605545,Cluster 6
+pulmonary artery,1,0.29248184,-7.3957663,Cluster 1
+lumbar vertebrae,2,-13.963503,-4.7966895,Cluster 2
+bone sclerosis,2,-10.680903,-2.0416949,Cluster 2
+lung volume loss,0,7.058517,-0.8555598,Cluster 0
+heart,4,-0.46693945,-10.582903,Cluster 4
+mediastinal shift,1,-5.941272,-8.162902,Cluster 1
+heart failure,4,2.2766914,-9.674735,Cluster 4
+nipple shadow,0,8.894773,-2.0679479,Cluster 0
+"hypertension, pulmonary",0,2.5114675,-6.046658,Cluster 0
+pulmonary cavitation,0,13.730646,-0.31413263,Cluster 0
+subcutaneous emphysema,0,1.5517175,3.8470168,Cluster 0
+pericardial effusion,4,0.9396715,-11.453667,Cluster 4
+pulmonary bleb,0,11.742791,-0.016509065,Cluster 0
+costophrenic sulcus,9,5.0014486,12.100441,Cluster 9
+pulmonary cyst,0,13.249342,0.51846266,Cluster 0
+dislocations,3,-7.025335,0.0915869,Cluster 3
+"hyperostosis, diffuse idiopathic skeletal",2,-11.190363,0.8068583,Cluster 2
+bronchiectasis,0,3.0895715,0.9353199,Cluster 0
+cystic fibrosis,0,-0.1985423,-0.6702864,Cluster 0
+pneumoperitoneum,8,-0.29288903,6.9939246,Cluster 8
+aortic aneurysm,1,-3.9767833,-11.775622,Cluster 1
+bullous emphysema,0,11.969109,-2.2934058,Cluster 0
+heart atria,4,-0.802606,-9.235446,Cluster 4
+adipose tissue,6,-7.868127,7.996335,Cluster 6
+funnel chest,2,-9.866405,-6.796534,Cluster 2
+ribs,2,-9.215774,-3.2020066,Cluster 2
+hydropneumothorax,0,3.8755217,7.535212,Cluster 0
+bone and bones,2,-9.748459,-0.8031431,Cluster 2
+pleura,0,2.1303978,9.357163,Cluster 0
+pectus carinatum,2,-10.124131,-7.269675,Cluster 2
+heart ventricles,4,0.05396255,-9.770775,Cluster 4
+lymph nodes,7,9.107538,-6.678196,Cluster 7
+sarcoidosis,3,-2.28279,-0.043787457,Cluster 3
+abdomen,8,-0.6889871,6.612151,Cluster 8
+humerus,2,-7.3701177,-2.303196,Cluster 2
+"hernia, diaphragmatic",8,-2.8576913,7.888335,Cluster 8
+cervical vertebrae,2,-14.978959,-3.740609,Cluster 2
+tuberculosis,3,-1.6281633,-0.0035054036,Cluster 3
+pulmonary blood vessels,0,2.9227488,-4.855899,Cluster 0
+osteoporosis,2,-11.044699,-1.3844795,Cluster 2
+hypovolemia,0,3.5807338,-6.601471,Cluster 0
+hemothorax,0,5.1493435,8.736184,Cluster 0
+hemopneumothorax,0,4.738202,7.4013333,Cluster 0
+expansile bone lesions,2,-8.556952,-1.4440479,Cluster 2
+cholelithiasis,5,-5.7387967,4.2430887,Cluster 5
+bronchitis,0,1.8989029,-0.20621037,Cluster 0
+bronchiolitis,0,2.8308127,0.0031139678,Cluster 0
+thorax,2,-8.38128,-6.3965826,Cluster 2
+trachea,1,-8.06221,-11.287944,Cluster 1
+"trachea, carina",1,-8.26981,-11.570525,Cluster 1
