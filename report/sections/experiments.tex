@@ -5,9 +5,8 @@ In this section, we evaluate our concept discovery framework across three core d
 
 
 \subsection{Sparse Reconstruction and Grounding}
-To assess SAE reconstruction quality and sparsity, we trained the model on BiomedCLIP embeddings from 7,500 NIH chest X-rays and monitored validation loss on 2,500 images. We used Adam with an initial learning rate of \(10^{-3}\), halving it when validation loss plateaued with a scheduler patience of five epochs. Decoder columns were normalized to unit length after each update. We set a maximum of 1,000 epochs and an early-stopping patience of 25 epochs. Training stopped at epoch 413, and the model from epoch 388 was selected for evaluation because it achieved the lowest validation loss. 
-We trained multiple SAEs with different values of the sparsity regularization coefficient ($\lambda$). The best-performing model used ($\lambda = 5 \times 10^{-5}$).
-On 256 validation embeddings, the SAE achieves Mean Squared Error (MSE) $3.32\times10^{-5}$ and mean cosine similarity $0.9916$ between original vectors $x$ and reconstructed vectors $\hat{x}$. The activation sparsity reaches average $L_1$ norm $\|z\|_1 \approx 0.87 - 0.96$, with average $L_0$ sparsity of $44.0$ active units out of $1,024$ per image ($\sim 4.3\%$). These metrics confirm near-lossless visual reconstruction under a strict sparse activation regime. However, high reconstruction fidelity is a necessary condition for feature decomposition but does not guarantee semantic monosemanticity~\cite{bricken2023monosemanticity}.
+We trained multiple SAEs on BiomedCLIP embeddings from 7,500 NIH chest X-rays, using 2,500 additional images for validation and varying the sparsity regularization coefficient $\lambda$. The results presented here correspond to $\lambda = 5 \times 10^{-5}$. We used Adam with an initial learning rate of $10^{-3}$, halving it when validation loss plateaued with a scheduler patience of five epochs. Decoder columns were normalized to unit length after each update. Training was limited to 1,000 epochs, with an early-stopping patience of 25 epochs. For the reported configuration, training stopped at epoch 413, and the checkpoint from epoch 388 was selected because it achieved the lowest validation loss.
+On 256 validation embeddings, the selected SAE achieves Mean Squared Error (MSE) $3.32\times10^{-5}$ and mean cosine similarity $0.9916$ between original vectors $x$ and reconstructed vectors $\hat{x}$. The activation sparsity reaches average $L_1$ norm $\|z\|_1 \approx 0.87 - 0.96$, with average $L_0$ sparsity of $44.0$ active units out of $1,024$ per image ($\sim 4.3\%$). These metrics confirm near-lossless visual reconstruction under a strict sparse activation regime. However, high reconstruction fidelity is a necessary condition for feature decomposition but does not guarantee semantic monosemanticity~\cite{bricken2023monosemanticity}.
 
 Following the concept assignment procedure described in Section 4.3, we label the SAE features using the concept dictionary. Retaining features accounting for over 90\% of the positive activation yields approximately 26 unique concept phrases per image, on average, in the evaluated Open-I subsets.
 \subsection{Report Alignment and Subset Analysis}
@@ -40,7 +39,7 @@ To analyze how alignment varies across clinical subdomains, we perform agglomera
 
 Table~\ref{tab:clusters} reports verdict percentages for all ten clusters at $k=10$ ($N=500$). Most clusters sit close to the overall average (Table~\ref{tab:alignment}), but three stand out: Cluster 9 reaches $49.23\%$ Aligned, the highest of any group; Cluster 5 reaches only $0.15\%$, the lowest; and Cluster 1 reaches $42.02\%$ Unaligned, the highest disagreement rate observed.
 
-These extreme alignment rates remain unchanged across all evaluated resolutions, ($k \in {3,5,8,10}$), with both concept groups forming separate clusters even at ($k=3$). This consistency suggests that the observed differences in report-based agreement are robust to clustering resolution and can be identified without clinician-assigned labels.
+These extreme alignment rates remain unchanged across all evaluated resolutions, $k \in \{3,5,8,10\}$, with both concept groups forming separate clusters even at $k=3$. This consistency suggests that the observed differences in report-based agreement are robust to clustering resolution and can be identified without clinician-assigned labels.
 \begin{table}[htbp]
 \centering
 \caption{Verdict percentages for all $k=10$ clusters ($N=500$), identified by numeric ID only.}
@@ -65,7 +64,7 @@ Cluster ID & Aligned (\%) & Unaligned (\%) & Uncertain (\%) \\
 \end{table}
 
 
-\subsection{Evaluator Audit and Qualitative Case Studies}
+\subsection{Evaluator Availability Analysis}
 Finally, three authors evaluated a stratified sample of 25 concept-report pairs ($8$ Aligned, $8$ Unaligned, $9$ Uncertain) with MedGemma hidden, achieving 72\% unanimous agreement.
 
 \begin{figure}[htbp]
@@ -76,7 +75,7 @@ Finally, three authors evaluated a stratified sample of 25 concept-report pairs 
 \label{fig:judges}
 \end{figure}
 
-Figure ~\ref{fig:judges} and Table ~\ref{tab:judges} compare MedGemma with three commercial LLMs (GPT-5.6 Luna, Claude Sonnet 5, and Gemini 3.1 Pro) using the authors’ majority verdict as the reference for 25 concept-report pairs. The commercial models receive the same evaluation material in two formats, file attachments and pasted text, to assess sensitivity to input presentation. MedGemma agrees with the reference on 56.0\% of pairs (14/25), compared with 68.0\%-76.0\% for the commercial models (17-19/25). GPT-5.6 Luna and Claude Sonnet 5 achieve unchanged agreement across formats, while Gemini 3.1 Pro decreases from 76.0\% with file input to 72.0\% with pasted text. These results suggest higher agreement for the commercial evaluators, while a larger sample would help establish how consistently this advantage holds. We leave this broader evaluation to future research.
+Figure ~\ref{fig:judges} and Table ~\ref{tab:judges} compare MedGemma with three commercial LLMs (GPT-5.6 Luna, Claude Sonnet 5, and Gemini 3.1 Pro) using the authors’ majority verdict as the reference for 25 concept-report pairs. The commercial models receive the same evaluation material in two formats, file attachments and pasted text, to assess sensitivity to input presentation. MedGemma agrees with the reference on 56.0\% of pairs, compared with 68.0\%-76.0\% for the commercial models. GPT-5.6 Luna and Claude Sonnet 5 achieve unchanged agreement across formats, while Gemini 3.1 Pro decreases from 76.0\% with file input to 72.0\% with pasted text. These results suggest higher agreement for the commercial evaluators, while a larger sample would help establish how consistently this advantage holds. We leave this broader evaluation to future research.
 
 \begin{table}[htbp]
 \centering
