@@ -1,81 +1,20 @@
-% --- Frame 1: From Predefined Concepts to Discovery ---
-\begin{frame}{Related Work}{From Predefined Concepts to Discovery}
+% --- Frame 1: From Concepts to Medical Grounding ---
+\begin{frame}{Related Work}{From Predefined Concepts to Unsupervised Discovery}
   \begin{itemize}
-    \item \textbf{Supervised concept methods} offer semantic interfaces but require predefined annotations:
+    \item \textbf{Supervised concept methods} (TCAV, Concept Bottleneck Models): semantic interfaces, but require \textbf{predefined annotations}
+    \item \textbf{Sparse dictionary learning}: decomposes polysemantic activations into monosemantic features \textit{without} predefined concepts
+    \item Recent approaches go further:
     \begin{itemize}
-      \item \textbf{TCAV}: Sensitivity along user-defined concept directions
-      \item \textbf{Concept Bottleneck Models}: Predict annotated concepts as an intermediate representation
+      \item First \textit{discover} features, then \textit{name} them --- decoupling representation from labeling
+      \item Decompose VLM embeddings directly into sparse combinations of existing textual concepts
     \end{itemize}
-    \item \textbf{Unsupervised discovery} removes this requirement:
-    \begin{itemize}
-      \item \textbf{Sparse dictionary learning}: Decomposes polysemantic activations into monosemantic features without predefined concepts
-      \item \textbf{Olah et al.}: Interprets resulting units as \textit{circuits} rather than opaque activations
-    \end{itemize}
-    \item Recent evolutions:
-    \begin{itemize}
-      \item \textbf{Discover-then-Name}: SAE discovery $\rightarrow$ naming $\rightarrow$ concept bottlenecks
-      \item \textbf{SpLiCE}: Decomposes CLIP embeddings directly into sparse combinations of existing textual concepts
-    \end{itemize}
+    \item In the \textbf{medical domain}: recent works dissect neuron activations in diagnostic models to extract concept-level explanations from opaque networks
   \end{itemize}
 
   \note{
-    Let's look at the related work. Traditional interpretability approaches fall into two camps.
-    On one side, supervised methods like TCAV and Concept Bottleneck Models give us nice semantic interfaces, but they require manually defined and annotated concept sets upfront.
-    On the other side, unsupervised methods based on sparse dictionary learning remove this requirement entirely. They decompose polysemantic activations, where a single neuron responds to many concepts, into monosemantic features.
-    Olah et al.\ go further and interpret these features and their connections as interpretable circuits.
-    Building on these ideas, Discover-then-Name first discovers features with an SAE and then names them, while SpLiCE takes a different approach and directly decomposes CLIP embeddings into sparse combinations of existing textual concepts without any new representation learning.
-  }
-\end{frame}
-
-% --- Frame 2: VLMs and Medical Grounding ---
-\begin{frame}{Related Work}{VLMs and Medical Grounding}
-  \begin{itemize}
-    \item \textbf{Pach et al.}: Evaluate SAE features in VLMs using a human-study benchmark and interventions --- going beyond reconstruction alone
-    \item \textbf{Gong et al.}: Dissect neuron activations in medical diagnostic models to build concept-level explanations directly from opaque networks
-    \item \textbf{MedConcept} --- the framework we build upon:
-    \begin{itemize}
-      \item Sparse decomposition of \textit{Merlin} CT embeddings
-      \item Ontology-derived vocabulary + cosine-based naming
-      \item Frozen MedGemma judgments of concept--report consistency
-    \end{itemize}
-    \item \textbf{Our adaptation}: We retain the discovery/evaluation separation, while changing:
-    \begin{itemize}
-      \item Image domain (3D CT $\rightarrow$ 2D chest X-ray)
-      \item Backbone (Merlin $\rightarrow$ BiomedCLIP)
-      \item Vocabulary construction and activation selection
-    \end{itemize}
-  \end{itemize}
-
-  \note{
-    In the medical domain specifically, Pach et al.\ evaluated SAE features in vision-language models using human studies and interventions, going beyond just measuring reconstruction quality.
-    Gong et al.\ dissected neuron activations in medical imaging models to build interpretable explanations, motivating a neuron-to-concept alignment strategy.
-    The framework we directly build upon is MedConcept, which combines sparse decomposition of 3D CT embeddings with an ontology-derived vocabulary and MedGemma-based evaluation.
-    We retain MedConcept's separation between discovery and evaluation, but we change the image domain from 3D CT to 2D chest X-rays, swap the backbone from Merlin to BiomedCLIP, and build a new vocabulary with a different activation selection strategy.
-  }
-\end{frame}
-
-% --- Frame 3: Evaluating Explanations ---
-\begin{frame}{Related Work}{Evaluating Explanations}
-  \begin{itemize}
-    \item Different evaluation methods capture \textbf{distinct aspects} of explanation quality:
-    \begin{itemize}
-      \item \textbf{Reconstruction}: How well are embeddings preserved?
-      \item \textbf{Human inspection}: Are features semantically coherent?
-      \item \textbf{Interventions}: Do they affect model behavior?
-      \item \textbf{Report entailment}: Is there textual support?
-    \end{itemize}
-    \item These approaches provide \textbf{complementary} evidence --- none is sufficient alone
-    \item \textbf{LLM-as-a-judge} scales well but introduces vulnerabilities
-    \begin{itemize}
-      \item Position bias and sensitivity to prompt format
-    \end{itemize}
-    \item Our approach: \textbf{label permutation} + \textbf{independent multi-evaluator validation}
-  \end{itemize}
-
-  \note{
-    Evaluating the quality of explanations is an open challenge, because different evaluation methods capture different things.
-    Reconstruction tells us if embeddings are preserved, human inspection checks semantic coherence, interventions test whether features actually affect behavior, and report entailment checks textual support. These are complementary: none alone is sufficient.
-    Using an LLM as a judge scales better than manual review, but the literature has shown it is susceptible to position bias: the order in which answer options are presented can affect the verdict.
-    To address this, we use label permutation across three forward passes to reduce letter bias, and we validate our judge's reliability with an independent human audit and comparison against multiple commercial LLMs.
+    Traditional methods like TCAV and Concept Bottleneck Models need predefined annotations.
+    Sparse dictionary learning removes this by extracting monosemantic features unsupervisedly.
+    Recent approaches decouple discovery from naming, or decompose VLM embeddings directly into textual concepts.
+    In the medical domain, several works extract interpretable concepts from opaque diagnostic networks, which motivates our approach.
   }
 \end{frame}

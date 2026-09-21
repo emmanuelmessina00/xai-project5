@@ -2,50 +2,44 @@
 \begin{frame}{Research Gaps}{Four Gaps Guide Our Analysis}
   \begin{enumerate}
     \item \textbf{Reconstruction $\neq$ Correct Naming}\\
-    SAE sparsity and fidelity do not guarantee correct labels --- \textit{vocabulary coverage} and \textit{image--text geometry} constrain naming
+    Vocabulary coverage and image--text geometry constrain naming
 
     \item \textbf{Dependence on External Resources}\\
-    Every stage from raw activations to a clinical claim relies on external tools (ontology, generative phrasing, LLM judges) --- biases can be mistaken for properties of the representation
+    Ontology, generative phrasing, LLM judges --- errors can be mistaken for representation properties
 
     \item \textbf{Reports as Selective Evidence}\\
-    A report is partial: unmentioned concepts may be visible, absent, or incorrectly named --- judges can confuse \textit{omission} with \textit{contradiction}
+    Omission $\neq$ absence --- judges can confuse the two
 
     \item \textbf{Independent Labels Omit Relationships}\\
-    Assigning labels independently ignores anatomical and causal relationships between findings --- embedding similarity $\neq$ anatomical hierarchy
+    Embedding similarity $\neq$ anatomical hierarchy
   \end{enumerate}
 
   \note{
-    We identified four research gaps that guide our entire analysis.
-    First, achieving good reconstruction does not mean the nearest text label is correct. The vocabulary itself and the geometry of the image-text embedding space constrain the naming process.
-    Second, the pipeline depends on external resources at every stage: the ontology vocabulary, a generative model for phrase expansion, and one or more LLMs as judges. Biases or errors in any of these components can be mistaken for properties of the learned representation itself.
-    Third, radiology reports are selective evidence. Radiologists prioritize acute findings and often omit normal anatomy. An automated judge can confuse this omission with contradiction, unfairly penalizing correct concepts.
-    Fourth, assigning labels independently to each feature ignores the relationships between findings. Embedding similarity does not establish an anatomical hierarchy or a causal relation.
+    Four gaps guide our analysis.
+    First: good reconstruction does not mean correct naming. The vocabulary and the embedding geometry constrain what labels are even possible.
+    Second: the pipeline depends on external resources at every stage. Errors in these tools can look like properties of the representation itself.
+    Third: reports are partial. Radiologists omit normal anatomy, and the judge can confuse omission with contradiction.
+    Fourth: assigning labels independently ignores relationships between concepts.
   }
 \end{frame}
 
 % --- Frame 2: Our Response to the Gaps ---
 \begin{frame}{Research Gaps}{Our Response}
-  These gaps point to the broader difficulty of \textbf{assessing interpretability in a scalable and reproducible way}. We address them by:
-
-  \vspace{0.3cm}
   \begin{itemize}
-    \item \textbf{Hierarchical clustering} at multiple resolutions to examine whether semantic groups produce useful concept categories
+    \item \textbf{Hierarchical clustering} at multiple resolutions to examine concept groups
+    \item \textbf{Human + multi-model audit} on 25 stratified pairs to assess \textbf{evaluator reliability}
     \begin{itemize}
-      \item Recognizing that embedding similarity alone does not validate clinical groupings
+      \item 3 human annotators + 3 commercial LLMs
     \end{itemize}
-    \item \textbf{Human + multi-model audit} to specifically address \textbf{evaluator reliability}
-    \begin{itemize}
-      \item 3 human annotators + 3 commercial LLMs on 25 stratified pairs
-      \item Surfaces the pipeline's dependence on the judge's quality
-    \end{itemize}
-    \item \textbf{Label permutation} across forward passes to mitigate position bias in the LLM judge
+    \item \textbf{Label permutation} to mitigate position bias in the LLM judge
   \end{itemize}
 
+  \vspace{0.4cm}
+  \centering
+  \textit{$\rightarrow$ Goal: assess interpretability in a scalable and reproducible way}
+
   \note{
-    Together, these four gaps point to a broader problem: assessing interpretability in a way that is both scalable and reproducible is fundamentally difficult.
-    We address these gaps in three concrete ways.
-    First, we apply hierarchical clustering at multiple resolutions to examine whether semantic groupings of concepts produce useful categories. However, we acknowledge that embedding similarity alone does not validate clinical groupings.
-    Second, and most importantly, we run a human plus multi-model audit specifically targeting evaluator reliability. Three team members independently evaluated 25 concept-report pairs, and we compared their consensus against MedGemma and three commercial LLMs. This directly surfaces how much the pipeline's results depend on the judge's quality.
-    Third, we mitigate position bias in the LLM judge by permuting the label-to-letter mapping across three forward passes and averaging the probabilities.
+    To address these gaps: we use hierarchical clustering to examine concept groups, a blinded audit with three annotators and three commercial LLMs to measure evaluator reliability, and label permutation to mitigate judge bias.
+    The broader goal is assessing interpretability in a way that is scalable and reproducible.
   }
 \end{frame}
