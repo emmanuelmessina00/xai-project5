@@ -1,22 +1,71 @@
-\begin{frame}{Introduction \& Abstract}{Unsupervised Concept Discovery in VLMs}
+% --- Frame 1: The Problem ---
+\begin{frame}{Introduction}{Why Are Medical VLMs Opaque?}
   \begin{itemize}
-    \item \textbf{Objective}: Investigate unsupervised concept discovery in medical Vision-Language Models (VLMs) without diagnostic supervision[cite: 3].
-    \item \textbf{Methodology}: A Sparse Autoencoder (SAE) decomposes frozen BiomedCLIP embeddings into $1,024$ latent features[cite: 3].
-    \item \textbf{Vocabulary Generation}: Features are named using 998 phrases associated with 100 clinical concepts, extracted without relying on downstream disease labels[cite: 3].
-    \item \textbf{Semantic Evaluation}: Extracted concepts are assessed against Open-I radiology reports using a frozen MedGemma evaluator[cite: 3].
-    \item \textbf{Key Findings}:
+    \item Medical \textbf{Vision-Language Models} (VLMs) encode images and text in a shared representation
     \begin{itemize}
-        \item SAE achieves near-lossless reconstruction with high sparsity, but textual alignment remains low on average ($7.21\%$ Aligned)[cite: 3].
-        \item Alignment is highly uneven across clinical subdomains[cite: 3].
-        \item Evaluator reliability is a critical bottleneck: MedGemma agreed with human consensus only $56\%$ of the time[cite: 3].
+      \item Strong performance across clinical tasks (classification, retrieval, report generation)
+    \end{itemize}
+    \item However, their latent representations are \textbf{high-dimensional} and \textbf{polysemantic}
+    \begin{itemize}
+      \item Individual dimensions mix multiple clinical meanings
+      \item Difficult to establish what each dimension represents
+    \end{itemize}
+    \item This limits \textbf{interpretability} and \textbf{trustworthiness} in safety-critical applications
+    \item \textbf{Concept-based explanations} aim to express these representations through recognizable anatomy and clinical findings
+  \end{itemize}
+
+  \note{
+    Good morning everyone. Today we present our work on Unsupervised Concept Discovery in Medical Vision-Language Models.
+    Medical VLMs like BiomedCLIP are very powerful: they encode both images and text in a shared latent space and achieve strong clinical performance.
+    However, these representations are high-dimensional and polysemantic, meaning that individual latent dimensions mix multiple clinical meanings.
+    This makes it very hard to understand \emph{what} the model has actually learned, which is a problem in safety-critical medical applications where trust and accountability are essential.
+    Concept-based explanations try to solve this by mapping the representation onto recognizable clinical concepts.
+  }
+\end{frame}
+
+% --- Frame 2: Our Approach ---
+\begin{frame}{Introduction}{Our Approach}
+  \begin{itemize}
+    \item Following \textbf{MedConcept}, we study whether SAE features extracted \textbf{without diagnostic supervision} can be named and assessed against radiology reports
+    \item We \textbf{adapt} the original pipeline:
+    \begin{itemize}
+      \item From 3D abdominal CT $\rightarrow$ \textbf{2D chest radiographs}
+      \item Backbone: \textbf{BiomedCLIP} (frozen ViT-B/16)
+      \item New dedicated concept vocabulary and activation selection
+    \end{itemize}
+    \item \textbf{Objective}: Assess what the available evidence supports about interpretability
+    \begin{itemize}
+      \item \textit{Not} to develop a diagnostic classifier
     \end{itemize}
   \end{itemize}
-  
+
   \note{
-    Good morning everyone. Today we are presenting our analysis on unsupervised concept discovery in medical Vision-Language Models[cite: 3]. 
-    Our main objective is to understand the clinical meaning of latent dimensions in models like BiomedCLIP without relying on manual diagnostic labels[cite: 3]. 
-    To do this, we trained a Sparse Autoencoder to decompose image embeddings into 1,024 features, which we then named using a custom vocabulary of 998 medical phrases[cite: 3]. 
-    We evaluated these concepts against real radiology reports using MedGemma as an LLM judge[cite: 3]. 
-    Our core finding is that while we can achieve excellent and sparse visual reconstruction, this does not automatically translate to high clinical textual agreement[cite: 3]. Furthermore, the choice of the LLM judge heavily impacts the evaluation results[cite: 3].
+    Our work builds on the MedConcept framework. The key question we ask is: can Sparse Autoencoder features, extracted in a completely unsupervised way without any disease labels, be meaningfully named and then validated against actual radiology reports?
+    We adapt the original pipeline, which was designed for 3D abdominal CT scans, to work with 2D chest radiographs.
+    We replace the backbone with BiomedCLIP and build a new dedicated vocabulary of clinical concepts.
+    It is important to note that our objective is not to build a diagnostic classifier. Instead, we want to assess what the available evidence actually supports about the interpretability of these discovered features.
+  }
+\end{frame}
+
+% --- Frame 3: Key Contributions & Findings ---
+\begin{frame}{Introduction}{Key Contributions \& Findings}
+  \textbf{Contributions:}
+  \begin{enumerate}
+    \item An implemented pipeline with \textbf{phrase-level semantic grounding}
+    \item Analysis of concept groups at \textbf{multiple clustering resolutions}
+    \item An independent \textbf{multi-evaluator audit} of the LLM judge
+  \end{enumerate}
+
+  \vspace{0.4cm}
+  \textbf{Key Findings:}
+  \begin{itemize}
+    \item Report-based alignment is \textbf{low on average} ($7.21\%$ Aligned) but \textbf{highly uneven} across clinical subdomains (up to $49.23\%$ in specific clusters)
+    \item The \textbf{choice of judge itself} is a major source of disagreement: MedGemma agrees with human consensus only $56\%$ of the time vs.\ $68$--$76\%$ for commercial LLMs
+  \end{itemize}
+
+  \note{
+    Our three main contributions are: first, a fully implemented pipeline that grounds SAE features to clinical phrases; second, an analysis of how alignment varies across groups of concepts at different clustering resolutions; and third, an independent audit of the LLM judge using both human reviewers and multiple commercial models.
+    Our key findings are that report-based alignment is only 7.2 percent on average, but this average is misleading because it is highly uneven: some concept clusters reach nearly 50 percent alignment.
+    Furthermore, we found that the choice of the evaluator model itself is a major source of disagreement. MedGemma agreed with our human consensus only 56 percent of the time, while commercial LLMs reached up to 76 percent. This tells us that the judge, not just the concepts, is a critical variable in measuring interpretability.
   }
 \end{frame}
