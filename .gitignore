@@ -248,3 +248,5 @@ __marimo__/
 *.synctex.gz
 *.toc
 *.vrb
+
+/presentation/speech.md
