@@ -1,36 +1,26 @@
 \begin{frame}{Methodology}{Datasets and Feature Extraction}
   \begin{itemize}
-    \item \textbf{NIH Chest X-ray 10k}: 7,500 training images and 2,500 validation images. The Sparse Autoencoder (SAE) learns from image embeddings, without disease labels or reports.
-    \item \textbf{Open-I}: Semantic evaluation pool of 3,666 frontal image--report pairs. Each reference report combines the Findings and Impression sections.
-    \item \textbf{Feature Extraction}: BiomedCLIP's frozen ViT-B/16 image encoder converts images from both datasets into \textbf{512-dimensional embeddings} for the SAE.
+    \item \textbf{NIH Chest X-ray 10k}: 7,500 SAE training / 2,500 validation images; no text or labels.
+    \item \textbf{Open-I}: Evaluation pool of 3,666 frontal image--report pairs; Findings + Impression.
+    \item \textbf{Features}: Frozen BiomedCLIP ViT-B/16 image encoder; \textbf{512-dimensional embeddings}.
   \end{itemize}
+  {\centering
+    \includegraphics[width=0.60\textwidth,keepaspectratio]{assets/Biomedclip.png}
+    \par
+    {\footnotesize BiomedCLIP overview\par}
+  }
 
   \note{
-    \textbf{Riccardo --- about 1 minute.}
-    \par\medskip
-    Start with the two datasets and their different roles.
-    \par\medskip
-    \textbf{NIH:} 7,500 images for SAE training and 2,500 for validation.
-    The SAE learns only from image embeddings, without disease labels or reports.
-    \par\medskip
-    \textbf{Open-I:} Keep records with a frontal image.
-    Combine Findings and Impression into a reference report to check whether
-    the extracted concepts are supported by the clinical text.
-    \textit{(Optional: Findings describe observations; Impression gives their diagnostic interpretation.)}
-    \par\medskip
-    \textbf{Feature extraction:} Use BiomedCLIP's frozen image encoder for both
-    datasets. Each X-ray becomes a 512-dimensional embedding.
-    Frozen means the encoder's weights stay fixed.
-    \textit{(Optional: These vectors are the inputs to our SAE.)}
   }
 \end{frame}
+
 
 \begin{frame}{Methodology}{Concept Dictionary Construction}
   \begin{itemize}
     \item \textbf{Concept Selection}: 100 parent concepts from cleaned and filtered Open-I Problems metadata, covering anatomy and pathological findings.
     \item \textbf{Expansion}: UMLS provides Concept Unique Identifiers (CUIs) and synonyms from SNOMED CT and MeSH for matched concepts.
     \item \textbf{Phrase Generation}: Gemini 3.1 Flash-Lite generates 5 radiology-style descriptions per concept.
-    \item \textbf{Encoding}: BiomedCLIP's PubMedBERT text encoder maps all 998 dictionary entries to 512-dimensional embeddings in the same space as the images.
+    \item \textbf{Encoding}: BiomedCLIP's PubMedBERT text encoder maps all 998 dictionary entries to L2-normalized, 512-dimensional embeddings in the same space as the images.
   \end{itemize}
   {\Large
   \[
@@ -39,33 +29,16 @@
   }
 
   \note{
-    \textbf{Riccardo --- about 70--80 seconds.}
-    \par\medskip
-    \textbf{Purpose:} Build a medical concept dictionary to name the SAE's learned features.
-    \par\medskip
-    \textbf{Selection:} Clean and filter Open-I's Problems metadata.
-    Remove device, procedure and technical terms to retain 100 parent concepts
-    covering anatomy and pathological findings.
-    \par\medskip
-    \textbf{Expansion:} UMLS supplies CUIs and synonyms from SNOMED CT
-    and MeSH: alternative names for each concept.
-    \textit{(Optional: Keep unmatched terms as fallbacks.)}
-    \par\medskip
-    \textbf{Generation:} Gemini 3.1 Flash-Lite generates five radiology-style phrases per concept.
-    \textit{(Optional: The prompt requests visible features consistent with each concept.)}
-    \par\medskip
-    \textbf{Encoding:} BiomedCLIP's PubMedBERT produces 998 embeddings,
-    each with 512 dimensions, in the same space as the image embeddings.
-    \textit{(Optional: 498 base terms and synonyms, plus 500 generated phrases.)}
   }
 \end{frame}
+
 
 \begin{frame}{Methodology}{Sparse Autoencoder Architecture and Training}
   \begin{columns}[c,onlytextwidth]
   \begin{column}{0.66\textwidth}
   \begin{itemize}
     \item \textbf{Architecture}: 512-dimensional input, 1,024 hidden units
-    (overcomplete factor of 2), and ReLU activations.
+    (overcomplete factor of 2), ReLU activations $z$.
     \medskip
     \item \textbf{Objective}: Reconstruction error plus an $L_1$ penalty on activations; $\lambda$ controls the sparsity penalty.
     \[
@@ -79,29 +52,14 @@
     \centering
     \includegraphics[width=\linewidth,keepaspectratio]{assets/SAE_diagram.png}
     \par\smallskip
-    {\footnotesize Illustrative architecture}
+    {\footnotesize Illustrative SAE architecture}
   \end{column}
   \end{columns}
 
   \note{
-    \textbf{Riccardo --- about 40--45 seconds.}
-    \par\medskip
-    \textbf{Purpose:} Represent each image embedding through a sparse combination
-    of learned features.
-    \par\medskip
-    \textbf{Architecture:} Encode 512 input dimensions into 1,024 hidden units.
-    Use ReLU activations. Point to the simplified diagram on the right:
-    input, hidden features, reconstructed output.
-    \textit{(Optional: The hidden space is twice the input size.)}
-    \par\medskip
-    \textbf{Objective:} Explain the two loss terms. Reconstruction preserves input
-    information. The $L_1$ penalty encourages sparse activations, with only a few
-    features active per image. $\lambda$ controls the penalty strength.
-    \par\medskip
-    \textbf{Training:} Use validation loss for early stopping and model selection.
-    \textit{(Optional: Adam optimizer and batch size 256.)}
   }
 \end{frame}
+
 
 \begin{frame}{Methodology}{Concept Assignment and Inference}
   After SAE training, each decoder column represents a learned feature direction
@@ -111,39 +69,21 @@
     \item \textbf{Naming}: Compare normalized decoder columns $\widetilde{W}_d$ with
     dictionary embeddings $T$. Assign the entry with the highest cosine similarity
     to each feature.
-    {\Large
+    {
     \[
       S=T\widetilde{W}_d\in\mathbb{R}^{998\times1024}
     \]
     }
     \item \textbf{Inference}: Rank positive SAE activations for each Open-I image.
-    Select features from largest to smallest until cumulative activation exceeds
-    \textbf{90\% of the total positive activation}.
+    Select features from largest to smallest until cumulative activation $>$ \textbf{90\% of the total positive activation}.
     \item \textbf{Output}: Collect the selected features' labels and remove duplicate
     phrases to obtain the predicted concept set.
   \end{itemize}
 
   \note{
-    \textbf{Riccardo --- about 60--70 seconds.}
-    \par\medskip
-    After SAE training, each decoder column is a learned feature direction in the
-    image embedding space.
-    \par\medskip
-    \textbf{Naming:} Compare each direction with dictionary entries using cosine
-    similarity. Assign the highest-scoring entry. Naming does not change the trained weights.
-    \par\medskip
-    \textbf{Equation:} $T$ contains normalized dictionary embeddings and
-    $\widetilde{W}_d$ contains normalized decoder columns. Each entry of $S$ is a
-    dictionary-entry/feature cosine similarity.
-    \textit{(Optional: Multiple features can share a label.)}
-    \par\medskip
-    \textbf{Inference:} For each Open-I image, rank positive activations from largest
-    to smallest. Select features until their sum exceeds 90\% of the total positive activation.
-    \par\medskip
-    \textbf{Output:} Remove duplicate labels to obtain the predicted concepts.
-    \textit{(Optional: The selected feature count varies by image.)}
   }
 \end{frame}
+
 
 \begin{frame}{Methodology}{Semantic Evaluation and Validation}
   \begin{itemize}
@@ -151,36 +91,18 @@
     its reference report, without the image.
     \item \textbf{Verdicts}:
     \begin{itemize}
-        \item \textbf{Aligned}: Report explicitly supports the concept.
-        \item \textbf{Unaligned}: Report explicitly negates or contradicts the concept.
-        \item \textbf{Uncertain}: Concept is unmentioned, ambiguous, or tentative.
+        \item[\textcolor{green!60!black}{$\checkmark$}] \textbf{Aligned}: Report explicitly supports the concept.
+        \item[\textcolor{red}{$\times$}] \textbf{Unaligned}: Report explicitly negates or contradicts the concept.
+        \item[\textcolor{orange}{$?$}] \textbf{Uncertain}: Concept is unmentioned, ambiguous, or tentative.
     \end{itemize}
-    \item \textbf{Bias Mitigation}: Average verdict probabilities across 3 rotated
-    answer mappings to reduce letter bias.
+    \item \textbf{Bias Mitigation}: Rotate class--letter mappings across 3 passes;
+    select the verdict with the highest average probability.
     \item \textbf{Clustering}: Group parent concepts with hierarchical clustering
     and compare alignment across groups using existing verdicts.
-    \item \textbf{Validation}: 25 concept--report pairs independently labelled by
-    the 3 authors, blinded to MedGemma's verdicts. Majority vote provides the reference.
+    \item \textbf{Validation}: 25 pairs independently labelled by 3 authors, blinded
+    to MedGemma's verdicts. Compare MedGemma and 3 commercial models against majority vote.
   \end{itemize}
 
   \note{
-    \textbf{Riccardo --- about 65--75 seconds.}
-    \par\medskip
-    \textbf{Evaluator:} Frozen MedGemma 1.5 4B checks whether the report supports
-    each extracted concept. It receives the phrase and report only, without the image.
-    \par\medskip
-    \textbf{Verdicts:} Aligned means explicit support. Unaligned means explicit
-    negation or contradiction. Uncertain means unmentioned, ambiguous, or tentative.
-    \par\medskip
-    \textbf{Bias:} Average verdict probabilities across three rotated answer
-    mappings to reduce letter bias.
-    \par\medskip
-    \textbf{Clustering:} Group related parent concepts with hierarchical clustering
-    and compare alignment across groups, reusing existing verdicts.
-    \par\medskip
-    \textbf{Validation:} The three authors independently label 25 concept--report
-    pairs without seeing MedGemma's verdicts. Majority vote defines the reference.
-    \textit{(Optional: Three commercial models also classify the same pairs,
-    using file attachments and pasted text.)}
   }
 \end{frame}
