@@ -1,7 +1,7 @@
 \begin{frame}{Methodology}{Datasets and Feature Extraction}
   \begin{itemize}
     \item \textbf{NIH Chest X-ray 10k}: 7,500 SAE training / 2,500 validation images; no text or labels.
-    \item \textbf{Open-I}: Evaluation pool of 3,666 frontal image--report pairs; Findings + Impression.
+    \item \textbf{Open-I}: 3,666 frontal image--report pairs form the semantic evaluation. We combine Findings and Impression into reference reports to check extracted concepts.
     \item \textbf{Features}: Frozen BiomedCLIP ViT-B/16 image encoder; \textbf{512-dimensional embeddings}.
   \end{itemize}
   {\centering
@@ -11,6 +11,12 @@
   }
 
   \note{
+    \begin{itemize}
+      \item \textbf{Two datasets, different roles}
+      \item \textbf{NIH Chest X-ray}: To train the SAE. Train only on image embeddings, without disease labels or reports.
+      \item \textbf{Open-I}: Keep frontal images. Combine \textbf{Findings} (radiological observations) and \textbf{Impression} (diagnostic interpretation) into a reference report to check whether the extracted concepts were supported.
+      \item \textbf{Frozen BiomedCLIP image encoder}: Convert each X-ray into a \textbf{512-dimensional embedding}, the input to the SAE.
+    \end{itemize}
   }
 \end{frame}
 
@@ -29,6 +35,13 @@
   }
 
   \note{
+    \begin{itemize}
+      \item \textbf{To name the features}: learned by the SAE, we build a \textbf{dictionary of medical concepts}.
+      \item \textbf{100 parent concepts}: From Open-I \textbf{Problems} metadata, filter devices, technical terms. Retain \textbf{anatomical structures and pathological findings}.
+      \item \textbf{UMLS expansion}: Retrieve CUIs and synonyms from medical vocabularies. Keep the original term when no match exists.
+      \item \textbf{Gemini 3.1 Flash-Lite}: Generate \textbf{five short radiology phrases per concept} in language of radiology reports, describing consistent visible features.
+      \item \textbf{PubMedBERT text encoder}: Encode 498 terms/synonyms and 500 generated phrases. Matrix $T$ contains \textbf{998 embeddings of 512 dimensions}, in the same space as the images.
+    \end{itemize}
   }
 \end{frame}
 
@@ -57,6 +70,13 @@
   \end{columns}
 
   \note{
+    \begin{itemize}
+      \item \textbf{Goal}: Represent each image embedding as a \textbf{sparse combination of learned features}.
+      \item \textbf{Architecture}: 512 input dimensions, 1,024 hidden units and ReLU activations. Overcomplete factor of \textbf{two}, as illustrated on the right.
+      \item \textbf{Reconstruction loss}: Preserve information from the input embedding.
+      \item \textbf{$L_1$ penalty}: Encourage sparse activations. $\lambda$ controls the penalty strength.
+      \item \textbf{Training}: Adam, batch size 256. Use \textbf{validation loss} for early stopping and model selection.
+    \end{itemize}
   }
 \end{frame}
 
@@ -81,28 +101,48 @@
   \end{itemize}
 
   \note{
+    \begin{itemize}
+      \item After training, each \textbf{Decoder columns} represents a \textbf{learned feature direction} in the image embedding space.
+      \item To name \textbf{Features}, compare normalized decoder columns with dictionary embeddings $T$ using \textbf{cosine similarity}, producing matrix $S$.
+      \item Assign each feature the \textbf{highest-similarity dictionary entry}.
+      \item \textbf{Image inference}: Rank positive SAE activations from largest to smallest. Select features until cumulative activation \textbf{exceeds 90\%} of the total positive activation.
+      \item \textbf{Predicted concept set}: Collect labels and remove duplicates. The number of selected features varies across images.
+    \end{itemize}
   }
 \end{frame}
 
 
 \begin{frame}{Methodology}{Semantic Evaluation and Validation}
+  \begin{columns}[c,onlytextwidth]
+  \begin{column}{0.60\textwidth}
   \begin{itemize}
-    \item \textbf{Evaluator}: Frozen MedGemma 1.5 4B receives a concept phrase and
-    its reference report, without the image.
+    \item \textbf{Evaluator}: Frozen MedGemma 1.5 4B;
+    concept and report only (No image).
     \item \textbf{Verdicts}:
     \begin{itemize}
-        \item[\textcolor{green!60!black}{$\checkmark$}] \textbf{Aligned}: Report explicitly supports the concept.
-        \item[\textcolor{red}{$\times$}] \textbf{Unaligned}: Report explicitly negates or contradicts the concept.
-        \item[\textcolor{orange}{$?$}] \textbf{Uncertain}: Concept is unmentioned, ambiguous, or tentative.
+        \item[{\makebox[1em][c]{\textcolor{green!60!black}{$\checkmark$}}}] \textbf{Aligned}: Explicit support.
+        \item[{\makebox[1em][c]{\textcolor{red}{$\times$}}}] \textbf{Unaligned}: Explicit contradiction.
+        \item[{\makebox[1em][c]{\textcolor{orange}{$?$}}}] \textbf{Uncertain}: Unmentioned, ambiguous, or tentative.
     \end{itemize}
-    \item \textbf{Bias Mitigation}: Rotate class--letter mappings across 3 passes;
-    select the verdict with the highest average probability.
-    \item \textbf{Clustering}: Group parent concepts with hierarchical clustering
-    and compare alignment across groups using existing verdicts.
-    \item \textbf{Validation}: 25 pairs independently labelled by 3 authors, blinded
-    to MedGemma's verdicts. Compare MedGemma and 3 commercial models against majority vote.
+    \item \textbf{Clustering}: Hierarchical parent-concept groups;
+    To compare alignment across clusters.
+    \item \textbf{Validation}: 25 concept-report pairs, 3 independet authors.
+    Majority vote as reference for MedGemma and 3 commercial models.
   \end{itemize}
+  \end{column}
+  \begin{column}{0.37\textwidth}
+    \centering
+    \includegraphics[width=\linewidth,height=5.5cm,keepaspectratio]{assets/Evaluation.png}
+  \end{column}
+  \end{columns}
 
   \note{
+    \begin{itemize}
+      \item To \textbf{evaluate} whether the extracted concepts are \textbf{supported} by the reference report. \textbf{Frozen MedGemma 1.5}, receives concept phrase and report, \textbf{without the image}.
+      \item \textbf{Verdicts}: Aligned = explicit support. Unaligned = contradiction or negation. Uncertain = unmentioned or ambiguous.
+      \item \textbf{Reduce letter bias}: Run three forward passes, rotating the A/B/C verdict mapping. Average verdict probabilities.
+      \item \textbf{Hierarchical clustering}: Group related parent concepts and compare alignment across groups, reusing existing verdicts.
+      \item \textbf{To check the judge's reliability}: Independently label \textbf{25 concept--report pairs}, blinded to MedGemma verdicts. Use author majority vote as the reference for MedGemma and \textbf{three commercial models}.
+    \end{itemize}
   }
 \end{frame}
