@@ -1,70 +1,151 @@
-\begin{frame}{Experiments}{Sparse Reconstruction and Grounding}
+% --- Frame 1: SAE Reconstruction & Visual Grounding ---
+\begin{frame}{Experiments}{Sparse Reconstruction and Visual Grounding}
+  \begin{center}
+    \includegraphics[width=0.92\linewidth,height=0.42\textheight,keepaspectratio]{assets/sae_training_loss.png}
+  \end{center}
+
+  \vspace{-0.3cm}
   \begin{itemize}
-    \item \textbf{Reconstruction Fidelity}: Mean Squared Error (MSE) of $3.32 \times 10^{-5}$ and mean cosine similarity of $0.9916$ on the validation set[cite: 3].
-    \item \textbf{Sparsity}: Average of 44.0 active units out of 1024 ($\sim 4.3\%$ $L_0$ sparsity) per image[cite: 3].
-    \item \textbf{Takeaway}: The SAE achieves near-lossless visual reconstruction under a strict sparse activation regime[cite: 3]. However, fidelity does not guarantee semantic monosemanticity[cite: 3].
+    \small
+    \item \textbf{Reconstruction Fidelity}: Mean Squared Error (MSE) of $3.32 \times 10^{-5}$ and mean cosine similarity of $0.9916$ on 2,500 validation images.
+    \item \textbf{High Sparsity}: Average $L_0$ sparsity of $44.0$ active units out of $1024$ per image ($\sim 4.3\%$ active neurons).
+    \item \textbf{Dictionary Mapping}: Top $90\%$ positive activations yield $\sim 26$ unique concept phrases per image.
+    \item \textbf{Key Takeaway}: Near-lossless visual reconstruction is achieved under strict sparsity, but mathematical fidelity does not guarantee clinical monosemanticity.
   \end{itemize}
 
   \note{
-    Moving to our results, the SAE training was highly successful in terms of reconstruction[cite: 3]. 
-    We achieved a very low Mean Squared Error and a cosine similarity above 0.99 on the validation set[cite: 3]. 
-    It did this while maintaining high sparsity, using an average of only 44 active units out of 1024 per image[cite: 3]. 
-    However, as we will see, this mathematical fidelity does not automatically mean the features are perfectly interpretable clinically[cite: 3].
+    \textbf{First of all}: Let's look at how our Sparse Autoencoder reconstructs visual features.\\
+    \textbf{As you see in the plots}: MSE loss drops rapidly and stabilizes at $3.32 \times 10^{-5}$, with cosine similarity reaching 0.9916.\\
+    \textbf{At the same time}: High sparsity is maintained, activating only 44 out of 1024 units per image (~4.3\%).\\
+    \textbf{However}: High mathematical fidelity does not automatically mean features are clinically monosemantic.
   }
 \end{frame}
 
-\begin{frame}{Experiments}{Report Alignment and Cohort Analysis}
+% --- Frame 2: Report Alignment & Omission Bias ---
+\begin{frame}{Experiments}{Report Alignment \& Omission Bias}
+  \begin{table}[htbp]
+    \centering
+    \small
+    \begin{tabular}{rrrrr}
+      \toprule
+      \textbf{Images ($N$)} & \textbf{Phrases/img} & \textbf{Aligned (\%)} & \textbf{Unaligned (\%)} & \textbf{Uncertain (\%)} \\
+      \midrule
+      10  & 26.20 & 7.25 & 23.17 & 69.57 \\
+      50  & 26.22 & 8.40 & 22.88 & 68.72 \\
+      100 & 26.23 & 7.64 & 23.37 & 68.99 \\
+      500 & 25.99 & \textbf{7.21} & \textbf{22.49} & \textbf{70.30} \\
+      \bottomrule
+    \end{tabular}
+  \end{table}
+
+  \vspace{-0.1cm}
   \begin{itemize}
-    \item \textbf{Cohort Performance ($N=500$)}:
-    \begin{itemize}
-        \item \textbf{Uncertain}: $70.30\%$[cite: 3]
-        \item \textbf{Unaligned}: $22.49\%$[cite: 3]
-        \item \textbf{Aligned}: $7.21\%$[cite: 3]
-    \end{itemize}
-    \item \textbf{Omission Bias}: The dominance of Uncertain verdicts is due to radiologists omitting normal anatomy and unmentioned concepts[cite: 3].
-    \item \textbf{Unaligned Rate}: Captures both false-positive concept predictions and explicit clinical negations[cite: 3].
+    \small
+    \item \textbf{Stable Verdict Distribution}: Across all sample sizes, $\sim 70\%$ of verdicts are \textit{Uncertain}, $\sim 22.5\%$ \textit{Unaligned}, and $\sim 7.2\%$ \textit{Aligned}.
+    \item \textbf{Reporting Omission Bias}: Radiologists document acute pathologies but omit normal anatomy, driving the dominant \textit{Uncertain} rate.
+    \item \textbf{Unaligned Rate ($22.5\%$)}: Captures both false-positive predictions and explicit clinical negations in reports.
   \end{itemize}
 
   \note{
-    When we tested the extracted concepts against actual reports on a 500-image cohort, the alignment was surprisingly low, averaging about 7.2 percent[cite: 3]. 
-    Over 70 percent of concepts were marked as Uncertain[cite: 3]. This is heavily driven by reporting omission bias: radiologists document acute pathology but skip normal anatomy, which the SAE still extracts[cite: 3]. 
-    The 22.5 percent Unaligned rate includes both model false-positives and explicit negations in the text[cite: 3].
+    \textbf{Moving to the second experiment}: We tested how visual concepts match radiology reports using MedGemma as a judge.\\
+    \textbf{Looking at the table}: Across 500 images, results are very stable: ~70\% Uncertain, ~22.5\% Unaligned, and ~7.2\% Aligned.\\
+    \textbf{The main reason}: The high Uncertain rate is driven by reporting omission bias (radiologists omit normal anatomy).\\
+    \textbf{On the other hand}: The 22.5\% Unaligned rate represents false-positive predictions and explicit text negations.
   }
 \end{frame}
 
-\begin{frame}{Experiments}{Hierarchical Concept Clustering}
+% --- Frame 3: Concept Space & Clustering Validation ---
+\begin{frame}{Experiments}{Hierarchical Clustering: Space \& Quality}
+  \begin{center}
+    \includegraphics[width=0.92\linewidth,height=0.55\textheight,keepaspectratio]{assets/cluster_validation_k10.png}
+  \end{center}
+
+  \vspace{-0.3cm}
   \begin{itemize}
-    \item \textbf{Approach}: Agglomerative hierarchical clustering on the 100 parent concept embeddings using cosine distance[cite: 3].
-    \item \textbf{Localized Alignment}:
-    \begin{itemize}
-        \item Focal, specific clusters score highly: \textit{Costophrenic Angle / Sulcus} achieves \textbf{49.23\%} Aligned[cite: 3].
-        \item Broad groups score poorly: \textit{Mixed Cardiopulmonary} yields only 8.62\% Aligned[cite: 3].
-    \end{itemize}
-    \item \textbf{Conclusion}: Clinical agreement is highly localized and unevenly distributed across subdomains[cite: 3].
+    \small
+    \item \textbf{Concept Projection}: t-SNE visualization of the 100 parent concept embeddings grouped into $k=10$ macro-clusters.
+    \item \textbf{Silhouette Validation}: Quantitative analysis across $k \in [3, 15]$ shows a peak score of $0.274$ at $k=3$ and a near-peak score of $0.263$ at reference $k=10$.
   \end{itemize}
 
   \note{
-    To see if alignment varied by topic, we clustered the 100 parent concepts[cite: 3]. 
-    We found that clinical agreement is highly localized[cite: 3]. 
-    For example, focal anatomical findings like the "Costophrenic Angle" achieved over 49 percent alignment[cite: 3]. 
-    Conversely, broad or mixed clusters performed very poorly[cite: 3]. This shows that the SAE learns certain specific features much better than general ones[cite: 3].
+    \textbf{To analyze concept types}: We clustered the 100 parent concept embeddings using cosine distance.\\
+    \textbf{On the left plot}: You can see the t-SNE visualization showing how concepts group into 10 macro-clusters.\\
+    \textbf{On the right plot}: Silhouette analysis confirms good separation, peaking at k=3 (0.274) and reaching 0.263 at k=10.\\
+    \textbf{Therefore}: We selected k=10 because it provides a detailed clinical grouping while keeping strong separation.
   }
 \end{frame}
 
-\begin{frame}{Experiments}{Evaluator Audit and Qualitative Case Studies}
+% --- Frame 4: Hierarchical Concept Clustering Results ---
+\begin{frame}{Experiments}{Hierarchical Clustering: Subdomain Alignment}
+  \begin{center}
+    \includegraphics[width=0.95\linewidth,height=0.53\textheight,keepaspectratio]{assets/macro_cluster_performance_500_samples.png}
+  \end{center}
+
+  \vspace{-0.3cm}
   \begin{itemize}
-    \item \textbf{Human Consensus}: 3 human experts audited 25 concept-report pairs[cite: 3].
-    \item \textbf{Model Agreement vs. Humans}:
+    \small
+    \item \textbf{Highly Non-Uniform Alignment}: Agreement varies sharply across subdomains ($N=500$).
     \begin{itemize}
-        \item \textbf{MedGemma 1.5 4B}: $56.0\%$ agreement[cite: 3].
-        \item \textbf{Commercial LLMs} (GPT-5.6, Claude 5, Gemini 3.1 Pro): $68.0\% - 76.0\%$ agreement[cite: 3].
+      \small
+      \item \textbf{Top Alignment} (Cluster 9 - Focal Anatomy): \textbf{49.23\% Aligned}.
+      \item \textbf{Highest Disagreement} (Cluster 1): \textbf{42.02\% Unaligned}.
+      \item \textbf{Lowest Alignment} (Cluster 5 - Broad Findings): \textbf{0.15\% Aligned}.
     \end{itemize}
-    \item \textbf{Failure Modes}: MedGemma suffered from negation parsing errors (e.g., misclassifying "no pleural effusion" as an Aligned "large effusion")[cite: 3].
   \end{itemize}
 
   \note{
-    Finally, we audited our judge model[cite: 3]. Three experts manually evaluated 25 concept-report pairs[cite: 3]. 
-    We discovered that MedGemma agreed with human consensus only 56 percent of the time, while commercial models like Gemini 3.1 Pro reached up to 76 percent[cite: 3]. 
-    A major failure mode for MedGemma was negation: it would read "no pleural effusion" and incorrectly mark the concept "large effusion" as Aligned[cite: 3]. This proves that automated judges cannot yet replace expert review[cite: 3].
+    \textbf{Examining alignment per cluster}: We see that clinical agreement is highly non-uniform.\\
+    \textbf{For instance}: Focal anatomical findings in Cluster 9 reach over 49\% alignment (vs 7.2\% global average).\\
+    \textbf{In contrast}: Broad or mixed groups like Cluster 5 drop to almost 0\% alignment.\\
+    \textbf{This proves that}: The SAE captures specific anatomical features very well, and this pattern holds across all resolutions.
+  }
+\end{frame}
+
+% --- Frame 5: Evaluator Audit & LLM Benchmark ---
+\begin{frame}{Experiments}{Evaluator Audit \& LLM Benchmark}
+  \begin{center}
+    \includegraphics[width=0.88\linewidth,height=0.55\textheight,keepaspectratio]{assets/evaluator_agreement_benchmark.png}
+  \end{center}
+
+  \vspace{-0.3cm}
+  \begin{itemize}
+    \small
+    \item \textbf{Human Expert Audit}: 3 authors audited 25 concept-report pairs (72\% unanimous agreement).
+    \item \textbf{Judge Performance}: MedGemma 4B reached \textbf{56.0\%} agreement, whereas commercial frontier LLMs reached \textbf{68.0\% -- 76.0\%} (Gemini 3.1 Pro peak at \textbf{76.0\%}).
+    \item \textbf{Failure Mode}: MedGemma struggled with negations (e.g. misclassifying \textit{"no effusion"} as Aligned).
+  \end{itemize}
+
+  \note{
+    \textbf{In our final experiment}: We audited our automated LLM judge against a human consensus of 3 expert authors on 25 pairs.\\
+    \textbf{As shown in the bar chart}: MedGemma 4B agreed with human consensus only 56\% of the time.\\
+    \textbf{By comparison}: Commercial frontier models like GPT-5.6, Claude 5, and Gemini 3.1 Pro achieved much higher agreement (up to 76\%).\\
+    \textbf{The main reason for this gap}: MedGemma failed on medical negations (misclassifying "no pleural effusion" as Aligned).
+  }
+\end{frame}
+
+% --- Frame 6: Conclusions & Future Directions ---
+\begin{frame}{Conclusions}{Summary \& Future Work}
+  \textbf{Summary of Key Findings:}
+  \begin{enumerate}
+    \small
+    \item \textbf{Mathematical vs Semantic Quality}: SAE achieves near-lossless visual reconstruction ($\text{MSE} = 3.32 \times 10^{-5}, L_0 \sim 4.3\%$), but text validation is bounded by reporting omission bias.
+    \item \textbf{Localized Interpretability}: Alignment is domain-specific; focal anatomical clusters reach up to \textbf{49.2\% Aligned}.
+    \item \textbf{Evaluator Reliability}: Frontier LLMs significantly outperform MedGemma (76\% vs 56\% human agreement).
+  \end{enumerate}
+
+  \vspace{0.2cm}
+  \textbf{Future Directions:}
+  \begin{itemize}
+    \small
+    \item Refine concept dictionaries and validate feature assignments with clinical experts.
+    \item Expand human audit datasets and incorporate spatial image grounding (heatmaps/bounding boxes).
+  \end{itemize}
+
+  \note{
+    \textbf{To summarize our main conclusions}:\\
+    \textbf{First}: The SAE reconstructs visual features near-losslessly, but report validation is limited by omission bias.\\
+    \textbf{Second}: Feature interpretability is strongly localized: specific anatomical concepts align very well with clinical text.\\
+    \textbf{Third}: Automated evaluation requires strong LLMs, where frontier models clearly outperform smaller domain judges.\\
+    \textbf{In the future}: We plan to refine the concept dictionary with clinicians and test spatial grounding directly on image regions. Thank you!
   }
 \end{frame}
