@@ -13,7 +13,7 @@
   \note{
     Medical VLMs like BiomedCLIP encode images and text in a shared space with excellent performance.
     However, their latent representations are polysemantic: each dimension mixes multiple clinical meanings, making it hard to understand what the model has learned.
-    This is a serious problem in safety-critical medical settings.
+    This limits interpretability and trustworthiness, which are critical in safety-sensitive applications like medicine.
     Concept-based explanations try to solve this by mapping these opaque representations onto recognizable clinical concepts.
   }
 \end{frame}
@@ -32,26 +32,31 @@
   \end{itemize}
 
   \note{
-    Following MedConcept, we use a Sparse Autoencoder to extract features without disease labels and evaluate them against real radiology reports.
-    We adapt the pipeline from 3D abdominal CT to 2D chest X-rays, using BiomedCLIP as backbone with a new dedicated vocabulary.
+    Following MedConcept, we use a Sparse Autoencoder to decompose embeddings into sparse latent features without disease labels, and validate them against actual radiology reports.
+    We adapted the original pipeline by swapping the backbone to BiomedCLIP and building a new dedicated concept vocabulary for 2D chest X-rays.
     Important: our goal is not to build a classifier, but to assess what the evidence actually tells us about interpretability.
   }
 \end{frame}
 
-% --- Frame 3: Key Contributions ---
-\begin{frame}{Introduction}{Our Contributions}
+% --- Frame 3: Key Contributions & Findings ---
+\begin{frame}{Introduction}{Key Contributions \& Findings}
+  \textbf{Contributions:}
   \begin{enumerate}
     \item An implemented pipeline with \textbf{phrase-level semantic grounding}
     \item Analysis of concept groups at \textbf{multiple clustering resolutions}
     \item An independent \textbf{multi-evaluator audit} of the LLM judge
   \end{enumerate}
 
-  \vspace{0.5cm}
-  \centering
-  \textit{$\rightarrow$ Detailed results in the Experiments section}
+  \vspace{0.3cm}
+  \textbf{Key Findings:}
+  \begin{itemize}
+    \item Report-based alignment is \textbf{low on average (7.21\%)} but \textbf{highly uneven} across clinical subdomains (up to 49.23\% in specific clusters).
+    \item The choice of judge is a major source of disagreement: \textbf{MedGemma agrees with human consensus only 56\%} of the time vs. \textbf{68--76\% for commercial LLMs}.
+  \end{itemize}
 
   \note{
-    Our three contributions are: a pipeline with phrase-level grounding, clustering analysis at multiple resolutions, and an independent audit of the LLM judge.
-    The detailed results are coming up in the experiments section.
+    Our three main contributions are: a fully implemented pipeline with phrase-level grounding, an analysis of concept groups at different clustering resolutions, and an independent audit of the LLM judge.
+    Our key findings show that while the average report-based alignment is low, around 7.2 percent, it's highly uneven across subdomains. 
+    Crucially, we found that MedGemma agreed with human consensus only 56 percent of the time, compared to 68 to 76 percent for commercial models, highlighting the judge's reliability as a major variable.
   }
 \end{frame}
