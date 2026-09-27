@@ -126,8 +126,8 @@
   \textbf{Summary of Key Findings:}
   \begin{enumerate}
     \small
-    \item \textbf{Mathematical vs Semantic Quality}: SAE achieves near-lossless visual reconstruction ($\text{MSE} = 3.32 \times 10^{-5}, L_0 \sim 4.3\%$), but text validation is bounded by reporting omission bias.
-    \item \textbf{Localized Interpretability}: Alignment is domain-specific; focal anatomical clusters reach up to \textbf{49.2\% Aligned}.
+    \item \textbf{Text-to-Image Mismatch}: The SAE is highly accurate mathematically ($L_0 \sim 4.3\%$), but report-based validation is severely bottlenecked by clinical omission bias.
+    \item \textbf{Localized Interpretability}: Clinical alignment is not uniform; specific semantic clusters perform better (up to \textbf{49.2\% Aligned}).
     \item \textbf{Evaluator Reliability}: Frontier LLMs significantly outperform MedGemma (76\% vs 56\% human agreement).
   \end{enumerate}
 
@@ -135,15 +135,15 @@
   \textbf{Future Directions:}
   \begin{itemize}
     \small
-    \item Refine concept dictionaries and validate feature assignments with clinical experts.
-    \item Expand human audit datasets and incorporate spatial image grounding (heatmaps/bounding boxes).
+    \item Refine concept dictionaries and validate semantic assignments with clinical experts.
+    \item Move beyond pure text evaluation by incorporating spatial grounding (heatmaps/bounding boxes).
   \end{itemize}
 
   \note{
-    \textbf{To summarize our main conclusions}:\\
+    \textbf{To summarize our key findings}:\\
     \textbf{First}: The SAE reconstructs visual features near-losslessly, but report validation is limited by omission bias.\\
-    \textbf{Second}: Feature interpretability is strongly localized: specific anatomical concepts align very well with clinical text.\\
+    \textbf{Second}: The interpretability is localized, with certain semantic sub-domains aligning better.\\
     \textbf{Third}: Automated evaluation requires strong LLMs, where frontier models clearly outperform smaller domain judges.\\
-    \textbf{In the future}: We plan to refine the concept dictionary with clinicians and test spatial grounding directly on image regions. Thank you!
+    \textbf{For future work}: We suggest moving beyond text-only validation. Grounding concepts directly onto the image space via heatmaps, combined with clinical expert validation, is the necessary next step. Thank you.
   }
 \end{frame}
