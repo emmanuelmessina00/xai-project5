@@ -37,26 +37,3 @@
     Important: our goal is not to build a classifier, but to assess what the evidence actually tells us about interpretability.
   }
 \end{frame}
-
-% --- Frame 3: Key Contributions & Findings ---
-\begin{frame}{Introduction}{Key Contributions \& Findings}
-  \textbf{Contributions:}
-  \begin{enumerate}
-    \item An implemented pipeline with \textbf{phrase-level semantic grounding}
-    \item Analysis of concept groups at \textbf{multiple clustering resolutions}
-    \item An independent \textbf{multi-evaluator audit} of the LLM judge
-  \end{enumerate}
-
-  \vspace{0.3cm}
-  \textbf{Key Findings:}
-  \begin{itemize}
-    \item Report-based alignment is \textbf{low on average (7.21\%)} but \textbf{highly uneven} across clinical subdomains (up to 49.23\% in specific clusters).
-    \item The choice of judge is a major source of disagreement: \textbf{MedGemma agrees with human consensus only 56\%} of the time vs. \textbf{68--76\% for commercial LLMs}.
-  \end{itemize}
-
-  \note{
-    Our three main contributions are: a fully implemented pipeline with phrase-level grounding, an analysis of concept groups at different clustering resolutions, and an independent audit of the LLM judge.
-    Our key findings show that while the average report-based alignment is low, around 7.2 percent, it's highly uneven across subdomains. 
-    Crucially, we found that MedGemma agreed with human consensus only 56 percent of the time, compared to 68 to 76 percent for commercial models, highlighting the judge's reliability as a major variable.
-  }
-\end{frame}
