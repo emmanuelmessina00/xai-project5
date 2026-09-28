@@ -49,7 +49,7 @@
     \textbf{We tested} how visual concepts match radiology reports using MedGemma as a judge.\\
     \textbf{As shown in the table}: Across 500 images, results are very stable: ~70\% Uncertain, ~22\% Unaligned, and ~7\% Aligned.\\
     \textbf{The main reason for the high Uncertain rate} is primarily the reporting omission bias. Radiologists focus on acute pathologies and simply do not write normal anatomy, leading to an "Uncertain" verdict even if the structure is perfectly visible.\\
-    \textbf{On the other hand}: The 22.5 percent Unaligned rate points to potential false positives, representing features the model predicted but the medical report explicitly negates.
+    \textbf{On the other hand}: The 22.5 percent Unaligned rate indicates potential false positives, representing elements predicted by the model but explicitly contradicted by the medical report.
   }
 \end{frame}
 
@@ -69,7 +69,7 @@
   \note{
     \textbf{To analyze concept types}: We clustered the 100 parent concept embeddings using cosine distance.\\
     \textbf{On the left plot}: You can see the t-SNE (t-Distributed Stochastic Neighbor Embedding) visualization showing how concepts group into 10 macro-clusters.\\
-    \textbf{On the right plot}: Silhouette analysis confirms good separation, peaking at k=3 (0.274) and reaching 0.263 at k=10.\\
+    \textbf{On the right plot}: Silhouette analysis confirms good separation, showing a peak score at $k=3$ and a near-peak score of $0.263$ at reference $k=10$.\\
     \textbf{Therefore}: We selected k=10 because it provides a detailed clinical grouping while keeping strong separation.
   }
 \end{frame}
@@ -116,8 +116,8 @@
   \note{
     \textbf{For our final experiment}: We performed an independent validation on a subset of the results. We (three authors) manually audited 25 pairs to establish a human baseline.\\
     \textbf{The chart clearly shows}: MedGemma, our automated judge, agrees with human consensus only 56 percent of the time.\\
-    \textbf{Even though}: Commercial models like Gemini, Claude or GPT reach up to 76 percent, a significant gap remains.\\
-    \textbf{This highlights}: Evaluating visual concepts against medical text is intrinsically difficult. The choice of the LLM judge heavily influences the alignment metrics.
+    \textbf{On the other hand}: Commercial models like Gemini, Claude or GPT reach up to 76 percent, a significant gap remains.\\
+    \textbf{This highlights}: Evaluating visual concepts against medical text is intrinsically difficult. The choice of the LLM judge influences the alignment metrics.
   }
 \end{frame}
 
@@ -141,9 +141,9 @@
 
   \note{
     \textbf{To summarize our key findings}:\\
-    \textbf{First}: The SAE reconstructs visual features near-losslessly, but report validation is limited by omission bias.\\
+    \textbf{First}: The SAE reconstructs visual features well, but report validation is limited by omission bias.\\
     \textbf{Second}: The interpretability is localized, with certain semantic sub-domains aligning better.\\
     \textbf{Third}: Automated evaluation requires strong LLMs, where frontier models clearly outperform smaller domain judges.\\
-    \textbf{For future work}: We suggest moving beyond text-only validation. Grounding concepts directly onto the image space via heatmaps, combined with clinical expert validation, is the necessary next step. Thank you.
+    \textbf{For future work}: We suggest moving beyond text-only validation. It could involve grounding concepts directly onto the image space, for instance via heatmaps, combined with clinical expert validation.
   }
 \end{frame}
